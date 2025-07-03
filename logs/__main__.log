@@ -1,0 +1,16 @@
+2025-07-03 23:00:59,712 | INFO | __main__ | Processing batch 1: ['360ONE']
+2025-07-03 23:01:49,351 | INFO | __main__ | Processing batch 1: ['360ONE']
+2025-07-03 23:01:56,802 | INFO | __main__ | Processing batch 2: ['ABB']
+2025-07-03 23:02:05,331 | INFO | __main__ | Processed and inserted data for 360ONE
+2025-07-03 23:02:05,994 | INFO | __main__ | Processed and inserted data for ABB
+2025-07-03 23:02:06,003 | INFO | __main__ | Sleeping for 150 seconds...
+2025-07-03 23:04:36,010 | INFO | __main__ | Processing batch 1: ['360ONE']
+2025-07-03 23:04:42,314 | INFO | __main__ | Processing batch 2: ['ABB']
+2025-07-03 23:04:49,438 | INFO | __main__ | Processed and inserted data for 360ONE
+2025-07-03 23:04:50,086 | INFO | __main__ | Processed and inserted data for ABB
+2025-07-03 23:04:50,087 | INFO | __main__ | Sleeping for 150 seconds...
+2025-07-03 23:07:20,080 | INFO | __main__ | Processing batch 1: ['360ONE']
+2025-07-03 23:07:26,341 | INFO | __main__ | Processing batch 2: ['ABB']
+2025-07-03 23:07:32,982 | INFO | __main__ | Processed and inserted data for 360ONE
+2025-07-03 23:07:33,580 | INFO | __main__ | Processed and inserted data for ABB
+2025-07-03 23:07:33,580 | INFO | __main__ | Sleeping for 150 seconds...
