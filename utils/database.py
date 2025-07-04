@@ -1,6 +1,6 @@
 #%% 
 # Database Utilities
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 from config import DB_CONFIG
 from utils.logger import get_logger
 import urllib.parse
@@ -56,3 +56,23 @@ def insert_in_database(df, table_name):
         logger.exception("Database insertion error")
     finally:
         engine.dispose()
+
+
+def get_latest_snapshot_id():
+    """
+    Retrieves the highest snapshot ID from the optionchain_metadata table.
+    Returns:
+        int or None: The highest snapshot ID, or None if the table is empty or an error occurs.
+    """
+    engine = create_mysql_engine()
+    try:
+        with engine.connect() as conn:
+            result = conn.execute(text("SELECT MAX(SNAPSHOT_ID) FROM optionchain_metadata"))
+            max_id = result.scalar()
+            return int(max_id) if max_id is not None else None
+    except Exception as e:
+        logger.error(f"Failed to retrieve latest snapshot ID: {e}")
+        return None
+    finally:
+        engine.dispose()
+

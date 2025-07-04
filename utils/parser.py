@@ -8,7 +8,7 @@ from utils.logger import get_logger
 logger = get_logger(__name__)
 
 
-def process_option_chain_data(stock: str, oc_data: dict) -> None:
+def process_option_chain_data(stock: str, oc_data: dict, snapshot_id: int) -> None:
     """
     Processes raw option chain data for a given stock and inserts the structured 
     call-put option matrix into the MySQL database.
@@ -67,7 +67,17 @@ def process_option_chain_data(stock: str, oc_data: dict) -> None:
             ]
 
             df = pd.DataFrame(l_OC, columns=OC_col)
+
+            # Add stock column (Foreign Key)
             df.insert(0, 'SYMBOL', stock)
+
+            # Add snapshot ID column
+            df.insert(1, 'SNAPSHOT_ID', snapshot_id)
+
+            # Add expiry date column
+            df.insert(2, 'EXPIRY', expiry_date)
+            df['EXPIRY'] = pd.to_datetime(df['EXPIRY'], format="%d-%b-%Y").dt.date
+
             final_df = pd.concat([final_df, df])
 
         except Exception as e:

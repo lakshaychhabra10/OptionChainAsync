@@ -5,7 +5,7 @@ import requests
 import json
 import pandas as pd
 from utils.database import insert_in_database
-from utils.helpers import extract_option_chain_by_expiry
+from utils.helpers import extract_option_chain_by_expiry, extract_download_datetime, save_option_chain_snapshot
 from utils.parser import process_option_chain_data
 
 
@@ -59,3 +59,15 @@ oc_data = extract_option_chain_by_expiry(data)
 reliance_data = process_option_chain_data(stock, oc_data)
 insert_in_database(reliance_data, 'optionchain')
 
+d_date, d_time = extract_download_datetime(data, logger=None)
+
+print(f"Data downloaded on {d_date} at {d_time}")
+
+save_option_chain_snapshot(
+    parent_dir="option_chain_snapshots",
+    download_date=d_date,
+    download_time=d_time,
+    snapshot_id=1,
+    stock=stock,
+    json_object=data
+)

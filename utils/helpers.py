@@ -1,6 +1,9 @@
 #%%
-
+from datetime import datetime
 from utils.logger import get_logger
+import os
+import json
+import pandas as pd
 logger = get_logger(__name__)
 
 
@@ -142,3 +145,100 @@ def compare_stock_dataframes(old_data: dict, new_data: dict) -> bool:
     except Exception as e:
         logger.exception("Error comparing DataFrames")
         return True  # be safe and assume changes if comparison fails
+
+
+def extract_download_datetime(json_object):
+    """
+    Extracts download_date and download_time from the JSON object's 'records'->'timestamp' field.
+    If the timestamp is missing or invalid, returns (None, None).
+    
+    Args:
+        json_object (dict): The JSON object containing the timestamp.
+        logger (logging.Logger, optional): Logger for error/warning messages.
+        
+    Returns:
+        tuple: (download_date, download_time) as strings in 'YYYY-MM-DD' and 'HH:MM:SS' format,
+               or (None, None) if not available or invalid.
+    """
+    timestamp_str = json_object.get('records', {}).get('timestamp', '')
+    if timestamp_str:
+        try:
+            timestamp = datetime.strptime(timestamp_str, "%d-%b-%Y %H:%M:%S")
+            download_date = timestamp.date().strftime("%Y-%m-%d")
+            download_time = timestamp.time().strftime("%H:%M:%S")
+            return download_date, download_time
+        except ValueError as e:
+            if logger:
+                logger.error(f"Invalid timestamp format for stock: {e}")
+            return None, None
+    else:
+        if logger:
+            logger.warning("No timestamp found for stock.")
+        return None, None
+
+
+def save_option_chain_snapshot(parent_dir, download_date, download_time, snapshot_id, stock, json_object):
+    """
+    Creates a directory structure: parent_dir/download_date/snapshot_id,
+    and saves the JSON object as {stock}_{snapshot_id}_{download_date}{download_time}_istock_oc.json
+
+    Args:
+        parent_dir (str): The root directory for storing data.
+        download_date (str): The date string (e.g., '20250704').
+        download_time (str): The time string (e.g., '153600' for 15:36:00).
+        snapshot_id (str or int): Unique identifier for the snapshot.
+        stock (str): Stock name or symbol.
+        json_object (dict): The JSON data to save.
+    """
+    try:
+        # Build directory structure
+        date_dir = os.path.join(parent_dir, download_date)
+        snapshot_dir = os.path.join(date_dir, str(snapshot_id))
+        os.makedirs(snapshot_dir, exist_ok=True)
+    except Exception as e:
+        logger.error(f"Failed to create directory {snapshot_dir}: {e}")
+        return False
+
+    # Construct filename
+    json_filename = f"{stock}_{snapshot_id}_{download_date}_{download_time}.json"
+    json_path = os.path.join(snapshot_dir, json_filename)
+    try:
+        with open(json_path, 'w') as f:
+            json.dump(json_object, f)
+        logger.info(f"Saved raw JSON for {stock} at {json_path}")
+        return True
+    except Exception as e:
+        logger.error(f"Failed to save JSON for {stock} at {json_path}: {e}")
+        return False
+
+
+def create_snapshot_df(final_df, snapshot_id, stock, download_date, download_time):
+    """
+    Creates a snapshot DataFrame for the option chain snapshot if final_df is not empty.
+    Logs the result using the global logger.
+
+    Args:
+        final_df (pd.DataFrame): The processed option chain DataFrame.
+        snapshot_id (str or int): The snapshot identifier.
+        stock (str): The stock ticker.
+        download_date (str): The download date.
+        download_time (str): The download time.
+
+    Returns:
+        pd.DataFrame or None: The snapshot DataFrame if final_df is not empty, else None.
+    """
+    try:
+        if not final_df.empty:
+            snapshot_df = pd.DataFrame([{
+                'SNAPSHOT_ID': snapshot_id,
+                'TICKER': stock,
+                'DOWNLOAD_DATE': download_date,
+                'DOWNLOAD_TIME': download_time
+            }])
+            return snapshot_df
+        else:
+            logger.warning(f"[{stock}] No data available in final_df. Snapshot DataFrame was not created for SNAPSHOT_ID: {snapshot_id}.")
+            return None
+    except Exception as e:
+        logger.error(f"[{stock}] Error occurred while creating snapshot DataFrame for SNAPSHOT_ID: {snapshot_id}: {e}")
+        return None
