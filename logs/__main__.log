@@ -1,16 +1,65 @@
-2025-07-03 23:00:59,712 | INFO | __main__ | Processing batch 1: ['360ONE']
-2025-07-03 23:01:49,351 | INFO | __main__ | Processing batch 1: ['360ONE']
-2025-07-03 23:01:56,802 | INFO | __main__ | Processing batch 2: ['ABB']
-2025-07-03 23:02:05,331 | INFO | __main__ | Processed and inserted data for 360ONE
-2025-07-03 23:02:05,994 | INFO | __main__ | Processed and inserted data for ABB
-2025-07-03 23:02:06,003 | INFO | __main__ | Sleeping for 150 seconds...
-2025-07-03 23:04:36,010 | INFO | __main__ | Processing batch 1: ['360ONE']
-2025-07-03 23:04:42,314 | INFO | __main__ | Processing batch 2: ['ABB']
-2025-07-03 23:04:49,438 | INFO | __main__ | Processed and inserted data for 360ONE
-2025-07-03 23:04:50,086 | INFO | __main__ | Processed and inserted data for ABB
-2025-07-03 23:04:50,087 | INFO | __main__ | Sleeping for 150 seconds...
-2025-07-03 23:07:20,080 | INFO | __main__ | Processing batch 1: ['360ONE']
-2025-07-03 23:07:26,341 | INFO | __main__ | Processing batch 2: ['ABB']
-2025-07-03 23:07:32,982 | INFO | __main__ | Processed and inserted data for 360ONE
-2025-07-03 23:07:33,580 | INFO | __main__ | Processed and inserted data for ABB
-2025-07-03 23:07:33,580 | INFO | __main__ | Sleeping for 150 seconds...
+2025-07-04 17:11:44,390 | INFO | __main__ | Starting main execution...
+2025-07-04 17:11:44,946 | INFO | __main__ | Starting with snapshot ID 1 (last was None)
+2025-07-04 17:11:44,947 | INFO | __main__ | Processing batch 1: ['360ONE']
+2025-07-04 17:11:57,675 | INFO | __main__ | Processing batch 2: ['ABB']
+2025-07-04 17:12:10,660 | INFO | __main__ | Processing batch 3: ['ACC']
+2025-07-04 17:12:23,659 | WARNING | __main__ | No data for 360ONE
+2025-07-04 17:12:23,660 | WARNING | __main__ | No data for ABB
+2025-07-04 17:12:23,660 | WARNING | __main__ | No data for ACC
+2025-07-04 17:12:23,660 | INFO | __main__ | Sleeping for 150 seconds...
+2025-07-04 17:19:24,898 | INFO | __main__ | Starting main execution...
+2025-07-04 17:19:25,432 | INFO | __main__ | Starting with snapshot ID 1 (last was None)
+2025-07-04 17:19:25,433 | INFO | __main__ | Processing batch 1: ['360ONE']
+2025-07-04 17:19:27,453 | INFO | __main__ | Processing batch 2: ['ABB']
+2025-07-04 17:19:29,464 | INFO | __main__ | Processing batch 3: ['ACC']
+2025-07-04 17:19:31,480 | WARNING | __main__ | No data for 360ONE
+2025-07-04 17:19:31,480 | WARNING | __main__ | No data for ABB
+2025-07-04 17:19:31,481 | WARNING | __main__ | No data for ACC
+2025-07-04 17:19:31,481 | INFO | __main__ | Sleeping for 150 seconds...
+2025-07-04 17:22:01,485 | INFO | __main__ | Processing batch 1: ['360ONE']
+2025-07-04 17:22:03,497 | INFO | __main__ | Processing batch 2: ['ABB']
+2025-07-04 17:22:05,506 | INFO | __main__ | Processing batch 3: ['ACC']
+2025-07-04 17:22:07,516 | WARNING | __main__ | No data for 360ONE
+2025-07-04 17:22:07,516 | WARNING | __main__ | No data for ABB
+2025-07-04 17:22:07,516 | WARNING | __main__ | No data for ACC
+2025-07-04 17:22:07,516 | INFO | __main__ | Sleeping for 150 seconds...
+2025-07-04 17:24:37,553 | INFO | __main__ | Processing batch 1: ['360ONE']
+2025-07-04 17:24:39,563 | INFO | __main__ | Processing batch 2: ['ABB']
+2025-07-04 17:24:41,571 | INFO | __main__ | Processing batch 3: ['ACC']
+2025-07-04 17:24:43,581 | WARNING | __main__ | No data for 360ONE
+2025-07-04 17:24:43,581 | WARNING | __main__ | No data for ABB
+2025-07-04 17:24:43,581 | WARNING | __main__ | No data for ACC
+2025-07-04 17:24:43,581 | INFO | __main__ | Sleeping for 150 seconds...
+2025-07-04 23:03:38,726 | INFO | __main__ | Starting main execution...
+2025-07-04 23:03:48,788 | INFO | __main__ | Starting with snapshot ID 1 (last was None)
+2025-07-04 23:03:48,788 | INFO | __main__ | Processing batch 1: ['360ONE']
+2025-07-04 23:03:57,120 | INFO | __main__ | Processing batch 2: ['ABB']
+2025-07-04 23:04:05,479 | INFO | __main__ | Processing batch 3: ['ACC']
+2025-07-04 23:07:30,666 | INFO | __main__ | Starting main execution...
+2025-07-04 23:07:31,240 | INFO | __main__ | Starting with snapshot ID 1 (last was None)
+2025-07-04 23:07:31,240 | INFO | __main__ | Processing batch 1: ['360ONE']
+2025-07-04 23:07:40,876 | INFO | __main__ | Processing batch 2: ['ABB']
+2025-07-04 23:07:50,376 | INFO | __main__ | Processing batch 3: ['ACC']
+2025-07-04 23:07:59,226 | INFO | __main__ | Processed and inserted data for 360ONE - snapshot ID 1
+2025-07-04 23:08:00,672 | INFO | __main__ | Processed and inserted data for ABB - snapshot ID 1
+2025-07-04 23:08:02,060 | INFO | __main__ | Processed and inserted data for ACC - snapshot ID 1
+2025-07-04 23:08:02,811 | INFO | __main__ | Sleeping for 150 seconds...
+2025-07-04 23:10:32,815 | INFO | __main__ | Processing batch 1: ['360ONE']
+2025-07-04 23:10:41,716 | INFO | __main__ | Processing batch 2: ['ABB']
+2025-07-04 23:10:52,239 | INFO | __main__ | Processing batch 3: ['ACC']
+2025-07-04 23:11:01,566 | INFO | __main__ | Processed and inserted data for 360ONE - snapshot ID 2
+2025-07-04 23:11:02,846 | INFO | __main__ | Processed and inserted data for ABB - snapshot ID 2
+2025-07-04 23:11:03,980 | INFO | __main__ | Processed and inserted data for ACC - snapshot ID 2
+2025-07-04 23:11:04,491 | INFO | __main__ | Sleeping for 150 seconds...
+2025-07-04 23:11:30,377 | INFO | __main__ | Starting main execution...
+2025-07-04 23:11:30,969 | INFO | __main__ | Starting with snapshot ID 3 (last was 2)
+2025-07-04 23:11:30,970 | INFO | __main__ | Processing batch 1: ['360ONE']
+2025-07-04 23:11:39,648 | INFO | __main__ | Processing batch 2: ['ABB']
+2025-07-04 23:11:47,588 | INFO | __main__ | Processing batch 3: ['ACC']
+2025-07-04 23:11:56,645 | INFO | __main__ | Processed and inserted data for 360ONE - snapshot ID 3
+2025-07-04 23:11:58,071 | INFO | __main__ | Processed and inserted data for ABB - snapshot ID 3
+2025-07-04 23:11:59,410 | INFO | __main__ | Processed and inserted data for ACC - snapshot ID 3
+2025-07-04 23:11:59,953 | INFO | __main__ | Sleeping for 150 seconds...
+2025-07-04 23:14:13,844 | INFO | __main__ | Starting main execution...
+2025-07-04 23:14:14,403 | INFO | __main__ | Starting with snapshot ID 4 (last was 3)
+2025-07-04 23:14:14,404 | INFO | __main__ | Processing batch 1: ['360ONE']

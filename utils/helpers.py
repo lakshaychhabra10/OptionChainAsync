@@ -123,30 +123,6 @@ def extract_option_values(option_data, option_keys):
 
 
 
-def compare_stock_dataframes(old_data: dict, new_data: dict) -> bool:
-    """
-    Compare old and new stock DataFrames.
-    Returns True if there is any difference in any stock's data.
-    Otherwise returns False if all match.
-    """
-    try:
-        for stock, new_df in new_data.items():
-            old_df = old_data.get(stock)
-            if old_df is None:
-                logger.info(f"{stock} not found in previous data — marked as changed.")
-                return True  # new stock appeared
-
-            if not new_df.equals(old_df):
-                logger.info(f"Detected change in data for {stock}")
-                return True  # data changed
-
-        logger.info("No changes detected in any stock data.")
-        return False  # all matched
-    except Exception as e:
-        logger.exception("Error comparing DataFrames")
-        return True  # be safe and assume changes if comparison fails
-
-
 def extract_download_datetime(json_object):
     """
     Extracts download_date and download_time from the JSON object's 'records'->'timestamp' field.
@@ -197,7 +173,7 @@ def save_option_chain_snapshot(parent_dir, download_date, download_time, snapsho
         os.makedirs(snapshot_dir, exist_ok=True)
     except Exception as e:
         logger.error(f"Failed to create directory {snapshot_dir}: {e}")
-        return False
+        
 
     # Construct filename
     json_filename = f"{stock}_{snapshot_id}_{download_date}_{download_time}.json"
@@ -206,13 +182,13 @@ def save_option_chain_snapshot(parent_dir, download_date, download_time, snapsho
         with open(json_path, 'w') as f:
             json.dump(json_object, f)
         logger.info(f"Saved raw JSON for {stock} at {json_path}")
-        return True
+    
     except Exception as e:
         logger.error(f"Failed to save JSON for {stock} at {json_path}: {e}")
-        return False
+        
 
 
-def create_snapshot_df(final_df, snapshot_id, stock, download_date, download_time):
+def create_snapshot_df(snapshot_id, stock, download_date, download_time):
     """
     Creates a snapshot DataFrame for the option chain snapshot if final_df is not empty.
     Logs the result using the global logger.
@@ -228,17 +204,14 @@ def create_snapshot_df(final_df, snapshot_id, stock, download_date, download_tim
         pd.DataFrame or None: The snapshot DataFrame if final_df is not empty, else None.
     """
     try:
-        if not final_df.empty:
-            snapshot_df = pd.DataFrame([{
-                'SNAPSHOT_ID': snapshot_id,
-                'TICKER': stock,
-                'DOWNLOAD_DATE': download_date,
-                'DOWNLOAD_TIME': download_time
-            }])
-            return snapshot_df
-        else:
-            logger.warning(f"[{stock}] No data available in final_df. Snapshot DataFrame was not created for SNAPSHOT_ID: {snapshot_id}.")
-            return None
+        snapshot_df = pd.DataFrame([{
+            'SNAPSHOT_ID': snapshot_id,
+            'TICKER': stock,
+            'DOWNLOAD_DATE': download_date,
+            'DOWNLOAD_TIME': download_time
+        }])
+        return snapshot_df
+    
     except Exception as e:
         logger.error(f"[{stock}] Error occurred while creating snapshot DataFrame for SNAPSHOT_ID: {snapshot_id}: {e}")
         return None

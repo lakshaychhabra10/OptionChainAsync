@@ -1,12 +1,13 @@
 #%%
 
+
 import requests
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # List of proxies to test
 proxies_list = [
-    "http://192.168.18.4:31"
+   "https://spdsnruo64:0Co0+qHdxIRrk8vrk2@gate.decodo.com:10001"
 ]
 
 # Test URL to check proxy connectivity
@@ -17,7 +18,7 @@ def check_proxy(proxy):
     proxy_dict = {"http": proxy, "https": proxy}
     start_time = time.time()
     try:
-        response = requests.get(TEST_URL, proxies=proxy_dict, timeout=10)
+        response = requests.get(TEST_URL, proxies=proxy_dict, timeout=10, verify=False)
         if response.status_code == 200:
             elapsed_time = time.time() - start_time
             return {"proxy": proxy, "status": "Working", "response_time": f"{elapsed_time:.2f} seconds"}
@@ -52,6 +53,7 @@ def main():
             working_proxies += 1
 
     print(f"Summary: {working_proxies}/{len(proxies_list)} proxies are working.")
+
 
 if __name__ == "__main__":
     main()

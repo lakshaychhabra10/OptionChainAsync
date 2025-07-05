@@ -5,7 +5,7 @@ import requests
 import json
 import pandas as pd
 from utils.database import insert_in_database
-from utils.helpers import extract_option_chain_by_expiry, extract_download_datetime, save_option_chain_snapshot
+from utils.helpers import extract_option_chain_by_expiry, extract_download_datetime, save_option_chain_snapshot, create_snapshot_df
 from utils.parser import process_option_chain_data
 
 
@@ -55,19 +55,23 @@ else:
 session.close()
 print("Session closed.")
 
-oc_data = extract_option_chain_by_expiry(data)
-reliance_data = process_option_chain_data(stock, oc_data)
-insert_in_database(reliance_data, 'optionchain')
+snapshot_id = 1  # Example snapshot ID, you can modify this as needed
 
-d_date, d_time = extract_download_datetime(data, logger=None)
-
-print(f"Data downloaded on {d_date} at {d_time}")
+download_date, download_time = extract_download_datetime(data)
 
 save_option_chain_snapshot(
     parent_dir="option_chain_snapshots",
-    download_date=d_date,
-    download_time=d_time,
+    download_date=download_date,
+    download_time=download_time,
     snapshot_id=1,
     stock=stock,
     json_object=data
 )
+
+oc_data = extract_option_chain_by_expiry(data)
+reliance_data = process_option_chain_data(stock, oc_data,snapshot_id)
+insert_in_database(reliance_data, 'optionchain')
+
+snapshot_df = create_snapshot_df(snapshot_id, stock, download_date, download_time)
+
+insert_in_database(snapshot_df, 'optionchain_snapshots')

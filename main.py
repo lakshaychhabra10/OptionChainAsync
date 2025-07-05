@@ -1,4 +1,3 @@
-#%%
 
 import sys
 import asyncio
@@ -40,8 +39,14 @@ async def main():
         for i in range(0, len(STOCKS[0:3]), batch_size):
             batch = STOCKS[i:i+batch_size]
             logger.info(f"Processing batch {i // batch_size + 1}: {batch}")
-            results = await process_batch(batch, PROXIES)
-            all_results.extend(results)
+            try:
+                results = await process_batch(batch, PROXIES)
+                all_results.extend(results)
+            except Exception as e:
+                logger.error(
+                    f"Exception occurred while processing batch {i // batch_size + 1} ({batch}): {e}",
+                    exc_info=True  # This logs the full traceback
+                )
             await asyncio.sleep(2)
 
         for stock, json_object in all_results:
@@ -61,20 +66,22 @@ async def main():
                     oc_data = extract_option_chain_by_expiry(json_object)
                     
                     if oc_data:
-                        stock_df = process_option_chain_data(stock, oc_data)
+                        stock_df = process_option_chain_data(stock, oc_data, snapshot_id)
                     else:
                         logger.warning(f"No option chain data found for {stock}")
                         continue
 
-                    if stock_df:
+                    if not stock_df.empty:
                         insert_in_database(stock_df, 'optionchain')
-                        snapshot_df = create_snapshot_df(stock_df, snapshot_id, stock, download_date, download_time)
+                        snapshot_df = create_snapshot_df(snapshot_id, stock, download_date, download_time)
                         logger.info(f"Processed and inserted data for {stock} - snapshot ID {snapshot_id}")
                     else:
                         logger.warning(f"No valid data to insert for {stock}")
 
-                    if snapshot_df:
+                    if not snapshot_df.empty:
                         insert_in_database(snapshot_df, 'optionchain_snapshots')
+                    else:
+                        logger.warning(f"No valid snapshot data to insert for {stock}")
 
                 except Exception as e:
                     logger.error(f"Error processing {stock}: {e}", exc_info=True)

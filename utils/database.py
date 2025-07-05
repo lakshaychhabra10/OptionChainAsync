@@ -67,7 +67,7 @@ def get_latest_snapshot_id():
     engine = create_mysql_engine()
     try:
         with engine.connect() as conn:
-            result = conn.execute(text("SELECT MAX(SNAPSHOT_ID) FROM optionchain_metadata"))
+            result = conn.execute(text("SELECT MAX(SNAPSHOT_ID) FROM optionchain_snapshots"))
             max_id = result.scalar()
             return int(max_id) if max_id is not None else None
     except Exception as e:
