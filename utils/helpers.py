@@ -125,34 +125,37 @@ def extract_option_values(option_data, option_keys):
 
 
 
-def extract_download_datetime(json_object):
+def extract_download_datetime_underlying(json_object):
     """
-    Extracts download_date and download_time from the JSON object's 'records'->'timestamp' field.
-    If the timestamp is missing or invalid, returns (None, None).
-    
+    Extracts download_date, download_time, and underlying from the JSON object's 'records' field.
+    If the timestamp is missing or invalid, returns (None, None, None).
+
     Args:
-        json_object (dict): The JSON object containing the timestamp.
+        json_object (dict): The JSON object containing the timestamp and underlying.
         logger (logging.Logger, optional): Logger for error/warning messages.
-        
+
     Returns:
-        tuple: (download_date, download_time) as strings in 'YYYY-MM-DD' and 'HH:MM:SS' format,
-               or (None, None) if not available or invalid.
+        tuple: (download_date, download_time, underlying) as strings,
+               or (None, None, None) if not available or invalid.
     """
-    timestamp_str = json_object.get('records', {}).get('timestamp', '')
+    records = json_object.get('records', {})
+    timestamp_str = records.get('timestamp', '')
+    underlying = records.get('underlyingValue', None)
+
     if timestamp_str:
         try:
             timestamp = datetime.strptime(timestamp_str, "%d-%b-%Y %H:%M:%S")
             download_date = timestamp.date().strftime("%Y-%m-%d")
             download_time = timestamp.time().strftime("%H:%M:%S")
-            return download_date, download_time
+            return download_date, download_time, underlying
         except ValueError as e:
             if logger:
                 logger.error(f"Invalid timestamp format for stock: {e}")
-            return None, None
+            return None, None, underlying
     else:
         if logger:
             logger.warning("No timestamp found for stock.")
-        return None, None
+        return None, None, underlying
 
 
 def save_option_chain_snapshot(parent_dir, download_date, download_time, snapshot_id, stock, json_object):
@@ -190,7 +193,7 @@ def save_option_chain_snapshot(parent_dir, download_date, download_time, snapsho
         
 
 
-def create_snapshot_df(snapshot_id, stock, download_date, download_time):
+def create_snapshot_df(snapshot_id, stock, download_date, download_time, underlying_val):
     """
     Creates a snapshot DataFrame for the option chain snapshot if final_df is not empty.
     Logs the result using the global logger.
@@ -210,7 +213,8 @@ def create_snapshot_df(snapshot_id, stock, download_date, download_time):
             'SNAPSHOT_ID': snapshot_id,
             'TICKER': stock,
             'DOWNLOAD_DATE': download_date,
-            'DOWNLOAD_TIME': download_time
+            'DOWNLOAD_TIME': download_time,
+            'UNDERLYING_VALUE' : underlying_val
         }])
         return snapshot_df
     

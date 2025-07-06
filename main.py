@@ -1,9 +1,9 @@
 
 import sys
 import asyncio
-from config import STOCKS, PROXIES
+from config import STOCKS, PROXY
 from utils.fetcher import process_batch
-from utils.helpers import extract_option_chain_by_expiry, extract_download_datetime, save_option_chain_snapshot, create_snapshot_df
+from utils.helpers import extract_option_chain_by_expiry, extract_download_datetime_underlying, save_option_chain_snapshot, create_snapshot_df
 from utils.parser import process_option_chain_data
 from utils.database import insert_in_database, get_latest_snapshot_id
 from utils.logger import get_logger
@@ -35,24 +35,25 @@ async def main():
     
     while True:
         all_results = []
-        batch_size = 50  # Adjust batch size as needed
-        for i in range(0, len(STOCKS[0:50]), batch_size):
+        batch_size = 30  # Adjust batch size as needed
+        for i in range(0, len(STOCKS[0:30]), batch_size):
             batch = STOCKS[i:i+batch_size]
             logger.info(f"Processing batch {i // batch_size + 1}: {batch}")
             try:
-                results = await process_batch(batch, PROXIES)
-                all_results.extend(results)
+                results = await process_batch(batch, PROXY)
             except Exception as e:
                 logger.error(
                     f"Exception occurred while processing batch {i // batch_size + 1} ({batch}): {e}",
                     exc_info=True  # This logs the full traceback
                 )
+                results = []
+            all_results.extend(results)
             await asyncio.sleep(2)
 
         for stock, json_object in all_results:
             if json_object:
                 try:
-                    download_date, download_time = extract_download_datetime(json_object)
+                    download_date, download_time, underlying_val = extract_download_datetime_underlying(json_object)
 
                     save_option_chain_snapshot(
                         parent_dir="option_chain_snapshots",
@@ -73,7 +74,7 @@ async def main():
 
                     if not stock_df.empty:
                         insert_in_database(stock_df, 'optionchain')
-                        snapshot_df = create_snapshot_df(snapshot_id, stock, download_date, download_time)
+                        snapshot_df = create_snapshot_df(snapshot_id, stock, download_date, download_time, underlying_val)
                         logger.info(f"Processed and inserted data for {stock} - snapshot ID {snapshot_id}")
                     else:
                         logger.warning(f"No valid data to insert for {stock}")
