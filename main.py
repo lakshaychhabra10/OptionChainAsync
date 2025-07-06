@@ -35,8 +35,8 @@ async def main():
     
     while True:
         all_results = []
-        batch_size = 1  # Adjust batch size as needed
-        for i in range(0, len(STOCKS[0:3]), batch_size):
+        batch_size = 50  # Adjust batch size as needed
+        for i in range(0, len(STOCKS[0:50]), batch_size):
             batch = STOCKS[i:i+batch_size]
             logger.info(f"Processing batch {i // batch_size + 1}: {batch}")
             try:

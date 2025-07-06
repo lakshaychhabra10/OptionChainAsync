@@ -6,8 +6,10 @@ import ssl
 import traceback
 
 PROXIES = [
-"https://spdsnruo64:0Co0+qHdxIRrk8vrk2@gate.decodo.com:10001"
+    "https://spdsnruo64:0Co0+qHdxIRrk8vrk2@in.decodo.com:10000",
 ]
+
+PROXIES *= 100  # Repeat the list to simulate a larger set of proxies
 
 STOCK = "RELIANCE"
 BASE_URL = "https://www.nseindia.com"
@@ -30,9 +32,9 @@ async def check_proxy(proxy):
         connector = aiohttp.TCPConnector(ssl=ssl_context)
         async with aiohttp.ClientSession(timeout=timeout, connector=connector) as session:
             await session.get(BASE_URL, headers=HEADERS, proxy=proxy)
-            await asyncio.sleep(random.uniform(1, 2))
+            await asyncio.sleep(random.uniform(2, 4))
             await session.get(OPTION_CHAIN_PAGE, headers=HEADERS, proxy=proxy)
-            await asyncio.sleep(random.uniform(1, 2))
+            await asyncio.sleep(random.uniform(2, 4))
             async with session.get(API_URL, headers=HEADERS, proxy=proxy) as response:
                 elapsed_time = time.time() - start_time
                 if response.status == 200:
@@ -51,6 +53,7 @@ async def main():
     results = await asyncio.gather(*(check_proxy(proxy) for proxy in PROXIES), return_exceptions=True)
 
     working_count = 0
+
     for result in results:
         if isinstance(result, dict):
             print(f"Proxy: {result['proxy']}")

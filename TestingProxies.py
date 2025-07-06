@@ -7,8 +7,10 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # List of proxies to test
 proxies_list = [
-   "https://spdsnruo64:0Co0+qHdxIRrk8vrk2@gate.decodo.com:10001"
+    "https://spdsnruo64:0Co0+qHdxIRrk8vrk2@in.decodo.com:10000",
 ]
+
+proxies_list *= 100  # Repeat the list to simulate a larger set of proxies
 
 # Test URL to check proxy connectivity
 TEST_URL = "http://httpbin.org/ip"
