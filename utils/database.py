@@ -26,50 +26,47 @@ def create_required_tables():
     Create required tables if they don't already exist.
     This should be run once during startup.
     """
-    try:
-        with engine.begin() as conn:
-            conn.execute(text("""
-                CREATE TABLE IF NOT EXISTS optionchain (
-                    TICKER TEXT,
-                    SNAPSHOT_ID BIGINT,
-                    EXPIRY DATE,
-                    c_OI DOUBLE,
-                    c_CHNG_IN_OI DOUBLE,
-                    c_VOLUME DOUBLE,
-                    c_IV DOUBLE,
-                    c_LTP DOUBLE,
-                    c_CHNG DOUBLE,
-                    c_BID_QTY DOUBLE,
-                    c_BID DOUBLE,
-                    c_ASK DOUBLE,
-                    c_ASK_QTY DOUBLE,
-                    STRIKE DOUBLE,
-                    p_BID_QTY DOUBLE,
-                    p_BID DOUBLE,
-                    p_ASK DOUBLE,
-                    p_ASK_QTY DOUBLE,
-                    p_CHNG DOUBLE,
-                    p_LTP DOUBLE,
-                    p_IV DOUBLE,
-                    p_VOLUME DOUBLE,
-                    p_CHNG_IN_OI DOUBLE,
-                    p_OI DOUBLE
-                );
-            """))
 
-            conn.execute(text("""
-                CREATE TABLE IF NOT EXISTS optionchain_snapshots (
-                    SNAPSHOT_ID BIGINT,
-                    TICKER TEXT,
-                    DOWNLOAD_DATE TEXT,
-                    DOWNLOAD_TIME TEXT,
-                    UNDERLYING_VALUE DOUBLE
-                );
-            """))
+    with engine.begin() as conn:
+        conn.execute(text("""
+            CREATE TABLE IF NOT EXISTS optionchain (
+                TICKER TEXT,
+                SNAPSHOT_ID BIGINT,
+                EXPIRY DATE,
+                c_OI DOUBLE,
+                c_CHNG_IN_OI DOUBLE,
+                c_VOLUME DOUBLE,
+                c_IV DOUBLE,
+                c_LTP DOUBLE,
+                c_CHNG DOUBLE,
+                c_BID_QTY DOUBLE,
+                c_BID DOUBLE,
+                c_ASK DOUBLE,
+                c_ASK_QTY DOUBLE,
+                STRIKE DOUBLE,
+                p_BID_QTY DOUBLE,
+                p_BID DOUBLE,
+                p_ASK DOUBLE,
+                p_ASK_QTY DOUBLE,
+                p_CHNG DOUBLE,
+                p_LTP DOUBLE,
+                p_IV DOUBLE,
+                p_VOLUME DOUBLE,
+                p_CHNG_IN_OI DOUBLE,
+                p_OI DOUBLE
+            );
+        """))
 
-    except Exception as e:
-        logger.error("Failed to create tables.", exc_info=True)
-        raise
+        conn.execute(text("""
+            CREATE TABLE IF NOT EXISTS optionchain_snapshots (
+                SNAPSHOT_ID BIGINT,
+                TICKER TEXT,
+                DOWNLOAD_DATE TEXT,
+                DOWNLOAD_TIME TEXT,
+                UNDERLYING_VALUE DOUBLE
+            );
+        """))
+
 
 
 def insert_in_database(df, table_name):
@@ -91,13 +88,9 @@ def insert_in_database(df, table_name):
         >>> insert_in_database(my_dataframe, "users")
     """
 
-    try:
-        with engine.connect() as conn:
-            df.to_sql(table_name, con=conn, if_exists='append', index=False)
-    except Exception as e:
-        logger.exception("Database insertion error")
-    finally:
-        engine.dispose()
+
+    with engine.connect() as conn:
+        df.to_sql(table_name, con=conn, if_exists='append', index=False)
 
 
 def get_latest_snapshot_id():
@@ -107,16 +100,12 @@ def get_latest_snapshot_id():
         int or None: The highest snapshot ID, or None if the table is empty or an error occurs.
     """
 
-    try:
-        with engine.connect() as conn:
-            result = conn.execute(text("SELECT MAX(SNAPSHOT_ID) FROM optionchain_snapshots"))
-            max_id = result.scalar()
-            return int(max_id) if max_id is not None else None
-    except Exception as e:
-        logger.error(f"Failed to retrieve latest snapshot ID: {e}")
-        return None
-    finally:
-        engine.dispose()
+
+    with engine.connect() as conn:
+        result = conn.execute(text("SELECT MAX(SNAPSHOT_ID) FROM optionchain_snapshots"))
+        max_id = result.scalar()
+        return int(max_id) if max_id is not None else None
+
 
 
 def get_previous_datetime(ticker):

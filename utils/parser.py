@@ -44,44 +44,40 @@ def process_option_chain_data(stock: str, oc_data: dict, snapshot_id: int) -> No
             'pchangeinOpenInterest', 'totalBuyQuantity', 'totalSellQuantity', 'identifier', 'pChange'
         ]
 
-        try:
-            CE, PE = remove_keys_from_option_lists(CE, PE, keys_to_exclude)
+        CE, PE = remove_keys_from_option_lists(CE, PE, keys_to_exclude)
 
-            l_OC = []
-            for i in range(len(CE)):
-                ce_data = CE[i] if CE[i] != '-' else DEFAULT_CALL_OPTION_DICT
-                pe_data = PE[i] if PE[i] != '-' else DEFAULT_PUT_OPTION_DICT
+        l_OC = []
+        for i in range(len(CE)):
+            ce_data = CE[i] if CE[i] != '-' else DEFAULT_CALL_OPTION_DICT
+            pe_data = PE[i] if PE[i] != '-' else DEFAULT_PUT_OPTION_DICT
 
-                l_CE = extract_option_values(ce_data, CALL_OPTION_KEYS)
-                l_PE = extract_option_values(pe_data, PUT_OPTION_KEYS)
-                sp = [oc['strikePrice'][i]]
+            l_CE = extract_option_values(ce_data, CALL_OPTION_KEYS)
+            l_PE = extract_option_values(pe_data, PUT_OPTION_KEYS)
+            sp = [oc['strikePrice'][i]]
 
-                l_OC.append(l_CE + sp + l_PE)
+            l_OC.append(l_CE + sp + l_PE)
 
-            OC_col = [
-                'c_OI', 'c_CHNG_IN_OI', 'c_VOLUME', 'c_IV', 'c_LTP', 'c_CHNG',
-                'c_BID_QTY', 'c_BID', 'c_ASK', 'c_ASK_QTY',
-                'STRIKE',
-                'p_BID_QTY', 'p_BID', 'p_ASK', 'p_ASK_QTY', 'p_CHNG',
-                'p_LTP', 'p_IV', 'p_VOLUME', 'p_CHNG_IN_OI', 'p_OI'
-            ]
+        OC_col = [
+            'c_OI', 'c_CHNG_IN_OI', 'c_VOLUME', 'c_IV', 'c_LTP', 'c_CHNG',
+            'c_BID_QTY', 'c_BID', 'c_ASK', 'c_ASK_QTY',
+            'STRIKE',
+            'p_BID_QTY', 'p_BID', 'p_ASK', 'p_ASK_QTY', 'p_CHNG',
+            'p_LTP', 'p_IV', 'p_VOLUME', 'p_CHNG_IN_OI', 'p_OI'
+        ]
 
-            df = pd.DataFrame(l_OC, columns=OC_col)
+        df = pd.DataFrame(l_OC, columns=OC_col)
 
-            # Add stock column (Foreign Key)
-            df.insert(0, 'TICKER', stock)
+        # Add stock column (Foreign Key)
+        df.insert(0, 'TICKER', stock)
 
-            # Add snapshot ID column
-            df.insert(1, 'SNAPSHOT_ID', snapshot_id)
+        # Add snapshot ID column
+        df.insert(1, 'SNAPSHOT_ID', snapshot_id)
 
-            # Add expiry date column
-            df.insert(2, 'EXPIRY', expiry_date)
-            df['EXPIRY'] = pd.to_datetime(df['EXPIRY'], format="%d-%b-%Y").dt.date
+        # Add expiry date column
+        df.insert(2, 'EXPIRY', expiry_date)
+        df['EXPIRY'] = pd.to_datetime(df['EXPIRY'], format="%d-%b-%Y").dt.date
 
-            final_df = pd.concat([final_df, df])
-
-        except Exception as e:
-            logger.exception(f"Exception while processing expiry {expiry_date} for stock {stock}: {e}")
+        final_df = pd.concat([final_df, df])
 
     if final_df.empty:
         logger.warning(f"[{stock}] No valid option chain data found after processing.")

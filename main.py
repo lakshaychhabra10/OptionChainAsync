@@ -17,23 +17,34 @@ logger = get_logger(__name__)
 
 
 async def process_result(stock, json_object, snapshot_id, symbol_type='equity'):
-    if not json_object:
-        logger.warning(f"No data for {stock} ({symbol_type})")
+    try:
+        if not json_object:
+            logger.warning(f"No data for {stock} ({symbol_type})")
+            return
+    except Exception as e:
+        logger.error(f"Failed to process result for {stock} ({symbol_type}): {e}")
         return
 
     try:
         download_date, download_time, underlying_val = await asyncio.to_thread(
             extract_download_datetime_underlying, json_object
         )
+    except Exception as e:
+        logger.error(f"Failed to extract download datetime for {stock} ({symbol_type}): {e}")
+        return
 
+    try:
         last_date, last_time = await asyncio.to_thread(
             get_previous_datetime, stock
         )
-
         if download_date == last_date and download_time == last_time:
             logger.info(f"Skipping {stock} ({symbol_type}): same download timestamp ({download_date} {download_time}) as last run")
             return
+    except Exception as e:
+        logger.error(f"Failed to get previous datetime for {stock} ({symbol_type}): {e}")
+        return
 
+    try:
         await asyncio.to_thread(
             save_option_chain_snapshot,
             parent_dir="option_chain_snapshots",
@@ -43,15 +54,21 @@ async def process_result(stock, json_object, snapshot_id, symbol_type='equity'):
             stock=stock,
             json_object=json_object
         )
+    except Exception as e:
+        logger.error(f"Failed to save option chain snapshot for {stock} ({symbol_type}): {e}")
+        return
 
+    try:
         oc_data = await asyncio.to_thread(extract_option_chain_by_expiry, json_object)
+    except Exception as e:
+        logger.error(f"Failed to extract option chain data for {stock} ({symbol_type}): {e}")
 
-        if not oc_data:
-            logger.warning(f"No option chain data found for {stock} ({symbol_type})")
-            return
-
+    try:    
         stock_df = await asyncio.to_thread(process_option_chain_data, stock, oc_data, snapshot_id)
+    except Exception as e:
+        logger.error(f"Failed to process option chain data for {stock} ({symbol_type}): {e}")
 
+    try:
         if not stock_df.empty:
             await asyncio.to_thread(insert_in_database, stock_df, 'optionchain')
             snapshot_df = await asyncio.to_thread(
@@ -66,19 +83,24 @@ async def process_result(stock, json_object, snapshot_id, symbol_type='equity'):
         else:
             logger.warning(f"No valid data to insert for {stock} ({symbol_type})")
             return
+    except Exception as e:
+        logger.error(f"Failed to create snapshot dataframe for {stock} ({symbol_type}): {e}")
 
+    try:
         if not snapshot_df.empty:
             await asyncio.to_thread(insert_in_database, snapshot_df, 'optionchain_snapshots')
         else:
             logger.warning(f"No valid snapshot data to insert for {stock} ({symbol_type})")
-
     except Exception as e:
-        logger.error(f"Error processing {stock} ({symbol_type}): {e}", exc_info=True)
+        logger.error(f"Failed to insert snapshot dataframe for {stock} ({symbol_type}): {e}")
 
 async def main():
     logger.info("Starting main execution...")
 
-    create_required_tables()
+    try:
+        create_required_tables()
+    except Exception as e:
+        logger.error(f"Failed to create required tables: {e}")
 
     try:
         last_snapshot_id = get_latest_snapshot_id()
@@ -92,7 +114,7 @@ async def main():
 
         fetch_start_time = time.monotonic()  # Start timer for this cycle
         logger.info(f"Processing all symbols: {len(SYMBOLS)} symbols")
-        try:
+        try: 
             # Process all symbols in one go
             results = await process_batch(SYMBOLS, PROXY)
         except Exception as e:
@@ -124,6 +146,3 @@ if __name__ == "__main__":
     except Exception as e:
         logger.exception("Unhandled exception in main execution")
         sys.exit(1)
-    finally:
-        engine.dispose()
-        logger.info("Database engine disposed cleanly on exit.")

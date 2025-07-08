@@ -36,28 +36,20 @@ def extract_option_chain_by_expiry(json_object: dict) -> dict:
     Raises:
         Logs the exception and returns an empty dictionary if data extraction fails.
     """
-    try:
-        data = json_object['records']['data']
-        expiry_dates = json_object['records']['expiryDates']
-        oc_data = {}
 
-        for ed in expiry_dates:
-            oc_data[ed] = {'CE': [], 'PE': [], 'strikePrice': []}
-            for item in data:
-                if item.get('expiryDate') == ed:
-                    oc_data[ed]['CE'].append(item.get('CE', '-'))
-                    oc_data[ed]['PE'].append(item.get('PE', '-'))
-                    oc_data[ed]['strikePrice'].append(item.get('strikePrice', 0))
-        return oc_data
+    data = json_object['records']['data']
+    expiry_dates = json_object['records']['expiryDates']
+    oc_data = {}
 
-    except KeyError as e:
-        logger.exception(f"Missing expected key in JSON while extracting option chain: {e}")
-    except TypeError as e:
-        logger.exception(f"Invalid JSON structure (TypeError) in input: {e}")
-    except Exception as e:
-        logger.exception(f"Unexpected error while extracting option chain data: {e}")
-    
-    return {}
+    for ed in expiry_dates:
+        oc_data[ed] = {'CE': [], 'PE': [], 'strikePrice': []}
+        for item in data:
+            if item.get('expiryDate') == ed:
+                oc_data[ed]['CE'].append(item.get('CE', '-'))
+                oc_data[ed]['PE'].append(item.get('PE', '-'))
+                oc_data[ed]['strikePrice'].append(item.get('strikePrice', 0))
+    return oc_data
+
 
 def remove_keys_from_option_lists(CE, PE, keys_to_exclude=None):
     """
@@ -85,10 +77,7 @@ def remove_keys_from_option_lists(CE, PE, keys_to_exclude=None):
                 logger.error(f"Item at index {i} in CE is not a dict: {CE[i]}")
                 continue
             for key in keys_to_exclude:
-                try:
-                    CE[i].pop(key, None)
-                except Exception as e:
-                    logger.error(f"Error removing key '{key}' from item at index {i} in CE: {e}")
+                CE[i].pop(key, None)
 
     # Process PE list
     for i in range(len(PE)):
@@ -143,18 +132,14 @@ def extract_download_datetime_underlying(json_object):
     underlying = records.get('underlyingValue', None)
 
     if timestamp_str:
-        try:
-            timestamp = datetime.strptime(timestamp_str, "%d-%b-%Y %H:%M:%S")
-            download_date = timestamp.date().strftime("%Y-%m-%d")
-            download_time = timestamp.time().strftime("%H:%M:%S")
-            return download_date, download_time, underlying
-        except ValueError as e:
-            if logger:
-                logger.error(f"Invalid timestamp format for stock: {e}")
-            return None, None, underlying
+
+        timestamp = datetime.strptime(timestamp_str, "%d-%b-%Y %H:%M:%S")
+        download_date = timestamp.date().strftime("%Y-%m-%d")
+        download_time = timestamp.time().strftime("%H:%M:%S")
+        return download_date, download_time, underlying
+
     else:
-        if logger:
-            logger.warning("No timestamp found for stock.")
+        logger.warning("No timestamp found for stock.")
         return None, None, underlying
 
 
@@ -171,26 +156,19 @@ def save_option_chain_snapshot(parent_dir, download_date, download_time, snapsho
         stock (str): Stock name or symbol.
         json_object (dict): The JSON data to save.
     """
-    try:
-        # Build directory structure
-        date_dir = os.path.join(parent_dir, download_date)
-        snapshot_dir = os.path.join(date_dir, str(snapshot_id))
-        os.makedirs(snapshot_dir, exist_ok=True)
-    except Exception as e:
-        logger.error(f"Failed to create directory {snapshot_dir}: {e}")
-        
+    # Build directory structure
+    date_dir = os.path.join(parent_dir, download_date)
+    snapshot_dir = os.path.join(date_dir, str(snapshot_id))
+    os.makedirs(snapshot_dir, exist_ok=True)
 
     # Construct filename
     json_filename = f"{stock}_{snapshot_id}_{download_date}_{download_time}.json"
     json_path = os.path.join(snapshot_dir, json_filename)
-    try:
-        with open(json_path, 'w') as f:
-            json.dump(json_object, f)
-        logger.info(f"Saved raw JSON for {stock} at {json_path}")
-    
-    except Exception as e:
-        logger.error(f"Failed to save JSON for {stock} at {json_path}: {e}")
-        
+
+    with open(json_path, 'w') as f:
+        json.dump(json_object, f)
+    logger.info(f"Saved raw JSON for {stock} at {json_path}")
+
 
 
 def create_snapshot_df(snapshot_id, stock, download_date, download_time, underlying_val):
@@ -208,18 +186,16 @@ def create_snapshot_df(snapshot_id, stock, download_date, download_time, underly
     Returns:
         pd.DataFrame or None: The snapshot DataFrame if final_df is not empty, else None.
     """
-    try:
-        snapshot_df = pd.DataFrame([{
-            'SNAPSHOT_ID': snapshot_id,
-            'TICKER': stock,
-            'DOWNLOAD_DATE': download_date,
-            'DOWNLOAD_TIME': download_time,
-            'UNDERLYING_VALUE' : underlying_val
-        }])
-        return snapshot_df
+
+    snapshot_df = pd.DataFrame([{
+        'SNAPSHOT_ID': snapshot_id,
+        'TICKER': stock,
+        'DOWNLOAD_DATE': download_date,
+        'DOWNLOAD_TIME': download_time,
+        'UNDERLYING_VALUE' : underlying_val
+    }])
+    return snapshot_df
     
-    except Exception as e:
-        logger.error(f"[{stock}] Error occurred while creating snapshot DataFrame for SNAPSHOT_ID: {snapshot_id}: {e}")
-        return None
+
 
 

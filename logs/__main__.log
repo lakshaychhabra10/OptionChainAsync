@@ -142,3 +142,215 @@ UnboundLocalError: cannot access local variable 'SYMBOLS' where it is not associ
 2025-07-08 16:01:29,789 | INFO | __main__ | Skipping ACC (equity): same download timestamp (2025-07-08 15:30:00) as last run
 2025-07-08 16:01:29,795 | INFO | __main__ | Skipping ABCAPITAL (equity): same download timestamp (2025-07-08 15:30:00) as last run
 2025-07-08 16:01:29,795 | INFO | __main__ | Sleeping for 59.26 seconds , Total Fetch Time : 25.40 ,  Total Process Time : 0.74, Total Time : 26.14
+2025-07-08 16:41:44,673 | INFO | __main__ | Starting main execution...
+2025-07-08 16:41:45,398 | INFO | __main__ | Starting with snapshot ID 13 (last was 12)
+2025-07-08 16:41:45,399 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 16:42:04,786 | INFO | __main__ | Skipping 360ONE (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:42:04,931 | INFO | __main__ | Skipping ACC (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:42:04,943 | INFO | __main__ | Skipping AUBANK (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:42:04,945 | INFO | __main__ | Skipping AARTIIND (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:42:04,960 | INFO | __main__ | Skipping ADANIENSOL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:42:04,969 | INFO | __main__ | Skipping ADANIPORTS (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:42:04,980 | INFO | __main__ | Skipping APLAPOLLO (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:42:04,980 | INFO | __main__ | Skipping ADANIENT (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:42:04,995 | INFO | __main__ | Skipping ADANIGREEN (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:42:04,995 | INFO | __main__ | Skipping ABB (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:42:04,995 | INFO | __main__ | Sleeping for 40.40 seconds , Total Fetch Time : 19.27 seconds ,  Total Process Time : 0.33 seconds , Total Time : 19.60 seconds
+2025-07-08 18:00:36,293 | INFO | __main__ | Starting main execution...
+2025-07-08 18:00:36,891 | INFO | __main__ | Starting with snapshot ID 13 (last was 12)
+2025-07-08 18:00:36,891 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 18:00:41,047 | ERROR | __main__ | Exception occurred while processing symbols: 522, message='status code 522', url='https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000'
+Traceback (most recent call last):
+  File "/Users/lakshaychhabra/Documents/scrapping/OptionChainAsync/main.py", line 119, in main
+    results = await process_batch(SYMBOLS, PROXY)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lakshaychhabra/Documents/scrapping/OptionChainAsync/utils/fetcher.py", line 94, in process_batch
+    results = await asyncio.gather(*tasks)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lakshaychhabra/Documents/scrapping/OptionChainAsync/utils/fetcher.py", line 79, in fetch_with_retries
+    result = await fetch_stock(stock, proxy, headers, session, symbol_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lakshaychhabra/Documents/scrapping/OptionChainAsync/utils/fetcher.py", line 54, in fetch_stock
+    async with session.get(base_url, headers=headers, proxy=proxy) as response:
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/client.py", line 1482, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/connector.py", line 622, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/connector.py", line 1187, in _create_connection
+    _, proto = await self._create_proxy_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/connector.py", line 1640, in _create_proxy_connection
+    raise ClientHttpProxyError(
+    ...<5 lines>...
+    )
+aiohttp.client_exceptions.ClientHttpProxyError: 522, message='status code 522', url='https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000'
+2025-07-08 18:00:41,057 | INFO | __main__ | Sleeping for 55.83 seconds , Total Fetch Time : 4.17 seconds ,  Total Process Time : 0.00 seconds , Total Time : 4.17 seconds
+2025-07-08 18:01:36,884 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 18:01:50,752 | INFO | __main__ | Skipping ABB (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:01:50,902 | INFO | __main__ | Skipping ADANIGREEN (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:01:50,905 | INFO | __main__ | Skipping ADANIENT (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:01:50,915 | INFO | __main__ | Skipping ADANIPORTS (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:01:50,916 | INFO | __main__ | Skipping AARTIIND (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:01:50,922 | INFO | __main__ | Skipping APLAPOLLO (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:01:50,922 | INFO | __main__ | Skipping ADANIENSOL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:01:50,922 | INFO | __main__ | Skipping 360ONE (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:01:50,945 | INFO | __main__ | Skipping AUBANK (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:01:50,945 | INFO | __main__ | Skipping ACC (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:01:50,946 | INFO | __main__ | Sleeping for 45.94 seconds , Total Fetch Time : 13.77 seconds ,  Total Process Time : 0.30 seconds , Total Time : 14.06 seconds
+2025-07-08 18:02:36,887 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 18:02:41,821 | ERROR | __main__ | Exception occurred while processing symbols: 522, message='status code 522', url='https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000'
+Traceback (most recent call last):
+  File "/Users/lakshaychhabra/Documents/scrapping/OptionChainAsync/main.py", line 119, in main
+    results = await process_batch(SYMBOLS, PROXY)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lakshaychhabra/Documents/scrapping/OptionChainAsync/utils/fetcher.py", line 94, in process_batch
+    results = await asyncio.gather(*tasks)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lakshaychhabra/Documents/scrapping/OptionChainAsync/utils/fetcher.py", line 79, in fetch_with_retries
+    result = await fetch_stock(stock, proxy, headers, session, symbol_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lakshaychhabra/Documents/scrapping/OptionChainAsync/utils/fetcher.py", line 54, in fetch_stock
+    async with session.get(base_url, headers=headers, proxy=proxy) as response:
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/client.py", line 1482, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/connector.py", line 622, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/connector.py", line 1187, in _create_connection
+    _, proto = await self._create_proxy_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/connector.py", line 1640, in _create_proxy_connection
+    raise ClientHttpProxyError(
+    ...<5 lines>...
+    )
+aiohttp.client_exceptions.ClientHttpProxyError: 522, message='status code 522', url='https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000'
+2025-07-08 18:02:41,826 | INFO | __main__ | Sleeping for 55.06 seconds , Total Fetch Time : 4.94 seconds ,  Total Process Time : 0.00 seconds , Total Time : 4.94 seconds
+2025-07-08 18:03:36,889 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 18:03:57,647 | ERROR | __main__ | Exception occurred while processing symbols: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/client_reqrep.py", line 532, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/streams.py", line 672, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/lakshaychhabra/Documents/scrapping/OptionChainAsync/main.py", line 119, in main
+    results = await process_batch(SYMBOLS, PROXY)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lakshaychhabra/Documents/scrapping/OptionChainAsync/utils/fetcher.py", line 94, in process_batch
+    results = await asyncio.gather(*tasks)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lakshaychhabra/Documents/scrapping/OptionChainAsync/utils/fetcher.py", line 79, in fetch_with_retries
+    result = await fetch_stock(stock, proxy, headers, session, symbol_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lakshaychhabra/Documents/scrapping/OptionChainAsync/utils/fetcher.py", line 60, in fetch_stock
+    async with session.get(option_chain_url, headers=headers, proxy=proxy) as response:
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/client.py", line 1482, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/client.py", line 748, in _connect_and_send_request
+    await resp.start(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/client_reqrep.py", line 527, in start
+    with self._timer:
+         ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-07-08 18:03:57,656 | INFO | __main__ | Sleeping for 39.23 seconds , Total Fetch Time : 20.77 seconds ,  Total Process Time : 0.00 seconds , Total Time : 20.77 seconds
+2025-07-08 18:04:36,892 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 18:04:48,705 | INFO | __main__ | Skipping ADANIPORTS (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:04:48,710 | INFO | __main__ | Skipping ABB (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:04:48,718 | INFO | __main__ | Skipping AARTIIND (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:04:48,718 | INFO | __main__ | Skipping 360ONE (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:04:48,718 | INFO | __main__ | Skipping APLAPOLLO (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:04:48,827 | INFO | __main__ | Skipping ADANIENSOL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:04:48,850 | INFO | __main__ | Skipping ACC (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:04:48,850 | INFO | __main__ | Skipping AUBANK (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:04:48,853 | INFO | __main__ | Skipping ADANIENT (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:04:48,856 | INFO | __main__ | Skipping ADANIGREEN (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:04:48,857 | INFO | __main__ | Sleeping for 48.04 seconds , Total Fetch Time : 11.66 seconds ,  Total Process Time : 0.30 seconds , Total Time : 11.96 seconds
+2025-07-08 18:07:43,972 | INFO | __main__ | Starting main execution...
+2025-07-08 18:07:44,573 | INFO | __main__ | Starting with snapshot ID 13 (last was 12)
+2025-07-08 18:07:44,574 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 18:07:54,544 | INFO | __main__ | Skipping 360ONE (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:07:54,694 | INFO | __main__ | Skipping ADANIENT (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:07:54,699 | INFO | __main__ | Skipping AUBANK (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:07:54,699 | INFO | __main__ | Skipping AARTIIND (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:07:54,702 | INFO | __main__ | Skipping ADANIGREEN (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:07:54,715 | INFO | __main__ | Skipping ADANIPORTS (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:07:54,718 | INFO | __main__ | Skipping ACC (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:07:54,718 | INFO | __main__ | Skipping APLAPOLLO (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:07:54,720 | INFO | __main__ | Skipping ABB (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:07:54,720 | INFO | __main__ | Skipping ADANIENSOL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:07:54,721 | INFO | __main__ | Sleeping for 49.85 seconds , Total Fetch Time : 9.87 seconds ,  Total Process Time : 0.28 seconds , Total Time : 10.15 seconds
+2025-07-08 18:08:44,576 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 18:08:54,496 | INFO | __main__ | Skipping APLAPOLLO (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:08:54,496 | INFO | __main__ | Skipping 360ONE (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:08:54,502 | INFO | __main__ | Skipping ADANIENT (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:08:54,502 | INFO | __main__ | Skipping AARTIIND (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:08:54,507 | INFO | __main__ | Skipping ACC (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:08:54,647 | INFO | __main__ | Skipping ABB (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:08:54,651 | INFO | __main__ | Skipping ADANIPORTS (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:08:54,670 | INFO | __main__ | Skipping ADANIGREEN (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:08:54,670 | INFO | __main__ | Skipping AUBANK (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:08:54,673 | INFO | __main__ | Skipping ADANIENSOL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:08:54,673 | INFO | __main__ | Sleeping for 49.90 seconds , Total Fetch Time : 9.82 seconds ,  Total Process Time : 0.27 seconds , Total Time : 10.10 seconds
+2025-07-08 18:09:44,579 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 18:10:00,902 | INFO | __main__ | Skipping ABB (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:10:00,907 | INFO | __main__ | Skipping ADANIENT (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:10:00,907 | INFO | __main__ | Skipping APLAPOLLO (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:10:00,909 | INFO | __main__ | Skipping 360ONE (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:10:00,909 | INFO | __main__ | Skipping AUBANK (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:10:01,031 | INFO | __main__ | Skipping ADANIENSOL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:10:01,038 | INFO | __main__ | Skipping ADANIGREEN (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:10:01,040 | INFO | __main__ | Skipping ADANIPORTS (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:10:01,044 | INFO | __main__ | Skipping ACC (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:10:01,060 | INFO | __main__ | Skipping AARTIIND (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:10:01,061 | INFO | __main__ | Sleeping for 43.52 seconds , Total Fetch Time : 16.18 seconds ,  Total Process Time : 0.30 seconds , Total Time : 16.48 seconds
+2025-07-08 18:11:30,027 | INFO | __main__ | Starting main execution...
+2025-07-08 18:11:30,687 | INFO | __main__ | Starting with snapshot ID 13 (last was 12)
+2025-07-08 18:11:30,687 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 18:11:42,232 | INFO | __main__ | Skipping 360ONE (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:11:42,359 | INFO | __main__ | Skipping ADANIENT (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:11:42,364 | INFO | __main__ | Skipping AUBANK (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:11:42,372 | INFO | __main__ | Skipping ADANIPORTS (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:11:42,376 | INFO | __main__ | Skipping ADANIENSOL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:11:42,379 | INFO | __main__ | Skipping APLAPOLLO (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:11:42,383 | INFO | __main__ | Skipping ACC (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:11:42,387 | INFO | __main__ | Skipping ABB (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:11:42,403 | INFO | __main__ | Skipping ADANIGREEN (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:11:42,405 | INFO | __main__ | Skipping AARTIIND (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 18:11:42,405 | INFO | __main__ | Sleeping for 48.28 seconds , Total Fetch Time : 11.43 seconds ,  Total Process Time : 0.29 seconds , Total Time : 11.72 seconds
