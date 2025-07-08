@@ -6,7 +6,7 @@ import ssl
 import traceback
 
 PROXIES = [
-    "https://spdsnruo64:0Co0+qHdxIRrk8vrk2@in.decodo.com:10000",
+    "https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000",
 ]
 
 PROXIES *= 100  # Repeat the list to simulate a larger set of proxies
@@ -16,11 +16,38 @@ BASE_URL = "https://www.nseindia.com"
 OPTION_CHAIN_PAGE = "https://www.nseindia.com/option-chain"
 API_URL = f"https://www.nseindia.com/api/option-chain-equities?symbol={STOCK}"
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-    "Accept-Language": "en-US,en;q=0.9"
-}
+HEADERS_LIST = [
+    {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Referer": "",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1"
+    },
+    {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Safari/605.1.15",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-GB,en;q=0.5",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Referer": "",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1"
+    },
+    {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.7",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Referer": "",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1"
+    }
+]
+
+def get_random_headers():
+    return random.choice(HEADERS_LIST).copy()
 
 async def check_proxy(proxy):
     start_time = time.time()
@@ -31,10 +58,11 @@ async def check_proxy(proxy):
         ssl_context.verify_mode = ssl.CERT_NONE
         connector = aiohttp.TCPConnector(ssl=ssl_context)
         async with aiohttp.ClientSession(timeout=timeout, connector=connector) as session:
+            HEADERS = get_random_headers()
             await session.get(BASE_URL, headers=HEADERS, proxy=proxy)
-            await asyncio.sleep(random.uniform(2, 4))
+            await asyncio.sleep(random.uniform(1, 3))
             await session.get(OPTION_CHAIN_PAGE, headers=HEADERS, proxy=proxy)
-            await asyncio.sleep(random.uniform(2, 4))
+            await asyncio.sleep(random.uniform(1, 3))
             async with session.get(API_URL, headers=HEADERS, proxy=proxy) as response:
                 elapsed_time = time.time() - start_time
                 if response.status == 200:

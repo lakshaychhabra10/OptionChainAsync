@@ -1,0 +1,397 @@
+2025-07-08 12:22:46,390 | INFO | utils.fetcher | Fetched data for BANKNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 12:22:46,742 | INFO | utils.fetcher | Fetched data for FINNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 12:22:47,308 | INFO | utils.fetcher | Fetched data for MIDCPNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 12:22:47,606 | INFO | utils.fetcher | Fetched data for 360ONE (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 12:22:47,662 | INFO | utils.fetcher | Fetched data for ACC (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 12:22:47,802 | INFO | utils.fetcher | Fetched data for APLAPOLLO (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 12:22:47,897 | INFO | utils.fetcher | Fetched data for NIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 12:22:47,994 | INFO | utils.fetcher | Fetched data for NIFTYNXT50 (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 12:22:49,852 | INFO | utils.fetcher | Fetched data for ABB (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 12:22:50,065 | INFO | utils.fetcher | Fetched data for AUBANK (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:23,701 | ERROR | utils.fetcher | Failed to fetch cookies with Playwright via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: BrowserType.launch: Executable doesn't exist at /Users/lakshaychhabra/Library/Caches/ms-playwright/chromium_headless_shell-1179/chrome-mac/headless_shell
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-07-08 14:56:27,748 | WARNING | utils.fetcher | Fetch failed for BANKNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:27,748 | INFO | utils.fetcher | Retry 1 for BANKNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:27,749 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:27,749 | INFO | utils.fetcher | Retry 1 for ABB (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:27,750 | WARNING | utils.fetcher | Fetch failed for NIFTYNXT50 (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:27,750 | INFO | utils.fetcher | Retry 1 for NIFTYNXT50 (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:27,751 | WARNING | utils.fetcher | Fetch failed for NIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:27,751 | INFO | utils.fetcher | Retry 1 for NIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:27,751 | WARNING | utils.fetcher | Fetch failed for 360ONE (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:27,752 | INFO | utils.fetcher | Retry 1 for 360ONE (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:27,752 | WARNING | utils.fetcher | Fetch failed for MIDCPNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:27,752 | INFO | utils.fetcher | Retry 1 for MIDCPNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:27,753 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:27,753 | INFO | utils.fetcher | Retry 1 for AUBANK (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:27,811 | WARNING | utils.fetcher | Fetch failed for FINNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:27,811 | INFO | utils.fetcher | Retry 1 for FINNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:28,767 | WARNING | utils.fetcher | Fetch failed for APLAPOLLO (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:28,768 | INFO | utils.fetcher | Retry 1 for APLAPOLLO (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:28,795 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:28,795 | INFO | utils.fetcher | Retry 1 for ACC (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:33,582 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:33,583 | INFO | utils.fetcher | Retry 2 for AUBANK (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:33,583 | WARNING | utils.fetcher | Fetch failed for MIDCPNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:33,584 | INFO | utils.fetcher | Retry 2 for MIDCPNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:34,095 | WARNING | utils.fetcher | Fetch failed for NIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:34,095 | INFO | utils.fetcher | Retry 2 for NIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:34,206 | WARNING | utils.fetcher | Fetch failed for NIFTYNXT50 (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:34,206 | INFO | utils.fetcher | Retry 2 for NIFTYNXT50 (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:34,423 | WARNING | utils.fetcher | Fetch failed for BANKNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:34,423 | INFO | utils.fetcher | Retry 2 for BANKNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:34,502 | WARNING | utils.fetcher | Fetch failed for 360ONE (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:34,502 | INFO | utils.fetcher | Retry 2 for 360ONE (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:34,913 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:34,914 | INFO | utils.fetcher | Retry 2 for ABB (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:35,022 | WARNING | utils.fetcher | Fetch failed for FINNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:35,022 | INFO | utils.fetcher | Retry 2 for FINNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:35,214 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:35,215 | INFO | utils.fetcher | Retry 2 for ACC (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:35,255 | WARNING | utils.fetcher | Fetch failed for APLAPOLLO (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:35,255 | INFO | utils.fetcher | Retry 2 for APLAPOLLO (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:41,672 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:41,673 | INFO | utils.fetcher | Retry 3 for AUBANK (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:42,182 | WARNING | utils.fetcher | Fetch failed for MIDCPNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:42,182 | INFO | utils.fetcher | Retry 3 for MIDCPNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:42,245 | WARNING | utils.fetcher | Fetch failed for BANKNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:42,245 | INFO | utils.fetcher | Retry 3 for BANKNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:42,937 | WARNING | utils.fetcher | Fetch failed for NIFTYNXT50 (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:42,937 | INFO | utils.fetcher | Retry 3 for NIFTYNXT50 (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:43,013 | WARNING | utils.fetcher | Fetch failed for NIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:43,013 | INFO | utils.fetcher | Retry 3 for NIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:43,077 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:43,078 | INFO | utils.fetcher | Retry 3 for ACC (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:43,325 | WARNING | utils.fetcher | Fetch failed for FINNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:43,325 | INFO | utils.fetcher | Retry 3 for FINNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:43,720 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:43,720 | INFO | utils.fetcher | Retry 3 for ABB (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:43,725 | WARNING | utils.fetcher | Fetch failed for 360ONE (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:43,725 | INFO | utils.fetcher | Retry 3 for 360ONE (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:56:44,263 | WARNING | utils.fetcher | Fetch failed for APLAPOLLO (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:56:44,264 | INFO | utils.fetcher | Retry 3 for APLAPOLLO (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:49,007 | ERROR | utils.fetcher | Failed to fetch cookies with Playwright via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: Page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "https://www.nseindia.com/", waiting until "load"
+
+2025-07-08 14:57:52,999 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:53,000 | INFO | utils.fetcher | Retry 1 for AUBANK (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:53,004 | WARNING | utils.fetcher | Fetch failed for MIDCPNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:53,004 | INFO | utils.fetcher | Retry 1 for MIDCPNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:53,098 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:53,099 | INFO | utils.fetcher | Retry 1 for ACC (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:53,197 | WARNING | utils.fetcher | Fetch failed for 360ONE (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:53,198 | INFO | utils.fetcher | Retry 1 for 360ONE (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:53,200 | WARNING | utils.fetcher | Fetch failed for FINNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:53,201 | INFO | utils.fetcher | Retry 1 for FINNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:53,340 | WARNING | utils.fetcher | Fetch failed for NIFTYNXT50 (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:53,340 | INFO | utils.fetcher | Retry 1 for NIFTYNXT50 (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:53,851 | WARNING | utils.fetcher | Fetch failed for APLAPOLLO (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:53,851 | INFO | utils.fetcher | Retry 1 for APLAPOLLO (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:53,929 | WARNING | utils.fetcher | Fetch failed for BANKNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:53,929 | INFO | utils.fetcher | Retry 1 for BANKNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:54,111 | WARNING | utils.fetcher | Fetch failed for NIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:54,111 | INFO | utils.fetcher | Retry 1 for NIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:54,156 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:54,156 | INFO | utils.fetcher | Retry 1 for ABB (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:59,279 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:59,280 | INFO | utils.fetcher | Retry 2 for AUBANK (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:59,471 | WARNING | utils.fetcher | Fetch failed for NIFTYNXT50 (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:59,471 | INFO | utils.fetcher | Retry 2 for NIFTYNXT50 (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:59,567 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:59,567 | INFO | utils.fetcher | Retry 2 for ACC (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:59,661 | WARNING | utils.fetcher | Fetch failed for 360ONE (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:59,661 | INFO | utils.fetcher | Retry 2 for 360ONE (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:59,887 | WARNING | utils.fetcher | Fetch failed for FINNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:59,887 | INFO | utils.fetcher | Retry 2 for FINNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:57:59,999 | WARNING | utils.fetcher | Fetch failed for NIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:57:59,999 | INFO | utils.fetcher | Retry 2 for NIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:00,078 | WARNING | utils.fetcher | Fetch failed for MIDCPNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:00,078 | INFO | utils.fetcher | Retry 2 for MIDCPNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:00,206 | WARNING | utils.fetcher | Fetch failed for BANKNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:00,206 | INFO | utils.fetcher | Retry 2 for BANKNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:00,263 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:00,264 | INFO | utils.fetcher | Retry 2 for ABB (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:00,819 | WARNING | utils.fetcher | Fetch failed for APLAPOLLO (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:00,819 | INFO | utils.fetcher | Retry 2 for APLAPOLLO (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:07,880 | WARNING | utils.fetcher | Fetch failed for MIDCPNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:07,880 | INFO | utils.fetcher | Retry 3 for MIDCPNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:07,935 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:07,935 | INFO | utils.fetcher | Retry 3 for AUBANK (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:08,238 | WARNING | utils.fetcher | Fetch failed for FINNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:08,238 | INFO | utils.fetcher | Retry 3 for FINNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:08,245 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:08,245 | INFO | utils.fetcher | Retry 3 for ACC (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:08,376 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:08,377 | INFO | utils.fetcher | Retry 3 for ABB (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:08,393 | WARNING | utils.fetcher | Fetch failed for NIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:08,393 | INFO | utils.fetcher | Retry 3 for NIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:08,543 | WARNING | utils.fetcher | Fetch failed for NIFTYNXT50 (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:08,543 | INFO | utils.fetcher | Retry 3 for NIFTYNXT50 (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:08,586 | WARNING | utils.fetcher | Fetch failed for 360ONE (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:08,586 | INFO | utils.fetcher | Retry 3 for 360ONE (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:08,837 | WARNING | utils.fetcher | Fetch failed for APLAPOLLO (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:08,838 | INFO | utils.fetcher | Retry 3 for APLAPOLLO (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:09,367 | WARNING | utils.fetcher | Fetch failed for BANKNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:09,368 | INFO | utils.fetcher | Retry 3 for BANKNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:51,814 | ERROR | utils.fetcher | Failed to fetch cookies with Playwright via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: Page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "https://www.nseindia.com/", waiting until "load"
+
+2025-07-08 14:58:55,803 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:55,803 | INFO | utils.fetcher | Retry 1 for AUBANK (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:55,860 | WARNING | utils.fetcher | Fetch failed for BANKNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:55,860 | INFO | utils.fetcher | Retry 1 for BANKNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:55,917 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:55,918 | INFO | utils.fetcher | Retry 1 for ABB (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:56,183 | WARNING | utils.fetcher | Fetch failed for MIDCPNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:56,184 | INFO | utils.fetcher | Retry 1 for MIDCPNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:56,294 | WARNING | utils.fetcher | Fetch failed for APLAPOLLO (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:56,295 | INFO | utils.fetcher | Retry 1 for APLAPOLLO (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:56,724 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:56,724 | INFO | utils.fetcher | Retry 1 for ACC (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:56,948 | WARNING | utils.fetcher | Fetch failed for FINNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:56,948 | INFO | utils.fetcher | Retry 1 for FINNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:56,970 | WARNING | utils.fetcher | Fetch failed for NIFTYNXT50 (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:56,971 | INFO | utils.fetcher | Retry 1 for NIFTYNXT50 (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:56,991 | WARNING | utils.fetcher | Fetch failed for 360ONE (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:56,992 | INFO | utils.fetcher | Retry 1 for 360ONE (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:58:57,000 | WARNING | utils.fetcher | Fetch failed for NIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:58:57,000 | INFO | utils.fetcher | Retry 1 for NIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:59:01,670 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:59:01,671 | INFO | utils.fetcher | Retry 2 for AUBANK (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:59:02,773 | WARNING | utils.fetcher | Fetch failed for NIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:59:02,774 | INFO | utils.fetcher | Retry 2 for NIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:59:02,816 | WARNING | utils.fetcher | Fetch failed for MIDCPNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:59:02,817 | INFO | utils.fetcher | Retry 2 for MIDCPNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:59:03,067 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:59:03,068 | INFO | utils.fetcher | Retry 2 for ABB (equity) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:59:03,100 | WARNING | utils.fetcher | Fetch failed for BANKNIFTY (index) with proxy https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000'
+2025-07-08 14:59:03,101 | INFO | utils.fetcher | Retry 2 for BANKNIFTY (index) via https://sp44bwae8q:9Kxeg6tAiyU3+tZw3x@in.decodo.com:10000
+2025-07-08 14:59:23,556 | ERROR | utils.fetcher | Failed to fetch cookies with Playwright via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: Page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "https://www.nseindia.com/", waiting until "load"
+
+2025-07-08 14:59:26,072 | WARNING | utils.fetcher | Fetch failed for NIFTY (index) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:26,073 | INFO | utils.fetcher | Retry 1 for NIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:26,301 | WARNING | utils.fetcher | Fetch failed for APLAPOLLO (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:26,301 | INFO | utils.fetcher | Retry 1 for APLAPOLLO (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:27,544 | WARNING | utils.fetcher | Fetch failed for 360ONE (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:27,544 | INFO | utils.fetcher | Retry 1 for 360ONE (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:27,578 | WARNING | utils.fetcher | Fetch failed for NIFTYNXT50 (index) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:27,578 | INFO | utils.fetcher | Retry 1 for NIFTYNXT50 (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:27,635 | WARNING | utils.fetcher | Fetch failed for MIDCPNIFTY (index) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:27,636 | INFO | utils.fetcher | Retry 1 for MIDCPNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:27,720 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:27,720 | INFO | utils.fetcher | Retry 1 for AUBANK (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:27,864 | WARNING | utils.fetcher | Fetch failed for FINNIFTY (index) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:27,864 | INFO | utils.fetcher | Retry 1 for FINNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:28,184 | WARNING | utils.fetcher | Fetch failed for BANKNIFTY (index) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:28,185 | INFO | utils.fetcher | Retry 1 for BANKNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:28,210 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:28,210 | INFO | utils.fetcher | Retry 1 for ABB (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:28,299 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:28,299 | INFO | utils.fetcher | Retry 1 for ACC (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:30,857 | WARNING | utils.fetcher | Fetch failed for APLAPOLLO (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:30,858 | INFO | utils.fetcher | Retry 2 for APLAPOLLO (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:32,853 | WARNING | utils.fetcher | Fetch failed for NIFTY (index) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 522, message='status code 522', url='https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000'
+2025-07-08 14:59:32,854 | INFO | utils.fetcher | Retry 2 for NIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:32,937 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:32,937 | INFO | utils.fetcher | Retry 2 for ABB (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:33,263 | WARNING | utils.fetcher | Fetch failed for NIFTYNXT50 (index) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:33,264 | INFO | utils.fetcher | Retry 2 for NIFTYNXT50 (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:33,509 | WARNING | utils.fetcher | Fetch failed for BANKNIFTY (index) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:33,509 | INFO | utils.fetcher | Retry 2 for BANKNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:33,542 | WARNING | utils.fetcher | Fetch failed for MIDCPNIFTY (index) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:33,542 | INFO | utils.fetcher | Retry 2 for MIDCPNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:33,617 | WARNING | utils.fetcher | Fetch failed for 360ONE (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:33,617 | INFO | utils.fetcher | Retry 2 for 360ONE (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:33,779 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:33,779 | INFO | utils.fetcher | Retry 2 for ACC (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:34,113 | WARNING | utils.fetcher | Fetch failed for FINNIFTY (index) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:34,113 | INFO | utils.fetcher | Retry 2 for FINNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:35,505 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:35,506 | INFO | utils.fetcher | Retry 2 for AUBANK (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:39,015 | WARNING | utils.fetcher | Fetch failed for APLAPOLLO (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:39,015 | INFO | utils.fetcher | Retry 3 for APLAPOLLO (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:40,066 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:40,067 | INFO | utils.fetcher | Retry 3 for ABB (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:40,526 | WARNING | utils.fetcher | Fetch failed for NIFTY (index) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:40,526 | INFO | utils.fetcher | Retry 3 for NIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:40,824 | WARNING | utils.fetcher | Fetch failed for FINNIFTY (index) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:40,824 | INFO | utils.fetcher | Retry 3 for FINNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:41,128 | WARNING | utils.fetcher | Fetch failed for 360ONE (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:41,129 | INFO | utils.fetcher | Retry 3 for 360ONE (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:41,141 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:41,142 | INFO | utils.fetcher | Retry 3 for ACC (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:41,340 | WARNING | utils.fetcher | Fetch failed for BANKNIFTY (index) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:41,341 | INFO | utils.fetcher | Retry 3 for BANKNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:41,381 | WARNING | utils.fetcher | Fetch failed for NIFTYNXT50 (index) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:41,381 | INFO | utils.fetcher | Retry 3 for NIFTYNXT50 (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:41,920 | WARNING | utils.fetcher | Fetch failed for MIDCPNIFTY (index) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:41,920 | INFO | utils.fetcher | Retry 3 for MIDCPNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 14:59:45,098 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 400, message='Can not decode content-encoding: brotli (br). Please install `Brotli`', url='https://www.nseindia.com'
+2025-07-08 14:59:45,098 | INFO | utils.fetcher | Retry 3 for AUBANK (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:07:36,498 | ERROR | utils.fetcher | Failed to fetch cookies with Playwright via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to "https://www.nseindia.com/", waiting until "load"
+
+2025-07-08 15:07:43,145 | INFO | utils.fetcher | Fetched data for MIDCPNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:07:43,432 | INFO | utils.fetcher | Fetched data for ABB (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:07:43,637 | INFO | utils.fetcher | Fetched data for AUBANK (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:07:43,660 | INFO | utils.fetcher | Fetched data for ACC (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:07:44,078 | INFO | utils.fetcher | Fetched data for APLAPOLLO (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:07:44,492 | INFO | utils.fetcher | Fetched data for BANKNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:07:44,642 | INFO | utils.fetcher | Fetched data for 360ONE (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:07:45,061 | INFO | utils.fetcher | Fetched data for NIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:07:46,044 | INFO | utils.fetcher | Fetched data for NIFTYNXT50 (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:07:46,349 | INFO | utils.fetcher | Fetched data for FINNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:12:26,593 | INFO | utils.fetcher | Fetched data for FINNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:12:27,451 | INFO | utils.fetcher | Fetched data for 360ONE (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:12:28,475 | INFO | utils.fetcher | Fetched data for ACC (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:12:28,703 | INFO | utils.fetcher | Fetched data for APLAPOLLO (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:12:28,755 | INFO | utils.fetcher | Fetched data for ABB (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:12:29,224 | INFO | utils.fetcher | Fetched data for BANKNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:12:29,271 | INFO | utils.fetcher | Fetched data for MIDCPNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:12:29,313 | INFO | utils.fetcher | Fetched data for NIFTYNXT50 (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:12:29,862 | INFO | utils.fetcher | Fetched data for AUBANK (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:12:30,437 | INFO | utils.fetcher | Fetched data for NIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:41:54,658 | INFO | utils.fetcher | Fetched data for 360ONE (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:41:54,671 | INFO | utils.fetcher | Fetched data for ACC (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:41:54,984 | INFO | utils.fetcher | Fetched data for APLAPOLLO (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:41:55,815 | INFO | utils.fetcher | Fetched data for NIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:41:55,851 | INFO | utils.fetcher | Fetched data for MIDCPNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:41:56,220 | INFO | utils.fetcher | Fetched data for ABB (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:41:56,510 | INFO | utils.fetcher | Fetched data for FINNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:41:56,926 | INFO | utils.fetcher | Fetched data for BANKNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:41:57,231 | INFO | utils.fetcher | Fetched data for NIFTYNXT50 (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:41:57,259 | INFO | utils.fetcher | Fetched data for AUBANK (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:42:52,776 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 522, message='status code 522', url='https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000'
+2025-07-08 15:42:52,776 | INFO | utils.fetcher | Retry 1 for ACC (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:42:56,253 | INFO | utils.fetcher | Fetched data for ABB (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:42:56,499 | INFO | utils.fetcher | Fetched data for BANKNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:42:57,317 | INFO | utils.fetcher | Fetched data for NIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:42:57,413 | INFO | utils.fetcher | Fetched data for 360ONE (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:42:57,419 | INFO | utils.fetcher | Fetched data for FINNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:42:58,963 | INFO | utils.fetcher | Fetched data for MIDCPNIFTY (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:42:59,157 | INFO | utils.fetcher | Fetched data for APLAPOLLO (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:42:59,679 | INFO | utils.fetcher | Fetched data for AUBANK (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:43:00,165 | INFO | utils.fetcher | Fetched data for NIFTYNXT50 (index) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:43:01,246 | INFO | utils.fetcher | Fetched data for ACC (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:54,279 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 522, message='status code 522', url='https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000'
+2025-07-08 15:59:54,280 | INFO | utils.fetcher | Retry 1 for ABB (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:54,513 | WARNING | utils.fetcher | Fetch failed for CHAMBLFERT (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 522, message='status code 522', url='https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000'
+2025-07-08 15:59:54,514 | INFO | utils.fetcher | Retry 1 for CHAMBLFERT (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:55,369 | INFO | utils.fetcher | Fetched data for DMART (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:56,529 | INFO | utils.fetcher | Fetched data for CGPOWER (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:56,700 | INFO | utils.fetcher | Fetched data for BIOCON (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:57,041 | INFO | utils.fetcher | Fetched data for BSE (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:57,209 | INFO | utils.fetcher | Fetched data for BLUESTARCO (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:57,250 | INFO | utils.fetcher | Fetched data for CIPLA (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:57,345 | INFO | utils.fetcher | Fetched data for BANKINDIA (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:57,474 | INFO | utils.fetcher | Fetched data for BHARATFORG (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:57,480 | INFO | utils.fetcher | Fetched data for BAJFINANCE (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:57,524 | INFO | utils.fetcher | Fetched data for ASTRAL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:57,611 | INFO | utils.fetcher | Fetched data for AXISBANK (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:57,614 | INFO | utils.fetcher | Fetched data for CANBK (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:57,623 | INFO | utils.fetcher | Fetched data for ADANIGREEN (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:57,648 | INFO | utils.fetcher | Fetched data for ATGL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:57,694 | INFO | utils.fetcher | Fetched data for BOSCHLTD (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:57,942 | INFO | utils.fetcher | Fetched data for BANKBARODA (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:57,956 | INFO | utils.fetcher | Fetched data for CHOLAFIN (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,016 | INFO | utils.fetcher | Fetched data for ABFRL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,114 | INFO | utils.fetcher | Fetched data for BAJAJ-AUTO (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,150 | INFO | utils.fetcher | Fetched data for BHEL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,152 | INFO | utils.fetcher | Fetched data for APLAPOLLO (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,270 | INFO | utils.fetcher | Fetched data for ADANIENT (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,282 | INFO | utils.fetcher | Fetched data for ADANIPORTS (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,371 | INFO | utils.fetcher | Fetched data for ACC (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,432 | INFO | utils.fetcher | Fetched data for AMBER (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,451 | INFO | utils.fetcher | Fetched data for AUBANK (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,488 | INFO | utils.fetcher | Fetched data for BRITANNIA (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,515 | INFO | utils.fetcher | Fetched data for ALKEM (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,596 | INFO | utils.fetcher | Fetched data for BALKRISIND (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,755 | INFO | utils.fetcher | Fetched data for BANDHANBNK (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,768 | INFO | utils.fetcher | Fetched data for ASIANPAINT (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,798 | INFO | utils.fetcher | Fetched data for CESC (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,828 | INFO | utils.fetcher | Fetched data for APOLLOHOSP (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:58,990 | INFO | utils.fetcher | Fetched data for 360ONE (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:59,011 | INFO | utils.fetcher | Fetched data for AUROPHARMA (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:59,169 | INFO | utils.fetcher | Fetched data for ABCAPITAL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:59,182 | INFO | utils.fetcher | Fetched data for ADANIENSOL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:59,855 | INFO | utils.fetcher | Fetched data for BEL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:59,868 | INFO | utils.fetcher | Fetched data for AARTIIND (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:59,925 | INFO | utils.fetcher | Fetched data for BSOFT (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 15:59:59,951 | INFO | utils.fetcher | Fetched data for CDSL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:00:00,006 | INFO | utils.fetcher | Fetched data for BAJAJFINSV (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:00:00,045 | INFO | utils.fetcher | Fetched data for BHARTIARTL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:00:00,213 | INFO | utils.fetcher | Fetched data for ANGELONE (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:00:00,372 | INFO | utils.fetcher | Fetched data for BDL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:00:01,696 | INFO | utils.fetcher | Fetched data for AMBUJACEM (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:00:01,995 | INFO | utils.fetcher | Fetched data for BPCL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:00:02,879 | INFO | utils.fetcher | Fetched data for ASHOKLEY (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:00:03,479 | INFO | utils.fetcher | Fetched data for ABB (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:00:03,644 | INFO | utils.fetcher | Fetched data for CHAMBLFERT (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:08,022 | WARNING | utils.fetcher | Fetch failed for AMBUJACEM (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 522, message='status code 522', url='https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000'
+2025-07-08 16:01:08,023 | INFO | utils.fetcher | Retry 1 for AMBUJACEM (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:08,041 | WARNING | utils.fetcher | Fetch failed for CESC (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 522, message='status code 522', url='https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000'
+2025-07-08 16:01:08,041 | INFO | utils.fetcher | Retry 1 for CESC (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:08,716 | INFO | utils.fetcher | Fetched data for CIPLA (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:08,735 | INFO | utils.fetcher | Fetched data for APOLLOHOSP (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:09,136 | INFO | utils.fetcher | Fetched data for ATGL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:09,457 | INFO | utils.fetcher | Fetched data for ASIANPAINT (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:09,904 | INFO | utils.fetcher | Fetched data for BALKRISIND (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:10,105 | INFO | utils.fetcher | Fetched data for APLAPOLLO (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:10,243 | INFO | utils.fetcher | Fetched data for BAJAJFINSV (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:10,300 | INFO | utils.fetcher | Fetched data for BRITANNIA (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:10,304 | INFO | utils.fetcher | Fetched data for CHOLAFIN (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:10,539 | INFO | utils.fetcher | Fetched data for CGPOWER (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:10,627 | INFO | utils.fetcher | Fetched data for AUBANK (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:10,783 | INFO | utils.fetcher | Fetched data for BDL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:10,838 | INFO | utils.fetcher | Fetched data for ACC (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:10,908 | INFO | utils.fetcher | Fetched data for BLUESTARCO (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:11,004 | INFO | utils.fetcher | Fetched data for ASHOKLEY (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:11,073 | INFO | utils.fetcher | Fetched data for AUROPHARMA (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:11,127 | INFO | utils.fetcher | Fetched data for ADANIGREEN (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:11,246 | INFO | utils.fetcher | Fetched data for AARTIIND (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:11,442 | INFO | utils.fetcher | Fetched data for BIOCON (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:11,445 | INFO | utils.fetcher | Fetched data for ADANIPORTS (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:11,504 | INFO | utils.fetcher | Fetched data for CDSL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:11,532 | INFO | utils.fetcher | Fetched data for ASTRAL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:11,727 | INFO | utils.fetcher | Fetched data for BANDHANBNK (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:11,733 | INFO | utils.fetcher | Fetched data for BEL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:12,137 | INFO | utils.fetcher | Fetched data for ABFRL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:12,161 | INFO | utils.fetcher | Fetched data for BHARTIARTL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:12,282 | INFO | utils.fetcher | Fetched data for AXISBANK (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:12,396 | INFO | utils.fetcher | Fetched data for ANGELONE (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:12,643 | INFO | utils.fetcher | Fetched data for BSOFT (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:12,657 | INFO | utils.fetcher | Fetched data for BAJAJ-AUTO (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:12,677 | INFO | utils.fetcher | Fetched data for ADANIENT (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:12,861 | INFO | utils.fetcher | Fetched data for BSE (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:12,956 | INFO | utils.fetcher | Fetched data for BAJFINANCE (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:12,965 | INFO | utils.fetcher | Fetched data for ABCAPITAL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:13,050 | INFO | utils.fetcher | Fetched data for DMART (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:13,312 | INFO | utils.fetcher | Fetched data for BPCL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:13,316 | INFO | utils.fetcher | Fetched data for CANBK (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:13,318 | INFO | utils.fetcher | Fetched data for 360ONE (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:13,338 | INFO | utils.fetcher | Fetched data for BANKBARODA (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:13,356 | INFO | utils.fetcher | Fetched data for AMBER (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:13,859 | INFO | utils.fetcher | Fetched data for CHAMBLFERT (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:14,328 | INFO | utils.fetcher | Fetched data for ADANIENSOL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:14,494 | INFO | utils.fetcher | Fetched data for ALKEM (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:14,542 | INFO | utils.fetcher | Fetched data for BOSCHLTD (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:14,562 | INFO | utils.fetcher | Fetched data for BHEL (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:14,721 | INFO | utils.fetcher | Fetched data for ABB (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:16,476 | INFO | utils.fetcher | Fetched data for AMBUJACEM (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:16,653 | INFO | utils.fetcher | Fetched data for CESC (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:20,470 | WARNING | utils.fetcher | Fetch failed for BANKINDIA (equity) with proxy https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000: 
+2025-07-08 16:01:20,471 | INFO | utils.fetcher | Retry 1 for BANKINDIA (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:22,219 | INFO | utils.fetcher | Fetched data for BHARATFORG (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000
+2025-07-08 16:01:29,038 | INFO | utils.fetcher | Fetched data for BANKINDIA (equity) via https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000

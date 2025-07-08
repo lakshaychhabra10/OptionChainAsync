@@ -102,7 +102,7 @@ def insert_in_database(df, table_name):
 
 def get_latest_snapshot_id():
     """
-    Retrieves the highest snapshot ID from the optionchain_metadata table.
+    Retrieves the highest snapshot ID from the optionchain_snapshots table.
     Returns:
         int or None: The highest snapshot ID, or None if the table is empty or an error occurs.
     """

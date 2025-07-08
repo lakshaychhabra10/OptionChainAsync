@@ -1,0 +1,144 @@
+2025-07-08 12:19:37,794 | INFO | __main__ | Starting main execution...
+2025-07-08 12:19:38,368 | INFO | __main__ | Starting with snapshot ID 8 (last was 7)
+2025-07-08 12:19:38,369 | ERROR | __main__ | Unhandled exception in main execution
+Traceback (most recent call last):
+  File "/Users/lakshaychhabra/Documents/scrapping/OptionChainAsync/main.py", line 112, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/lakshaychhabra/Documents/scrapping/OptionChainAsync/main.py", line 89, in main
+    SYMBOLS = SYMBOLS[0:10]
+              ^^^^^^^
+UnboundLocalError: cannot access local variable 'SYMBOLS' where it is not associated with a value
+2025-07-08 12:19:38,378 | INFO | __main__ | Database engine disposed cleanly on exit.
+2025-07-08 12:22:37,852 | INFO | __main__ | Starting main execution...
+2025-07-08 12:22:38,528 | INFO | __main__ | Starting with snapshot ID 8 (last was 7)
+2025-07-08 12:22:38,529 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 12:22:51,707 | INFO | __main__ | Sleeping for 20 seconds...
+2025-07-08 14:56:20,540 | INFO | __main__ | Starting main execution...
+2025-07-08 14:56:21,112 | INFO | __main__ | Starting with snapshot ID 9 (last was 8)
+2025-07-08 14:56:21,112 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 14:57:29,443 | INFO | __main__ | Starting main execution...
+2025-07-08 14:57:30,133 | INFO | __main__ | Starting with snapshot ID 9 (last was 8)
+2025-07-08 14:57:30,134 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 14:58:15,369 | WARNING | __main__ | No data for NIFTY (index)
+2025-07-08 14:58:15,369 | WARNING | __main__ | No data for BANKNIFTY (index)
+2025-07-08 14:58:15,370 | WARNING | __main__ | No data for FINNIFTY (index)
+2025-07-08 14:58:15,370 | WARNING | __main__ | No data for MIDCPNIFTY (index)
+2025-07-08 14:58:15,370 | WARNING | __main__ | No data for NIFTYNXT50 (index)
+2025-07-08 14:58:15,370 | WARNING | __main__ | No data for 360ONE (equity)
+2025-07-08 14:58:15,370 | WARNING | __main__ | No data for ABB (equity)
+2025-07-08 14:58:15,370 | WARNING | __main__ | No data for ACC (equity)
+2025-07-08 14:58:15,370 | WARNING | __main__ | No data for APLAPOLLO (equity)
+2025-07-08 14:58:15,371 | WARNING | __main__ | No data for AUBANK (equity)
+2025-07-08 14:58:15,371 | INFO | __main__ | Sleeping for 20 seconds...
+2025-07-08 14:58:35,372 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 14:59:06,456 | INFO | __main__ | Starting main execution...
+2025-07-08 14:59:07,286 | INFO | __main__ | Starting with snapshot ID 9 (last was 8)
+2025-07-08 14:59:07,286 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 14:59:51,100 | WARNING | __main__ | No data for NIFTY (index)
+2025-07-08 14:59:51,100 | WARNING | __main__ | No data for BANKNIFTY (index)
+2025-07-08 14:59:51,101 | WARNING | __main__ | No data for FINNIFTY (index)
+2025-07-08 14:59:51,101 | WARNING | __main__ | No data for MIDCPNIFTY (index)
+2025-07-08 14:59:51,101 | WARNING | __main__ | No data for NIFTYNXT50 (index)
+2025-07-08 14:59:51,101 | WARNING | __main__ | No data for 360ONE (equity)
+2025-07-08 14:59:51,101 | WARNING | __main__ | No data for ABB (equity)
+2025-07-08 14:59:51,101 | WARNING | __main__ | No data for ACC (equity)
+2025-07-08 14:59:51,101 | WARNING | __main__ | No data for APLAPOLLO (equity)
+2025-07-08 14:59:51,101 | WARNING | __main__ | No data for AUBANK (equity)
+2025-07-08 14:59:51,101 | INFO | __main__ | Sleeping for 20 seconds...
+2025-07-08 15:07:14,149 | INFO | __main__ | Starting main execution...
+2025-07-08 15:07:14,857 | INFO | __main__ | Starting with snapshot ID 9 (last was 8)
+2025-07-08 15:07:14,858 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 15:07:47,918 | INFO | __main__ | Sleeping for 20 seconds...
+2025-07-08 15:12:20,864 | INFO | __main__ | Starting main execution...
+2025-07-08 15:12:21,486 | INFO | __main__ | Starting with snapshot ID 10 (last was 9)
+2025-07-08 15:12:21,486 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 15:12:31,978 | INFO | __main__ | Sleeping for 20 seconds...
+2025-07-08 15:41:45,841 | INFO | __main__ | Starting main execution...
+2025-07-08 15:41:46,646 | INFO | __main__ | Starting with snapshot ID 11 (last was 10)
+2025-07-08 15:41:46,646 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 15:41:58,932 | INFO | __main__ | Sleeping for 61.67 seconds , Total Fetch Time : -10.62 ,  Total Process Time : -1.67, Total Time : -12.29
+2025-07-08 15:42:48,223 | INFO | __main__ | Starting main execution...
+2025-07-08 15:42:48,851 | INFO | __main__ | Starting with snapshot ID 12 (last was 11)
+2025-07-08 15:42:48,851 | INFO | __main__ | Processing all symbols: 10 symbols
+2025-07-08 15:43:01,519 | INFO | __main__ | Skipping FINNIFTY (index): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 15:43:01,553 | INFO | __main__ | Skipping ABB (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 15:43:01,578 | INFO | __main__ | Skipping 360ONE (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 15:43:01,586 | INFO | __main__ | Skipping ACC (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 15:43:01,620 | INFO | __main__ | Skipping NIFTYNXT50 (index): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 15:43:01,659 | INFO | __main__ | Skipping BANKNIFTY (index): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 15:43:01,694 | INFO | __main__ | Skipping APLAPOLLO (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 15:43:01,759 | INFO | __main__ | Skipping MIDCPNIFTY (index): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 15:43:01,794 | INFO | __main__ | Skipping AUBANK (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 15:43:01,829 | INFO | __main__ | Skipping NIFTY (index): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 15:43:01,830 | INFO | __main__ | Sleeping for 59.42 seconds , Total Fetch Time : 12.40 ,  Total Process Time : 0.58, Total Time : 12.98
+2025-07-08 15:59:49,692 | INFO | __main__ | Starting main execution...
+2025-07-08 15:59:50,279 | INFO | __main__ | Starting with snapshot ID 12 (last was 11)
+2025-07-08 15:59:50,279 | INFO | __main__ | Processing all symbols: 50 symbols
+2025-07-08 16:00:03,964 | INFO | __main__ | Skipping AUBANK (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:00:04,060 | INFO | __main__ | Skipping 360ONE (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:00:04,157 | INFO | __main__ | Skipping ABB (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:00:04,268 | INFO | __main__ | Skipping APLAPOLLO (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:00:04,305 | INFO | __main__ | Skipping ACC (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:00:07,811 | INFO | __main__ | Sleeping for 55.84 seconds , Total Fetch Time : 13.37 ,  Total Process Time : 4.16, Total Time : 17.53
+2025-07-08 16:01:03,654 | INFO | __main__ | Processing all symbols: 50 symbols
+2025-07-08 16:01:29,296 | INFO | __main__ | Skipping ASTRAL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,326 | INFO | __main__ | Skipping ABFRL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,356 | INFO | __main__ | Skipping APOLLOHOSP (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,384 | INFO | __main__ | Skipping ANGELONE (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,386 | INFO | __main__ | Skipping AUROPHARMA (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,416 | INFO | __main__ | Skipping AMBER (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,417 | INFO | __main__ | Skipping DMART (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,441 | INFO | __main__ | Skipping AXISBANK (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,451 | INFO | __main__ | Skipping ASHOKLEY (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,469 | INFO | __main__ | Skipping BSOFT (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,480 | INFO | __main__ | Skipping ATGL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,481 | INFO | __main__ | Skipping BSE (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,501 | INFO | __main__ | Skipping BAJAJ-AUTO (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,510 | INFO | __main__ | Skipping ALKEM (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,513 | INFO | __main__ | Skipping BAJFINANCE (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,525 | INFO | __main__ | Skipping BAJAJFINSV (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,544 | INFO | __main__ | Skipping ADANIENT (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,545 | INFO | __main__ | Skipping ASIANPAINT (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,555 | INFO | __main__ | Skipping BALKRISIND (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,567 | INFO | __main__ | Skipping BANKBARODA (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,570 | INFO | __main__ | Skipping BANDHANBNK (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,577 | INFO | __main__ | Skipping 360ONE (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,586 | INFO | __main__ | Skipping ABB (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,598 | INFO | __main__ | Skipping BANKINDIA (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,606 | INFO | __main__ | Skipping BDL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,613 | INFO | __main__ | Skipping BEL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,615 | INFO | __main__ | Skipping AARTIIND (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,636 | INFO | __main__ | Skipping AUBANK (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,637 | INFO | __main__ | Skipping BHARATFORG (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,642 | INFO | __main__ | Skipping AMBUJACEM (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,642 | INFO | __main__ | Skipping ADANIENSOL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,656 | INFO | __main__ | Skipping BHEL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,661 | INFO | __main__ | Skipping ADANIPORTS (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,676 | INFO | __main__ | Skipping BPCL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,677 | INFO | __main__ | Skipping ADANIGREEN (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,689 | INFO | __main__ | Skipping BHARTIARTL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,699 | INFO | __main__ | Skipping BIOCON (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,707 | INFO | __main__ | Skipping BLUESTARCO (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,717 | INFO | __main__ | Skipping BOSCHLTD (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,731 | INFO | __main__ | Skipping CESC (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,731 | INFO | __main__ | Skipping BRITANNIA (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,740 | INFO | __main__ | Skipping CANBK (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,745 | INFO | __main__ | Skipping CGPOWER (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,745 | INFO | __main__ | Skipping CDSL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,751 | INFO | __main__ | Skipping CHAMBLFERT (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,762 | INFO | __main__ | Skipping CHOLAFIN (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,776 | INFO | __main__ | Skipping CIPLA (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,778 | INFO | __main__ | Skipping APLAPOLLO (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,789 | INFO | __main__ | Skipping ACC (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,795 | INFO | __main__ | Skipping ABCAPITAL (equity): same download timestamp (2025-07-08 15:30:00) as last run
+2025-07-08 16:01:29,795 | INFO | __main__ | Sleeping for 59.26 seconds , Total Fetch Time : 25.40 ,  Total Process Time : 0.74, Total Time : 26.14

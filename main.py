@@ -1,6 +1,6 @@
 import sys
 import asyncio
-from config import STOCKS, PROXY
+from config import PROXY, SYMBOLS
 from utils.fetcher import process_batch
 from utils.helpers import (
     extract_option_chain_by_expiry,
@@ -11,12 +11,14 @@ from utils.helpers import (
 from utils.parser import process_option_chain_data
 from utils.database import insert_in_database, get_latest_snapshot_id, engine, create_required_tables, get_previous_datetime
 from utils.logger import get_logger
+import time
 
 logger = get_logger(__name__)
 
-async def process_result(stock, json_object, snapshot_id):
+
+async def process_result(stock, json_object, snapshot_id, symbol_type='equity'):
     if not json_object:
-        logger.warning(f"No data for {stock}")
+        logger.warning(f"No data for {stock} ({symbol_type})")
         return
 
     try:
@@ -24,13 +26,12 @@ async def process_result(stock, json_object, snapshot_id):
             extract_download_datetime_underlying, json_object
         )
 
-        # 🆕 Get previous download timestamp for this stock
         last_date, last_time = await asyncio.to_thread(
             get_previous_datetime, stock
         )
 
         if download_date == last_date and download_time == last_time:
-            logger.info(f"Skipping {stock}: same download timestamp ({download_date} {download_time}) as last run")
+            logger.info(f"Skipping {stock} ({symbol_type}): same download timestamp ({download_date} {download_time}) as last run")
             return
 
         await asyncio.to_thread(
@@ -46,7 +47,7 @@ async def process_result(stock, json_object, snapshot_id):
         oc_data = await asyncio.to_thread(extract_option_chain_by_expiry, json_object)
 
         if not oc_data:
-            logger.warning(f"No option chain data found for {stock}")
+            logger.warning(f"No option chain data found for {stock} ({symbol_type})")
             return
 
         stock_df = await asyncio.to_thread(process_option_chain_data, stock, oc_data, snapshot_id)
@@ -63,17 +64,16 @@ async def process_result(stock, json_object, snapshot_id):
             )
 
         else:
-            logger.warning(f"No valid data to insert for {stock}")
+            logger.warning(f"No valid data to insert for {stock} ({symbol_type})")
             return
 
         if not snapshot_df.empty:
             await asyncio.to_thread(insert_in_database, snapshot_df, 'optionchain_snapshots')
         else:
-            logger.warning(f"No valid snapshot data to insert for {stock}")
+            logger.warning(f"No valid snapshot data to insert for {stock} ({symbol_type})")
 
     except Exception as e:
-        logger.error(f"Error processing {stock}: {e}", exc_info=True)
-
+        logger.error(f"Error processing {stock} ({symbol_type}): {e}", exc_info=True)
 
 async def main():
     logger.info("Starting main execution...")
@@ -89,30 +89,34 @@ async def main():
         snapshot_id = 1
 
     while True:
-        all_results = []
-        batch_size = 224
 
-        for i in range(0, len(STOCKS), batch_size):
-            batch = STOCKS[i:i+batch_size]
-            logger.info(f"Processing batch {i // batch_size + 1}: len : {len(batch)} :{batch}")
-            try:
-                results = await process_batch(batch, PROXY)
-            except Exception as e:
-                logger.error(
-                    f"Exception occurred while processing batch {i // batch_size + 1} ({batch}): {e}",
-                    exc_info=True
-                )
-                results = []
-            all_results.extend(results)
-            await asyncio.sleep(2)
+        fetch_start_time = time.monotonic()  # Start timer for this cycle
+        logger.info(f"Processing all symbols: {len(SYMBOLS)} symbols")
+        try:
+            # Process all symbols in one go
+            results = await process_batch(SYMBOLS, PROXY)
+        except Exception as e:
+            logger.error(f"Exception occurred while processing symbols: {e}", exc_info=True)
+            results = []
+        
+        fetch_end_time = time.monotonic()
 
-        await asyncio.gather(*(process_result(stock, json_object, snapshot_id) for stock, json_object in all_results))
+        # Process all results
+        await asyncio.gather(
+            *(process_result(stock, json_object, snapshot_id, symbol_type) for stock, json_object, symbol_type in results)
+        )
+
+        process_end_time = time.monotonic()
 
         snapshot_id += 1
-        wait_time = 15
-        logger.info(f"Sleeping for {wait_time} seconds...")
-        await asyncio.sleep(wait_time)
 
+        fetch_time = fetch_end_time - fetch_start_time
+        processing_time = process_end_time - fetch_end_time
+        total_execution_time = fetch_time + processing_time
+
+        wait_time = 60 - total_execution_time # 60 seconds minus elapsed time
+        logger.info(f"Sleeping for {wait_time:.2f} seconds , Total Fetch Time : {fetch_time:.2f} seconds ,  Total Process Time : {processing_time:.2f} seconds , Total Time : {fetch_time + processing_time:.2f} seconds")
+        await asyncio.sleep(wait_time)
 
 if __name__ == "__main__":
     try:
