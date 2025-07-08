@@ -9,23 +9,67 @@ logger = get_logger(__name__)
 from sqlalchemy import create_engine
 from utils.logger import get_logger  # Adjust if needed
 
-def create_mysql_engine():
+# Create a global engine once
+try:
+    host = DB_CONFIG['host']
+    username = DB_CONFIG['username']
+    password = urllib.parse.quote_plus(DB_CONFIG['password'])
+    database = DB_CONFIG['database']
+    engine = create_engine(f"mysql+pymysql://{username}:{password}@{host}/{database}", pool_pre_ping=True)
+except Exception as e:
+    logger.error("Failed to create MySQL engine.", exc_info=True)
+    raise RuntimeError("Could not connect to the database.") from e
+
+
+def create_required_tables():
     """
-    Create a SQLAlchemy engine for a MySQL database using configuration in DB_CONFIG.
+    Create required tables if they don't already exist.
+    This should be run once during startup.
     """
     try:
-        host = DB_CONFIG['host']
-        username = DB_CONFIG['username']
-        password = urllib.parse.quote_plus(DB_CONFIG['password'])  # encode special chars
-        database = DB_CONFIG['database']
+        with engine.begin() as conn:
+            conn.execute(text("""
+                CREATE TABLE IF NOT EXISTS optionchain (
+                    TICKER TEXT,
+                    SNAPSHOT_ID BIGINT,
+                    EXPIRY DATE,
+                    c_OI DOUBLE,
+                    c_CHNG_IN_OI DOUBLE,
+                    c_VOLUME DOUBLE,
+                    c_IV DOUBLE,
+                    c_LTP DOUBLE,
+                    c_CHNG DOUBLE,
+                    c_BID_QTY DOUBLE,
+                    c_BID DOUBLE,
+                    c_ASK DOUBLE,
+                    c_ASK_QTY DOUBLE,
+                    STRIKE DOUBLE,
+                    p_BID_QTY DOUBLE,
+                    p_BID DOUBLE,
+                    p_ASK DOUBLE,
+                    p_ASK_QTY DOUBLE,
+                    p_CHNG DOUBLE,
+                    p_LTP DOUBLE,
+                    p_IV DOUBLE,
+                    p_VOLUME DOUBLE,
+                    p_CHNG_IN_OI DOUBLE,
+                    p_OI DOUBLE
+                );
+            """))
 
-        engine = create_engine(f"mysql+pymysql://{username}:{password}@{host}/{database}")
-        #logger.info("MySQL engine created successfully for database '%s' at host '%s'.",DB_CONFIG['database'], DB_CONFIG['host'])
-        return engine
-    
+            conn.execute(text("""
+                CREATE TABLE IF NOT EXISTS optionchain_snapshots (
+                    SNAPSHOT_ID BIGINT,
+                    TICKER TEXT,
+                    DOWNLOAD_DATE TEXT,
+                    DOWNLOAD_TIME TEXT,
+                    UNDERLYING_VALUE DOUBLE
+                );
+            """))
+
     except Exception as e:
-        logger.error("Failed to create MySQL engine.", exc_info=True)
-        raise RuntimeError("Could not connect to the database. Please check your configuration and try again.") from None
+        logger.error("Failed to create tables.", exc_info=True)
+        raise
 
 
 def insert_in_database(df, table_name):
@@ -47,11 +91,9 @@ def insert_in_database(df, table_name):
         >>> insert_in_database(my_dataframe, "users")
     """
 
-    engine = create_mysql_engine()
     try:
         with engine.connect() as conn:
             df.to_sql(table_name, con=conn, if_exists='append', index=False)
-            logger.info(f"Successfully Inserted DataFrame into {table_name}")
     except Exception as e:
         logger.exception("Database insertion error")
     finally:
@@ -64,7 +106,7 @@ def get_latest_snapshot_id():
     Returns:
         int or None: The highest snapshot ID, or None if the table is empty or an error occurs.
     """
-    engine = create_mysql_engine()
+
     try:
         with engine.connect() as conn:
             result = conn.execute(text("SELECT MAX(SNAPSHOT_ID) FROM optionchain_snapshots"))
@@ -76,3 +118,12 @@ def get_latest_snapshot_id():
     finally:
         engine.dispose()
 
+
+def get_previous_datetime(ticker):
+    with engine.connect() as conn:
+        result = conn.execute(
+            text("SELECT download_date, download_time FROM optionchain_snapshots WHERE ticker = :ticker ORDER BY snapshot_id DESC LIMIT 1")
+            ,
+            {"ticker": ticker}  # <- use dictionary for parameters
+        ).fetchone()
+        return result if result else (None, None)

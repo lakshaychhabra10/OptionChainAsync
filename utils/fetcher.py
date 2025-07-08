@@ -1,6 +1,7 @@
 import aiohttp
 import asyncio
 import random
+from urllib.parse import quote
 from utils.logger import get_logger
 
 logger = get_logger(__name__)
@@ -28,18 +29,19 @@ def get_random_headers():
 
 async def fetch_stock(stock, proxy, headers, session):
 
-    await asyncio.sleep(random.uniform(1, 3))
+    await asyncio.sleep(random.uniform(0.5, 2))
 
     base_url = "https://www.nseindia.com"
     option_chain_url = "https://www.nseindia.com/option-chain"
-    api_url = f"https://www.nseindia.com/api/option-chain-equities?symbol={stock}"
+    encoded_stock = quote(stock)
+    api_url = f"https://www.nseindia.com/api/option-chain-equities?symbol={encoded_stock}"
 
     try:
         # Use context manager to ensure responses are closed
         async with session.get(base_url, headers=headers, proxy=proxy) as _:
-            await asyncio.sleep(random.uniform(0.5, 1.5))
+            await asyncio.sleep(random.uniform(0.5, 1))
         async with session.get(option_chain_url, headers=headers, proxy=proxy) as _:
-            await asyncio.sleep(random.uniform(0.5, 1.5))
+            await asyncio.sleep(random.uniform(0.5, 1))
 
         async with session.get(api_url, headers=headers, proxy=proxy) as response:
             if response.status == 200:
@@ -67,7 +69,7 @@ async def fetch_with_retries(stock, proxy, session, max_retries=3):
 async def process_batch(stocks, proxy):
 
     timeout = aiohttp.ClientTimeout(total=15)
-    connector = aiohttp.TCPConnector(ssl=False, limit=100)
+    connector = aiohttp.TCPConnector(ssl=False, limit=250)
 
     async with aiohttp.ClientSession(timeout=timeout, connector=connector) as session:
         tasks = [

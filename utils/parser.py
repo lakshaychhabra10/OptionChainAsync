@@ -69,7 +69,7 @@ def process_option_chain_data(stock: str, oc_data: dict, snapshot_id: int) -> No
             df = pd.DataFrame(l_OC, columns=OC_col)
 
             # Add stock column (Foreign Key)
-            df.insert(0, 'SYMBOL', stock)
+            df.insert(0, 'TICKER', stock)
 
             # Add snapshot ID column
             df.insert(1, 'SNAPSHOT_ID', snapshot_id)
@@ -83,9 +83,7 @@ def process_option_chain_data(stock: str, oc_data: dict, snapshot_id: int) -> No
         except Exception as e:
             logger.exception(f"Exception while processing expiry {expiry_date} for stock {stock}: {e}")
 
-    if not final_df.empty:
-        logger.info(f"[{stock}] Option chain data successfully parsed.")
-    else:
+    if final_df.empty:
         logger.warning(f"[{stock}] No valid option chain data found after processing.")
 
     return final_df
