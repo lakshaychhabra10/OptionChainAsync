@@ -167,7 +167,7 @@ def save_option_chain_snapshot(parent_dir, download_date, download_time, snapsho
 
     with open(json_path, 'w') as f:
         json.dump(json_object, f)
-    logger.info(f"Saved raw JSON for {stock} at {json_path}")
+    #logger.info(f"Saved raw JSON for {stock} at {json_path}")
 
 
 

@@ -66,7 +66,7 @@ async def fetch_stock(stock, proxy, headers, session, symbol_type='equity'):
         async with session.get(api_url, headers=headers, proxy=proxy) as response:
             if response.status == 200:
                 data = await response.json()
-                logger.info(f"Fetched data for {stock} ({symbol_type}) via {proxy}")
+                #logger.info(f"Fetched data for {stock} ({symbol_type}) via {proxy}")
                 return stock, data
             else:
                 logger.warning(f"Bad response {response.status} for {stock} ({symbol_type}) via {proxy}")
@@ -81,7 +81,7 @@ async def fetch_with_retries(stock, proxy, session, max_retries=3, symbol_type='
         result = await fetch_stock(stock, proxy, headers, session, symbol_type)
         if result[1] is not None:
             return result
-        logger.info(f"Retry {attempt + 1} for {stock} ({symbol_type}) via {proxy}")
+        logger.info(f"Retry {attempt + 1} for {stock} ({symbol_type})")
         await asyncio.sleep(2 * (attempt + 1))
     return stock, None
 
