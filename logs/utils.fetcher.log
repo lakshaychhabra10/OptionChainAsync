@@ -1,0 +1,6 @@
+2025-07-09 15:21:37,065 | WARNING | utils.fetcher | Fetch failed for POWERGRID (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 522, message='status code 522', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-09 15:21:37,066 | INFO | utils.fetcher | Retry 1 for POWERGRID (equity)
+2025-07-09 15:22:36,619 | WARNING | utils.fetcher | Fetch failed for UNIONBANK (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 522, message='status code 522', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-09 15:22:36,621 | INFO | utils.fetcher | Retry 1 for UNIONBANK (equity)
+2025-07-09 15:22:54,511 | WARNING | utils.fetcher | Fetch failed for TATACOMM (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 
+2025-07-09 15:22:54,512 | INFO | utils.fetcher | Retry 1 for TATACOMM (equity)

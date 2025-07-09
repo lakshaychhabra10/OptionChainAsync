@@ -3,7 +3,6 @@
 # utils/logger.py
 import logging
 import os
-from logging.handlers import RotatingFileHandler
 
 def get_logger(name="scraper"):
     """
@@ -35,7 +34,7 @@ def get_logger(name="scraper"):
 
     formatter = logging.Formatter('%(asctime)s | %(levelname)s | %(name)s | %(message)s')
 
-    file_handler = RotatingFileHandler(f"{log_dir}/{name}.log", maxBytes=5_000_000, backupCount=5)
+    file_handler = logging.FileHandler(f"{log_dir}/{name}.log")
     file_handler.setFormatter(formatter)
 
     console_handler = logging.StreamHandler()
