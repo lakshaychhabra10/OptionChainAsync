@@ -4,7 +4,9 @@ from utils.logger import get_logger
 import os
 import json
 import pandas as pd
-
+from google.cloud import storage
+import os
+from io import BytesIO
 
 logger = get_logger(__name__)
 
@@ -143,31 +145,22 @@ def extract_download_datetime_underlying(json_object):
         return None, None, underlying
 
 
-def save_option_chain_snapshot(parent_dir, download_date, download_time, snapshot_id, stock, json_object):
-    """
-    Creates a directory structure: parent_dir/download_date/snapshot_id,
-    and saves the JSON object as {stock}_{snapshot_id}_{download_date}{download_time}_istock_oc.json
 
-    Args:
-        parent_dir (str): The root directory for storing data.
-        download_date (str): The date string (e.g., '20250704').
-        download_time (str): The time string (e.g., '153600' for 15:36:00).
-        snapshot_id (str or int): Unique identifier for the snapshot.
-        stock (str): Stock name or symbol.
-        json_object (dict): The JSON data to save.
+def save_option_chain_snapshot_gcs(bucket_name, download_date, download_time, snapshot_id, stock, json_object):
     """
-    # Build directory structure
-    date_dir = os.path.join(parent_dir, download_date)
-    snapshot_dir = os.path.join(date_dir, str(snapshot_id))
-    os.makedirs(snapshot_dir, exist_ok=True)
-
+    Saves the JSON object to a GCS bucket instead of local disk.
+    """
     # Construct filename
     json_filename = f"{stock}_{snapshot_id}_{download_date}_{download_time}.json"
-    json_path = os.path.join(snapshot_dir, json_filename)
+    blob_path = f"{download_date}/{snapshot_id}/{json_filename}"
 
-    with open(json_path, 'w') as f:
-        json.dump(json_object, f)
-    #logger.info(f"Saved raw JSON for {stock} at {json_path}")
+    # Upload JSON as bytes
+    client = storage.Client()
+    bucket = client.bucket(bucket_name)
+    blob = bucket.blob(blob_path)
+
+    data = json.dumps(json_object).encode('utf-8')
+    blob.upload_from_string(data, content_type='application/json')
 
 
 

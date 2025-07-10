@@ -5,7 +5,7 @@ from utils.fetcher import process_batch
 from utils.helpers import (
     extract_option_chain_by_expiry,
     extract_download_datetime_underlying,
-    save_option_chain_snapshot,
+    save_option_chain_snapshot_gcs,
     create_snapshot_df
 )
 from utils.parser import process_option_chain_data
@@ -43,8 +43,8 @@ async def process_result(stock, json_object, snapshot_id, symbol_type='equity'):
 
         # Save option chain snapshot
         await asyncio.to_thread(
-            save_option_chain_snapshot,
-            parent_dir="option_chain_snapshots",
+            save_option_chain_snapshot_gcs,
+            bucket_name="my-option-chain-data",  # your GCS bucket name
             download_date=download_date,
             download_time=download_time,
             snapshot_id=snapshot_id,
