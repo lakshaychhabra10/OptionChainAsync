@@ -36,3 +36,197 @@
 2025-07-10 15:01:23,506 | INFO | __main__ | SLEEPING FOR 44.67 SECONDS
 2025-07-10 15:01:23,506 | INFO | __main__ | ==================================================
 2025-07-10 15:01:33,845 | INFO | __main__ | Program terminated by user
+2025-07-10 15:39:41,663 | INFO | __main__ | Starting main execution...
+2025-07-10 15:39:42,222 | INFO | __main__ | Starting with snapshot ID 7 (last was 6)
+2025-07-10 15:40:00,936 | INFO | __main__ | ==================================================
+2025-07-10 15:40:00,937 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 7:
+2025-07-10 15:40:00,937 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 5 | TOTAL SKIPPED: 0
+2025-07-10 15:40:00,937 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 5
+2025-07-10 15:40:00,937 | INFO | __main__ | PROCESS FAILURE DETAILS:
+2025-07-10 15:40:00,937 | ERROR | __main__ | • 360ONE: Error processing 360ONE (equity): Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-07-10 15:40:00,938 | ERROR | __main__ | • ABB: Error processing ABB (equity): Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-07-10 15:40:00,938 | ERROR | __main__ | • ACC: Error processing ACC (equity): Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-07-10 15:40:00,938 | ERROR | __main__ | • APLAPOLLO: Error processing APLAPOLLO (equity): Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-07-10 15:40:00,938 | ERROR | __main__ | • AUBANK: Error processing AUBANK (equity): Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-07-10 15:40:00,938 | INFO | __main__ | TOTAL FETCH TIME : 9.31 SECONDS ,  TOTAL PROCESS TIME : 9.40 SECONDS , TOTAL TIME : 18.72 SECONDS
+2025-07-10 15:40:00,938 | INFO | __main__ | SLEEPING FOR 41.28 SECONDS
+2025-07-10 15:40:00,938 | INFO | __main__ | ==================================================
+2025-07-10 15:50:44,269 | INFO | __main__ | Starting main execution...
+2025-07-10 15:50:44,862 | INFO | __main__ | Starting with snapshot ID 7 (last was 6)
+2025-07-10 15:50:57,609 | INFO | __main__ | ==================================================
+2025-07-10 15:50:57,610 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 7:
+2025-07-10 15:50:57,610 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 5 | TOTAL FAILED: 0 | TOTAL SKIPPED: 0
+2025-07-10 15:50:57,610 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 15:50:57,610 | INFO | __main__ | TOTAL FETCH TIME : 9.40 SECONDS ,  TOTAL PROCESS TIME : 3.35 SECONDS , TOTAL TIME : 12.75 SECONDS
+2025-07-10 15:50:57,610 | INFO | __main__ | SLEEPING FOR 47.25 SECONDS
+2025-07-10 15:50:57,610 | INFO | __main__ | ==================================================
+2025-07-10 15:52:10,555 | INFO | __main__ | ==================================================
+2025-07-10 15:52:10,556 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 8:
+2025-07-10 15:52:10,556 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 15:52:10,556 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 15:52:10,557 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 15:52:10,557 | INFO | __main__ | TOTAL FETCH TIME : 25.58 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 25.69 SECONDS
+2025-07-10 15:52:10,557 | INFO | __main__ | SLEEPING FOR 34.31 SECONDS
+2025-07-10 15:52:10,557 | INFO | __main__ | ==================================================
+2025-07-10 15:52:57,971 | INFO | __main__ | ==================================================
+2025-07-10 15:52:57,972 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 9:
+2025-07-10 15:52:57,972 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 15:52:57,972 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 15:52:57,972 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 15:52:57,973 | INFO | __main__ | TOTAL FETCH TIME : 13.00 SECONDS ,  TOTAL PROCESS TIME : 0.10 SECONDS , TOTAL TIME : 13.10 SECONDS
+2025-07-10 15:52:57,973 | INFO | __main__ | SLEEPING FOR 46.90 SECONDS
+2025-07-10 15:52:57,973 | INFO | __main__ | ==================================================
+2025-07-10 15:54:19,293 | INFO | __main__ | ==================================================
+2025-07-10 15:54:19,295 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 10:
+2025-07-10 15:54:19,295 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 15:54:19,295 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 15:54:19,295 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 15:54:19,296 | INFO | __main__ | TOTAL FETCH TIME : 34.31 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 34.42 SECONDS
+2025-07-10 15:54:19,296 | INFO | __main__ | SLEEPING FOR 25.58 SECONDS
+2025-07-10 15:54:19,296 | INFO | __main__ | ==================================================
+2025-07-10 15:54:53,412 | INFO | __main__ | ==================================================
+2025-07-10 15:54:53,419 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 11:
+2025-07-10 15:54:53,420 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 15:54:53,420 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 15:54:53,420 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 15:54:53,420 | INFO | __main__ | TOTAL FETCH TIME : 8.44 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 8.54 SECONDS
+2025-07-10 15:54:53,420 | INFO | __main__ | SLEEPING FOR 51.46 SECONDS
+2025-07-10 15:54:53,420 | INFO | __main__ | ==================================================
+2025-07-10 16:17:01,537 | INFO | __main__ | Starting main execution...
+2025-07-10 16:17:02,174 | INFO | __main__ | Starting with snapshot ID 8 (last was 7)
+2025-07-10 16:17:34,121 | INFO | __main__ | ==================================================
+2025-07-10 16:17:34,121 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 8:
+2025-07-10 16:17:34,122 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:17:34,122 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:17:34,122 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:17:34,122 | INFO | __main__ | TOTAL FETCH TIME : 31.67 SECONDS ,  TOTAL PROCESS TIME : 0.28 SECONDS , TOTAL TIME : 31.95 SECONDS
+2025-07-10 16:17:34,122 | INFO | __main__ | SLEEPING FOR 28.05 SECONDS
+2025-07-10 16:17:34,122 | INFO | __main__ | ==================================================
+2025-07-10 16:18:37,455 | INFO | __main__ | ==================================================
+2025-07-10 16:18:37,457 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 9:
+2025-07-10 16:18:37,457 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:18:37,457 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:18:37,457 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:18:37,457 | INFO | __main__ | TOTAL FETCH TIME : 35.17 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 35.28 SECONDS
+2025-07-10 16:18:37,457 | INFO | __main__ | SLEEPING FOR 24.72 SECONDS
+2025-07-10 16:18:37,457 | INFO | __main__ | ==================================================
+2025-07-10 16:19:12,209 | INFO | __main__ | ==================================================
+2025-07-10 16:19:12,211 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 10:
+2025-07-10 16:19:12,211 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:19:12,211 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:19:12,211 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:19:12,211 | INFO | __main__ | TOTAL FETCH TIME : 9.92 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 10.03 SECONDS
+2025-07-10 16:19:12,211 | INFO | __main__ | SLEEPING FOR 49.97 SECONDS
+2025-07-10 16:19:12,211 | INFO | __main__ | ==================================================
+2025-07-10 16:20:38,372 | INFO | __main__ | ==================================================
+2025-07-10 16:20:38,372 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 11:
+2025-07-10 16:20:38,373 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:20:38,373 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:20:38,373 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:20:38,373 | INFO | __main__ | TOTAL FETCH TIME : 36.08 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 36.19 SECONDS
+2025-07-10 16:20:38,373 | INFO | __main__ | SLEEPING FOR 23.81 SECONDS
+2025-07-10 16:20:38,373 | INFO | __main__ | ==================================================
+2025-07-10 16:21:11,317 | INFO | __main__ | ==================================================
+2025-07-10 16:21:11,319 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 12:
+2025-07-10 16:21:11,319 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:21:11,319 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:21:11,319 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:21:11,319 | INFO | __main__ | TOTAL FETCH TIME : 9.03 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 9.13 SECONDS
+2025-07-10 16:21:11,319 | INFO | __main__ | SLEEPING FOR 50.87 SECONDS
+2025-07-10 16:21:11,320 | INFO | __main__ | ==================================================
+2025-07-10 16:22:13,223 | INFO | __main__ | ==================================================
+2025-07-10 16:22:13,225 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 13:
+2025-07-10 16:22:13,226 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:22:13,226 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:22:13,226 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:22:13,226 | INFO | __main__ | TOTAL FETCH TIME : 10.93 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 11.04 SECONDS
+2025-07-10 16:22:13,226 | INFO | __main__ | SLEEPING FOR 48.96 SECONDS
+2025-07-10 16:22:13,226 | INFO | __main__ | ==================================================
+2025-07-10 16:23:11,478 | INFO | __main__ | ==================================================
+2025-07-10 16:23:11,481 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 14:
+2025-07-10 16:23:11,481 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:23:11,481 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:23:11,481 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:23:11,481 | INFO | __main__ | TOTAL FETCH TIME : 9.18 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 9.29 SECONDS
+2025-07-10 16:23:11,481 | INFO | __main__ | SLEEPING FOR 50.71 SECONDS
+2025-07-10 16:23:11,482 | INFO | __main__ | ==================================================
+2025-07-10 16:24:12,759 | INFO | __main__ | ==================================================
+2025-07-10 16:24:12,761 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 15:
+2025-07-10 16:24:12,761 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:24:12,761 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:24:12,762 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:24:12,762 | INFO | __main__ | TOTAL FETCH TIME : 10.45 SECONDS ,  TOTAL PROCESS TIME : 0.12 SECONDS , TOTAL TIME : 10.57 SECONDS
+2025-07-10 16:24:12,762 | INFO | __main__ | SLEEPING FOR 49.43 SECONDS
+2025-07-10 16:24:12,762 | INFO | __main__ | ==================================================
+2025-07-10 16:25:14,499 | INFO | __main__ | ==================================================
+2025-07-10 16:25:14,501 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 16:
+2025-07-10 16:25:14,501 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:25:14,501 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:25:14,501 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:25:14,501 | INFO | __main__ | TOTAL FETCH TIME : 12.20 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 12.31 SECONDS
+2025-07-10 16:25:14,501 | INFO | __main__ | SLEEPING FOR 47.69 SECONDS
+2025-07-10 16:25:14,502 | INFO | __main__ | ==================================================
+2025-07-10 16:26:12,771 | INFO | __main__ | ==================================================
+2025-07-10 16:26:12,774 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 17:
+2025-07-10 16:26:12,774 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:26:12,774 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:26:12,774 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:26:12,774 | INFO | __main__ | TOTAL FETCH TIME : 10.47 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 10.58 SECONDS
+2025-07-10 16:26:12,775 | INFO | __main__ | SLEEPING FOR 49.42 SECONDS
+2025-07-10 16:26:12,775 | INFO | __main__ | ==================================================
+2025-07-10 16:27:11,297 | INFO | __main__ | ==================================================
+2025-07-10 16:27:11,299 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 18:
+2025-07-10 16:27:11,300 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:27:11,300 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:27:11,300 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:27:11,300 | INFO | __main__ | TOTAL FETCH TIME : 8.99 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 9.10 SECONDS
+2025-07-10 16:27:11,300 | INFO | __main__ | SLEEPING FOR 50.90 SECONDS
+2025-07-10 16:27:11,300 | INFO | __main__ | ==================================================
+2025-07-10 16:28:12,466 | INFO | __main__ | ==================================================
+2025-07-10 16:28:12,468 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 19:
+2025-07-10 16:28:12,468 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:28:12,468 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:28:12,468 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:28:12,468 | INFO | __main__ | TOTAL FETCH TIME : 10.16 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 10.27 SECONDS
+2025-07-10 16:28:12,469 | INFO | __main__ | SLEEPING FOR 49.73 SECONDS
+2025-07-10 16:28:12,469 | INFO | __main__ | ==================================================
+2025-07-10 16:29:30,513 | INFO | __main__ | ==================================================
+2025-07-10 16:29:30,514 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 20:
+2025-07-10 16:29:30,514 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:29:30,514 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:29:30,514 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:29:30,514 | INFO | __main__ | TOTAL FETCH TIME : 28.20 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 28.30 SECONDS
+2025-07-10 16:29:30,514 | INFO | __main__ | SLEEPING FOR 31.70 SECONDS
+2025-07-10 16:29:30,514 | INFO | __main__ | ==================================================
+2025-07-10 16:30:10,438 | INFO | __main__ | ==================================================
+2025-07-10 16:30:10,438 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 21:
+2025-07-10 16:30:10,438 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:30:10,438 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:30:10,439 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:30:10,439 | INFO | __main__ | TOTAL FETCH TIME : 8.12 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 8.23 SECONDS
+2025-07-10 16:30:10,439 | INFO | __main__ | SLEEPING FOR 51.77 SECONDS
+2025-07-10 16:30:10,439 | INFO | __main__ | ==================================================
+2025-07-10 16:31:11,680 | INFO | __main__ | ==================================================
+2025-07-10 16:31:11,681 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 22:
+2025-07-10 16:31:11,681 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:31:11,681 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:31:11,681 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:31:11,681 | INFO | __main__ | TOTAL FETCH TIME : 9.36 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 9.47 SECONDS
+2025-07-10 16:31:11,682 | INFO | __main__ | SLEEPING FOR 50.53 SECONDS
+2025-07-10 16:31:11,682 | INFO | __main__ | ==================================================
+2025-07-10 16:32:36,041 | INFO | __main__ | ==================================================
+2025-07-10 16:32:36,043 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 23:
+2025-07-10 16:32:36,043 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:32:36,043 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:32:36,043 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:32:36,043 | INFO | __main__ | TOTAL FETCH TIME : 33.72 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 33.82 SECONDS
+2025-07-10 16:32:36,043 | INFO | __main__ | SLEEPING FOR 26.18 SECONDS
+2025-07-10 16:32:36,043 | INFO | __main__ | ==================================================
+2025-07-10 16:33:12,304 | INFO | __main__ | ==================================================
+2025-07-10 16:33:12,305 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 24:
+2025-07-10 16:33:12,305 | INFO | __main__ | TOTAL STOCKS: 5 | TOTAL SUCCESS: 0 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-10 16:33:12,305 | INFO | __main__ | FETCH SUCCESS : 5 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-10 16:33:12,305 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, APLAPOLLO, AUBANK
+2025-07-10 16:33:12,305 | INFO | __main__ | TOTAL FETCH TIME : 9.98 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 10.09 SECONDS
+2025-07-10 16:33:12,305 | INFO | __main__ | SLEEPING FOR 49.91 SECONDS
+2025-07-10 16:33:12,306 | INFO | __main__ | ==================================================

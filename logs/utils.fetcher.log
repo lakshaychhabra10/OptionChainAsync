@@ -4,3 +4,21 @@
 2025-07-09 15:22:36,621 | INFO | utils.fetcher | Retry 1 for UNIONBANK (equity)
 2025-07-09 15:22:54,511 | WARNING | utils.fetcher | Fetch failed for TATACOMM (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 
 2025-07-09 15:22:54,512 | INFO | utils.fetcher | Retry 1 for TATACOMM (equity)
+2025-07-10 15:52:01,906 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 
+2025-07-10 15:52:01,909 | INFO | utils.fetcher | Retry 1 for ABB (equity)
+2025-07-10 15:54:06,908 | WARNING | utils.fetcher | Fetch failed for 360ONE (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 
+2025-07-10 15:54:06,912 | INFO | utils.fetcher | Retry 1 for 360ONE (equity)
+2025-07-10 16:17:24,926 | WARNING | utils.fetcher | Fetch failed for APLAPOLLO (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 
+2025-07-10 16:17:24,927 | INFO | utils.fetcher | Retry 1 for APLAPOLLO (equity)
+2025-07-10 16:18:25,926 | WARNING | utils.fetcher | Fetch failed for APLAPOLLO (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 
+2025-07-10 16:18:25,927 | INFO | utils.fetcher | Retry 1 for APLAPOLLO (equity)
+2025-07-10 16:20:06,232 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 522, message='status code 522', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-10 16:20:06,234 | INFO | utils.fetcher | Retry 1 for AUBANK (equity)
+2025-07-10 16:20:23,928 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 
+2025-07-10 16:20:23,929 | INFO | utils.fetcher | Retry 1 for ABB (equity)
+2025-07-10 16:29:06,196 | WARNING | utils.fetcher | Fetch failed for 360ONE (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 522, message='status code 522', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-10 16:29:06,198 | INFO | utils.fetcher | Retry 1 for 360ONE (equity)
+2025-07-10 16:29:21,943 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 
+2025-07-10 16:29:21,943 | INFO | utils.fetcher | Retry 1 for AUBANK (equity)
+2025-07-10 16:32:24,946 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 
+2025-07-10 16:32:24,948 | INFO | utils.fetcher | Retry 1 for ACC (equity)
