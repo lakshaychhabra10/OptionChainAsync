@@ -22,3 +22,145 @@
 2025-07-10 16:29:21,943 | INFO | utils.fetcher | Retry 1 for AUBANK (equity)
 2025-07-10 16:32:24,946 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 
 2025-07-10 16:32:24,948 | INFO | utils.fetcher | Retry 1 for ACC (equity)
+2025-07-11 11:27:47,662 | WARNING | utils.fetcher | Fetch failed for ALKEM (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 522, message='status code 522', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:27:47,662 | INFO | utils.fetcher | Retry 1 for ALKEM (equity)
+2025-07-11 11:27:52,049 | WARNING | utils.fetcher | Fetch failed for AMBER (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 522, message='status code 522', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:27:52,049 | INFO | utils.fetcher | Retry 1 for AMBER (equity)
+2025-07-11 11:27:52,132 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 522, message='status code 522', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:27:52,133 | INFO | utils.fetcher | Retry 1 for AUBANK (equity)
+2025-07-11 11:28:52,352 | WARNING | utils.fetcher | Fetch failed for ALKEM (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 522, message='status code 522', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:28:52,354 | INFO | utils.fetcher | Retry 1 for ALKEM (equity)
+2025-07-11 11:47:31,703 | WARNING | utils.fetcher | Fetch failed for AMBUJACEM (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:47:31,705 | INFO | utils.fetcher | Retry 1 for AMBUJACEM (equity)
+2025-07-11 11:47:38,506 | WARNING | utils.fetcher | Fetch failed for AMBUJACEM (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:47:38,506 | INFO | utils.fetcher | Retry 2 for AMBUJACEM (equity)
+2025-07-11 11:47:46,870 | WARNING | utils.fetcher | Fetch failed for AMBUJACEM (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:47:46,870 | INFO | utils.fetcher | Retry 3 for AMBUJACEM (equity)
+2025-07-11 11:48:20,182 | WARNING | utils.fetcher | Fetch failed for ASHOKLEY (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:20,183 | INFO | utils.fetcher | Retry 1 for ASHOKLEY (equity)
+2025-07-11 11:48:20,198 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:20,199 | INFO | utils.fetcher | Retry 1 for AUBANK (equity)
+2025-07-11 11:48:20,379 | WARNING | utils.fetcher | Fetch failed for ADANIPORTS (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:20,379 | INFO | utils.fetcher | Retry 1 for ADANIPORTS (equity)
+2025-07-11 11:48:20,400 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:20,401 | INFO | utils.fetcher | Retry 1 for ACC (equity)
+2025-07-11 11:48:20,426 | WARNING | utils.fetcher | Fetch failed for ABCAPITAL (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:20,426 | INFO | utils.fetcher | Retry 1 for ABCAPITAL (equity)
+2025-07-11 11:48:20,498 | WARNING | utils.fetcher | Fetch failed for ASIANPAINT (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:20,499 | INFO | utils.fetcher | Retry 1 for ASIANPAINT (equity)
+2025-07-11 11:48:20,527 | WARNING | utils.fetcher | Fetch failed for ABFRL (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:20,527 | INFO | utils.fetcher | Retry 1 for ABFRL (equity)
+2025-07-11 11:48:20,616 | WARNING | utils.fetcher | Fetch failed for AARTIIND (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:20,617 | INFO | utils.fetcher | Retry 1 for AARTIIND (equity)
+2025-07-11 11:48:20,644 | WARNING | utils.fetcher | Fetch failed for ADANIGREEN (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:20,644 | INFO | utils.fetcher | Retry 1 for ADANIGREEN (equity)
+2025-07-11 11:48:20,674 | WARNING | utils.fetcher | Fetch failed for APLAPOLLO (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:20,674 | INFO | utils.fetcher | Retry 1 for APLAPOLLO (equity)
+2025-07-11 11:48:20,706 | WARNING | utils.fetcher | Fetch failed for ALKEM (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:20,706 | INFO | utils.fetcher | Retry 1 for ALKEM (equity)
+2025-07-11 11:48:20,760 | WARNING | utils.fetcher | Fetch failed for ANGELONE (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:20,760 | INFO | utils.fetcher | Retry 1 for ANGELONE (equity)
+2025-07-11 11:48:20,842 | WARNING | utils.fetcher | Fetch failed for APOLLOHOSP (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:20,842 | INFO | utils.fetcher | Retry 1 for APOLLOHOSP (equity)
+2025-07-11 11:48:20,896 | WARNING | utils.fetcher | Fetch failed for AMBER (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:20,896 | INFO | utils.fetcher | Retry 1 for AMBER (equity)
+2025-07-11 11:48:20,941 | WARNING | utils.fetcher | Fetch failed for AMBUJACEM (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:20,941 | INFO | utils.fetcher | Retry 1 for AMBUJACEM (equity)
+2025-07-11 11:48:21,118 | WARNING | utils.fetcher | Fetch failed for ADANIENT (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:21,119 | INFO | utils.fetcher | Retry 1 for ADANIENT (equity)
+2025-07-11 11:48:21,250 | WARNING | utils.fetcher | Fetch failed for ADANIENSOL (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:21,250 | INFO | utils.fetcher | Retry 1 for ADANIENSOL (equity)
+2025-07-11 11:48:21,346 | WARNING | utils.fetcher | Fetch failed for 360ONE (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:21,346 | INFO | utils.fetcher | Retry 1 for 360ONE (equity)
+2025-07-11 11:48:21,510 | WARNING | utils.fetcher | Fetch failed for ATGL (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:21,511 | INFO | utils.fetcher | Retry 1 for ATGL (equity)
+2025-07-11 11:48:21,576 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:21,577 | INFO | utils.fetcher | Retry 1 for ABB (equity)
+2025-07-11 11:48:26,280 | WARNING | utils.fetcher | Fetch failed for ABFRL (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:26,281 | INFO | utils.fetcher | Retry 2 for ABFRL (equity)
+2025-07-11 11:48:26,476 | WARNING | utils.fetcher | Fetch failed for ASIANPAINT (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:26,477 | INFO | utils.fetcher | Retry 2 for ASIANPAINT (equity)
+2025-07-11 11:48:26,526 | WARNING | utils.fetcher | Fetch failed for ASHOKLEY (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:26,527 | INFO | utils.fetcher | Retry 2 for ASHOKLEY (equity)
+2025-07-11 11:48:26,539 | WARNING | utils.fetcher | Fetch failed for AARTIIND (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:26,539 | INFO | utils.fetcher | Retry 2 for AARTIIND (equity)
+2025-07-11 11:48:26,540 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:26,541 | INFO | utils.fetcher | Retry 2 for AUBANK (equity)
+2025-07-11 11:48:26,714 | WARNING | utils.fetcher | Fetch failed for ADANIGREEN (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:26,715 | INFO | utils.fetcher | Retry 2 for ADANIGREEN (equity)
+2025-07-11 11:48:26,763 | WARNING | utils.fetcher | Fetch failed for ANGELONE (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:26,764 | INFO | utils.fetcher | Retry 2 for ANGELONE (equity)
+2025-07-11 11:48:26,870 | WARNING | utils.fetcher | Fetch failed for APLAPOLLO (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:26,870 | INFO | utils.fetcher | Retry 2 for APLAPOLLO (equity)
+2025-07-11 11:48:26,915 | WARNING | utils.fetcher | Fetch failed for ADANIENT (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:26,916 | INFO | utils.fetcher | Retry 2 for ADANIENT (equity)
+2025-07-11 11:48:27,068 | WARNING | utils.fetcher | Fetch failed for AMBUJACEM (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:27,069 | INFO | utils.fetcher | Retry 2 for AMBUJACEM (equity)
+2025-07-11 11:48:27,105 | WARNING | utils.fetcher | Fetch failed for ADANIPORTS (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:27,105 | INFO | utils.fetcher | Retry 2 for ADANIPORTS (equity)
+2025-07-11 11:48:27,143 | WARNING | utils.fetcher | Fetch failed for AMBER (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:27,143 | INFO | utils.fetcher | Retry 2 for AMBER (equity)
+2025-07-11 11:48:27,240 | WARNING | utils.fetcher | Fetch failed for ADANIENSOL (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:27,241 | INFO | utils.fetcher | Retry 2 for ADANIENSOL (equity)
+2025-07-11 11:48:27,371 | WARNING | utils.fetcher | Fetch failed for ALKEM (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:27,371 | INFO | utils.fetcher | Retry 2 for ALKEM (equity)
+2025-07-11 11:48:27,372 | WARNING | utils.fetcher | Fetch failed for ATGL (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:27,372 | INFO | utils.fetcher | Retry 2 for ATGL (equity)
+2025-07-11 11:48:27,410 | WARNING | utils.fetcher | Fetch failed for APOLLOHOSP (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:27,410 | INFO | utils.fetcher | Retry 2 for APOLLOHOSP (equity)
+2025-07-11 11:48:27,425 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:27,425 | INFO | utils.fetcher | Retry 2 for ACC (equity)
+2025-07-11 11:48:27,545 | WARNING | utils.fetcher | Fetch failed for ABCAPITAL (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:27,545 | INFO | utils.fetcher | Retry 2 for ABCAPITAL (equity)
+2025-07-11 11:48:28,017 | WARNING | utils.fetcher | Fetch failed for 360ONE (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:28,018 | INFO | utils.fetcher | Retry 2 for 360ONE (equity)
+2025-07-11 11:48:28,117 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:28,117 | INFO | utils.fetcher | Retry 2 for ABB (equity)
+2025-07-11 11:48:34,135 | WARNING | utils.fetcher | Fetch failed for ABFRL (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:34,135 | INFO | utils.fetcher | Retry 3 for ABFRL (equity)
+2025-07-11 11:48:34,690 | WARNING | utils.fetcher | Fetch failed for ASIANPAINT (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:34,691 | INFO | utils.fetcher | Retry 3 for ASIANPAINT (equity)
+2025-07-11 11:48:34,972 | WARNING | utils.fetcher | Fetch failed for ADANIPORTS (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:34,972 | INFO | utils.fetcher | Retry 3 for ADANIPORTS (equity)
+2025-07-11 11:48:34,994 | WARNING | utils.fetcher | Fetch failed for AMBER (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:34,994 | INFO | utils.fetcher | Retry 3 for AMBER (equity)
+2025-07-11 11:48:35,081 | WARNING | utils.fetcher | Fetch failed for AARTIIND (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:35,081 | INFO | utils.fetcher | Retry 3 for AARTIIND (equity)
+2025-07-11 11:48:35,145 | WARNING | utils.fetcher | Fetch failed for ATGL (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:35,145 | INFO | utils.fetcher | Retry 3 for ATGL (equity)
+2025-07-11 11:48:35,170 | WARNING | utils.fetcher | Fetch failed for ADANIGREEN (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:35,170 | INFO | utils.fetcher | Retry 3 for ADANIGREEN (equity)
+2025-07-11 11:48:35,228 | WARNING | utils.fetcher | Fetch failed for APOLLOHOSP (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:35,228 | INFO | utils.fetcher | Retry 3 for APOLLOHOSP (equity)
+2025-07-11 11:48:35,349 | WARNING | utils.fetcher | Fetch failed for ALKEM (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:35,349 | INFO | utils.fetcher | Retry 3 for ALKEM (equity)
+2025-07-11 11:48:35,382 | WARNING | utils.fetcher | Fetch failed for ADANIENSOL (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:35,382 | INFO | utils.fetcher | Retry 3 for ADANIENSOL (equity)
+2025-07-11 11:48:35,386 | WARNING | utils.fetcher | Fetch failed for ASHOKLEY (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:35,386 | INFO | utils.fetcher | Retry 3 for ASHOKLEY (equity)
+2025-07-11 11:48:35,396 | WARNING | utils.fetcher | Fetch failed for ANGELONE (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:35,397 | INFO | utils.fetcher | Retry 3 for ANGELONE (equity)
+2025-07-11 11:48:35,480 | WARNING | utils.fetcher | Fetch failed for ADANIENT (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:35,481 | INFO | utils.fetcher | Retry 3 for ADANIENT (equity)
+2025-07-11 11:48:35,645 | WARNING | utils.fetcher | Fetch failed for APLAPOLLO (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:35,645 | INFO | utils.fetcher | Retry 3 for APLAPOLLO (equity)
+2025-07-11 11:48:35,751 | WARNING | utils.fetcher | Fetch failed for AUBANK (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:35,752 | INFO | utils.fetcher | Retry 3 for AUBANK (equity)
+2025-07-11 11:48:35,803 | WARNING | utils.fetcher | Fetch failed for ABCAPITAL (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:35,803 | INFO | utils.fetcher | Retry 3 for ABCAPITAL (equity)
+2025-07-11 11:48:36,079 | WARNING | utils.fetcher | Fetch failed for AMBUJACEM (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:36,079 | INFO | utils.fetcher | Retry 3 for AMBUJACEM (equity)
+2025-07-11 11:48:36,131 | WARNING | utils.fetcher | Fetch failed for ABB (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:36,131 | INFO | utils.fetcher | Retry 3 for ABB (equity)
+2025-07-11 11:48:36,176 | WARNING | utils.fetcher | Fetch failed for ACC (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:36,176 | INFO | utils.fetcher | Retry 3 for ACC (equity)
+2025-07-11 11:48:37,060 | WARNING | utils.fetcher | Fetch failed for 360ONE (equity) with proxy https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000: 407, message='Proxy Authentication Required', url='https://sph5db45ap:6jh6YdyL1_lurjx6GB@in.decodo.com:10000'
+2025-07-11 11:48:37,061 | INFO | utils.fetcher | Retry 3 for 360ONE (equity)
+2025-07-11 12:38:11,411 | WARNING | utils.fetcher | Fetch failed for BHARTIARTL (equity) with proxy https://sp43xsvop5:CrylD86py=e4ZxQl7m@in.decodo.com:10000: 
+2025-07-11 12:38:11,412 | INFO | utils.fetcher | Retry 1 for BHARTIARTL (equity)
+2025-07-11 12:38:11,413 | WARNING | utils.fetcher | Fetch failed for BSE (equity) with proxy https://sp43xsvop5:CrylD86py=e4ZxQl7m@in.decodo.com:10000: 
+2025-07-11 12:38:11,413 | INFO | utils.fetcher | Retry 1 for BSE (equity)
+2025-07-11 12:44:22,578 | WARNING | utils.fetcher | Fetch failed for BANDHANBNK (equity) with proxy https://sp43xsvop5:CrylD86py=e4ZxQl7m@in.decodo.com:10000: 522, message='status code 522', url='https://sp43xsvop5:CrylD86py=e4ZxQl7m@in.decodo.com:10000'
+2025-07-11 12:44:22,579 | INFO | utils.fetcher | Retry 1 for BANDHANBNK (equity)
+2025-07-11 12:44:34,418 | WARNING | utils.fetcher | Fetch failed for ASHOKLEY (equity) with proxy https://sp43xsvop5:CrylD86py=e4ZxQl7m@in.decodo.com:10000: 
+2025-07-11 12:44:34,418 | INFO | utils.fetcher | Retry 1 for ASHOKLEY (equity)

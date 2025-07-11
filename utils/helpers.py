@@ -144,24 +144,34 @@ def extract_download_datetime_underlying(json_object):
         logger.warning("No timestamp found for stock.")
         return None, None, underlying
 
-
-
-def save_option_chain_snapshot_gcs(bucket_name, download_date, download_time, snapshot_id, stock, json_object):
+def save_option_chain_snapshot_local(temp_dir, download_date, download_time, snapshot_id, stock, json_object):
     """
-    Saves the JSON object to a GCS bucket instead of local disk.
+    Saves the JSON object to a local temporary directory instead of uploading to GCS.
     """
-    # Construct filename
+    date_dir = os.path.join(temp_dir, download_date, str(snapshot_id))
+    os.makedirs(date_dir, exist_ok=True)
+
     json_filename = f"{stock}_{snapshot_id}_{download_date}_{download_time}.json"
-    blob_path = f"{download_date}/{snapshot_id}/{json_filename}"
+    json_path = os.path.join(date_dir, json_filename)
 
-    # Upload JSON as bytes
+    with open(json_path, 'w') as f:
+        json.dump(json_object, f)
+
+def batch_upload_to_gcs(bucket_name, local_base_dir):
+    """
+    Recursively uploads all files in local_base_dir to GCS bucket, preserving folder structure.
+    """
     client = storage.Client()
     bucket = client.bucket(bucket_name)
-    blob = bucket.blob(blob_path)
 
-    data = json.dumps(json_object).encode('utf-8')
-    blob.upload_from_string(data, content_type='application/json')
+    for root, _, files in os.walk(local_base_dir):
+        for file in files:
+            local_path = os.path.join(root, file)
+            # Construct relative path for GCS
+            rel_path = os.path.relpath(local_path, local_base_dir)
+            blob = bucket.blob(rel_path)
 
+            blob.upload_from_filename(local_path, content_type='application/json')
 
 
 def create_snapshot_df(snapshot_id, stock, download_date, download_time, underlying_val):

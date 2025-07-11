@@ -5,8 +5,9 @@ from utils.fetcher import process_batch
 from utils.helpers import (
     extract_option_chain_by_expiry,
     extract_download_datetime_underlying,
-    save_option_chain_snapshot_gcs,
-    create_snapshot_df
+    batch_upload_to_gcs,
+    create_snapshot_df,
+    save_option_chain_snapshot_local
 )
 from utils.parser import process_option_chain_data
 from utils.database import insert_in_database, get_latest_snapshot_id, engine, create_required_tables, get_previous_datetime
@@ -14,6 +15,8 @@ from utils.logger import get_logger
 import time
 from collections import defaultdict
 import aiohttp
+import shutil
+
 
 logger = get_logger(__name__)
 
@@ -43,14 +46,14 @@ async def process_result(stock, json_object, snapshot_id, symbol_type='equity'):
 
         # Save option chain snapshot
         await asyncio.to_thread(
-            save_option_chain_snapshot_gcs,
-            bucket_name="my-option-chain-data",  # your GCS bucket name
-            download_date=download_date,
-            download_time=download_time,
-            snapshot_id=snapshot_id,
-            stock=stock,
-            json_object=json_object
-        )
+        save_option_chain_snapshot_local,
+        temp_dir="temp_snapshots",
+        download_date=download_date,
+        download_time=download_time,
+        snapshot_id=snapshot_id,
+        stock=stock,
+        json_object=json_object
+    )
 
         # Process option chain data
         oc_data = await asyncio.to_thread(extract_option_chain_by_expiry, json_object)
@@ -70,7 +73,7 @@ async def process_result(stock, json_object, snapshot_id, symbol_type='equity'):
             download_time,
             underlying_val
         )
-        
+
         if not snapshot_df.empty:
             await asyncio.to_thread(insert_in_database, snapshot_df, 'optionchain_snapshots')
         else:
@@ -140,6 +143,9 @@ async def main():
             process_results = await asyncio.gather(
                 *(process_result(stock, json_object, snapshot_id, symbol_type) for stock, json_object, symbol_type in successful_results)
             )
+
+            await asyncio.to_thread(batch_upload_to_gcs, "my-option-chain-data", "temp_snapshots")
+            shutil.rmtree("temp_snapshots", ignore_errors=True)
 
             # Update status tracking
             for result in process_results:

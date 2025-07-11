@@ -230,3 +230,176 @@
 2025-07-10 16:33:12,305 | INFO | __main__ | TOTAL FETCH TIME : 9.98 SECONDS ,  TOTAL PROCESS TIME : 0.11 SECONDS , TOTAL TIME : 10.09 SECONDS
 2025-07-10 16:33:12,305 | INFO | __main__ | SLEEPING FOR 49.91 SECONDS
 2025-07-10 16:33:12,306 | INFO | __main__ | ==================================================
+2025-07-11 11:27:43,075 | INFO | __main__ | Starting main execution...
+2025-07-11 11:27:43,695 | INFO | __main__ | Starting with snapshot ID 3 (last was 2)
+2025-07-11 11:28:10,411 | INFO | __main__ | ==================================================
+2025-07-11 11:28:10,412 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 3:
+2025-07-11 11:28:10,413 | INFO | __main__ | TOTAL STOCKS: 20 | TOTAL SUCCESS: 20 | TOTAL FAILED: 0 | TOTAL SKIPPED: 0
+2025-07-11 11:28:10,413 | INFO | __main__ | FETCH SUCCESS : 20 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-11 11:28:10,413 | INFO | __main__ | TOTAL FETCH TIME : 17.66 SECONDS ,  TOTAL PROCESS TIME : 9.06 SECONDS , TOTAL TIME : 26.72 SECONDS
+2025-07-11 11:28:10,413 | INFO | __main__ | SLEEPING FOR 33.28 SECONDS
+2025-07-11 11:28:10,413 | INFO | __main__ | ==================================================
+2025-07-11 11:29:09,038 | INFO | __main__ | ==================================================
+2025-07-11 11:29:09,039 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 4:
+2025-07-11 11:29:09,039 | INFO | __main__ | TOTAL STOCKS: 20 | TOTAL SUCCESS: 16 | TOTAL FAILED: 0 | TOTAL SKIPPED: 4
+2025-07-11 11:29:09,039 | INFO | __main__ | FETCH SUCCESS : 20 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-11 11:29:09,040 | INFO | __main__ | SKIPPED STOCKS: ADANIGREEN, ABFRL, APOLLOHOSP, ASHOKLEY
+2025-07-11 11:29:09,040 | INFO | __main__ | TOTAL FETCH TIME : 18.09 SECONDS ,  TOTAL PROCESS TIME : 7.25 SECONDS , TOTAL TIME : 25.34 SECONDS
+2025-07-11 11:29:09,040 | INFO | __main__ | SLEEPING FOR 34.66 SECONDS
+2025-07-11 11:29:09,040 | INFO | __main__ | ==================================================
+2025-07-11 11:47:15,828 | INFO | __main__ | Starting main execution...
+2025-07-11 11:47:16,432 | INFO | __main__ | Starting with snapshot ID 6 (last was 5)
+2025-07-11 11:48:14,191 | INFO | __main__ | ==================================================
+2025-07-11 11:48:14,192 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 6:
+2025-07-11 11:48:14,192 | INFO | __main__ | TOTAL STOCKS: 20 | TOTAL SUCCESS: 19 | TOTAL FAILED: 1 | TOTAL SKIPPED: 0
+2025-07-11 11:48:14,192 | INFO | __main__ | FETCH SUCCESS : 19 | FETCH FAILED: 1 | PROCESS FAILED: 0
+2025-07-11 11:48:14,193 | INFO | __main__ | FETCH FAILURE DETAILS :
+2025-07-11 11:48:14,193 | ERROR | __main__ | • AMBUJACEM: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:14,193 | INFO | __main__ | TOTAL FETCH TIME : 36.44 SECONDS ,  TOTAL PROCESS TIME : 21.32 SECONDS , TOTAL TIME : 57.76 SECONDS
+2025-07-11 11:48:14,193 | INFO | __main__ | SLEEPING FOR 2.24 SECONDS
+2025-07-11 11:48:14,193 | INFO | __main__ | ==================================================
+2025-07-11 11:48:43,067 | INFO | __main__ | ==================================================
+2025-07-11 11:48:43,068 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 7:
+2025-07-11 11:48:43,068 | INFO | __main__ | TOTAL STOCKS: 20 | TOTAL SUCCESS: 0 | TOTAL FAILED: 20 | TOTAL SKIPPED: 0
+2025-07-11 11:48:43,068 | INFO | __main__ | FETCH SUCCESS : 0 | FETCH FAILED: 20 | PROCESS FAILED: 0
+2025-07-11 11:48:43,069 | INFO | __main__ | FETCH FAILURE DETAILS :
+2025-07-11 11:48:43,069 | ERROR | __main__ | • 360ONE: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,069 | ERROR | __main__ | • ABB: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,069 | ERROR | __main__ | • ACC: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,069 | ERROR | __main__ | • APLAPOLLO: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,069 | ERROR | __main__ | • AUBANK: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,069 | ERROR | __main__ | • AARTIIND: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,069 | ERROR | __main__ | • ADANIENSOL: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,069 | ERROR | __main__ | • ADANIENT: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,070 | ERROR | __main__ | • ADANIGREEN: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,070 | ERROR | __main__ | • ADANIPORTS: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,070 | ERROR | __main__ | • ATGL: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,070 | ERROR | __main__ | • ABCAPITAL: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,070 | ERROR | __main__ | • ABFRL: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,070 | ERROR | __main__ | • ALKEM: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,070 | ERROR | __main__ | • AMBER: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,070 | ERROR | __main__ | • AMBUJACEM: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,070 | ERROR | __main__ | • ANGELONE: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,070 | ERROR | __main__ | • APOLLOHOSP: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,071 | ERROR | __main__ | • ASHOKLEY: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,071 | ERROR | __main__ | • ASIANPAINT: ['Fetch failed: Could not retrieve data']
+2025-07-11 11:48:43,071 | INFO | __main__ | TOTAL FETCH TIME : 26.63 SECONDS ,  TOTAL PROCESS TIME : 0.00 SECONDS , TOTAL TIME : 26.64 SECONDS
+2025-07-11 11:48:43,071 | INFO | __main__ | SLEEPING FOR 33.36 SECONDS
+2025-07-11 11:48:43,071 | INFO | __main__ | ==================================================
+2025-07-11 12:28:48,415 | INFO | __main__ | Starting main execution...
+2025-07-11 12:28:49,034 | INFO | __main__ | Starting with snapshot ID 7 (last was 6)
+2025-07-11 12:29:09,184 | INFO | __main__ | ==================================================
+2025-07-11 12:29:09,186 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 7:
+2025-07-11 12:29:09,186 | INFO | __main__ | TOTAL STOCKS: 10 | TOTAL SUCCESS: 3 | TOTAL FAILED: 7 | TOTAL SKIPPED: 0
+2025-07-11 12:29:09,186 | INFO | __main__ | FETCH SUCCESS : 10 | FETCH FAILED: 0 | PROCESS FAILED: 7
+2025-07-11 12:29:09,186 | INFO | __main__ | PROCESS FAILURE DETAILS:
+2025-07-11 12:29:09,187 | ERROR | __main__ | • 360ONE: Error processing 360ONE (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/6/ALKEM_6_2025-07-11_11:45:49.json'
+2025-07-11 12:29:09,187 | ERROR | __main__ | • ABB: Error processing ABB (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/6/AARTIIND_6_2025-07-11_11:46:49.json'
+2025-07-11 12:29:09,187 | ERROR | __main__ | • AUBANK: Error processing AUBANK (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/6/AARTIIND_6_2025-07-11_11:46:49.json'
+2025-07-11 12:29:09,187 | ERROR | __main__ | • AARTIIND: Error processing AARTIIND (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/6/ATGL_6_2025-07-11_11:46:49.json'
+2025-07-11 12:29:09,187 | ERROR | __main__ | • ADANIENT: Error processing ADANIENT (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/6/ASIANPAINT_6_2025-07-11_11:45:49.json'
+2025-07-11 12:29:09,187 | ERROR | __main__ | • ADANIGREEN: Error processing ADANIGREEN (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/6/ATGL_6_2025-07-11_11:46:49.json'
+2025-07-11 12:29:09,188 | ERROR | __main__ | • ADANIPORTS: Error processing ADANIPORTS (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/6/APLAPOLLO_6_2025-07-11_11:46:49.json'
+2025-07-11 12:29:09,188 | INFO | __main__ | TOTAL FETCH TIME : 9.30 SECONDS ,  TOTAL PROCESS TIME : 10.86 SECONDS , TOTAL TIME : 20.15 SECONDS
+2025-07-11 12:29:09,188 | INFO | __main__ | SLEEPING FOR 39.85 SECONDS
+2025-07-11 12:29:09,188 | INFO | __main__ | ==================================================
+2025-07-11 12:30:06,715 | INFO | __main__ | ==================================================
+2025-07-11 12:30:06,717 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 8:
+2025-07-11 12:30:06,717 | INFO | __main__ | TOTAL STOCKS: 10 | TOTAL SUCCESS: 2 | TOTAL FAILED: 8 | TOTAL SKIPPED: 0
+2025-07-11 12:30:06,717 | INFO | __main__ | FETCH SUCCESS : 10 | FETCH FAILED: 0 | PROCESS FAILED: 8
+2025-07-11 12:30:06,717 | INFO | __main__ | PROCESS FAILURE DETAILS:
+2025-07-11 12:30:06,717 | ERROR | __main__ | • ABB: Error processing ABB (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/8/ADANIENSOL_8_2025-07-11_12:28:50.json'
+2025-07-11 12:30:06,717 | ERROR | __main__ | • ACC: Error processing ACC (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/8/ADANIENT_8_2025-07-11_12:28:20.json'
+2025-07-11 12:30:06,718 | ERROR | __main__ | • APLAPOLLO: Error processing APLAPOLLO (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/8/ADANIENT_8_2025-07-11_12:28:20.json'
+2025-07-11 12:30:06,718 | ERROR | __main__ | • AUBANK: Error processing AUBANK (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/8/ADANIENSOL_8_2025-07-11_12:28:50.json'
+2025-07-11 12:30:06,719 | ERROR | __main__ | • AARTIIND: Error processing AARTIIND (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/8/AUBANK_8_2025-07-11_12:29:20.json'
+2025-07-11 12:30:06,719 | ERROR | __main__ | • ADANIENT: Error processing ADANIENT (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/8/APLAPOLLO_8_2025-07-11_12:28:50.json'
+2025-07-11 12:30:06,719 | ERROR | __main__ | • ADANIGREEN: Error processing ADANIGREEN (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/8/APLAPOLLO_8_2025-07-11_12:28:50.json'
+2025-07-11 12:30:06,720 | ERROR | __main__ | • ADANIPORTS: Error processing ADANIPORTS (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/8/ADANIENSOL_8_2025-07-11_12:28:50.json'
+2025-07-11 12:30:06,720 | INFO | __main__ | TOTAL FETCH TIME : 10.15 SECONDS ,  TOTAL PROCESS TIME : 7.54 SECONDS , TOTAL TIME : 17.68 SECONDS
+2025-07-11 12:30:06,720 | INFO | __main__ | SLEEPING FOR 42.32 SECONDS
+2025-07-11 12:30:06,720 | INFO | __main__ | ==================================================
+2025-07-11 12:31:06,472 | INFO | __main__ | ==================================================
+2025-07-11 12:31:06,473 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 9:
+2025-07-11 12:31:06,474 | INFO | __main__ | TOTAL STOCKS: 10 | TOTAL SUCCESS: 3 | TOTAL FAILED: 7 | TOTAL SKIPPED: 0
+2025-07-11 12:31:06,474 | INFO | __main__ | FETCH SUCCESS : 10 | FETCH FAILED: 0 | PROCESS FAILED: 7
+2025-07-11 12:31:06,474 | INFO | __main__ | PROCESS FAILURE DETAILS:
+2025-07-11 12:31:06,474 | ERROR | __main__ | • ACC: Error processing ACC (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/9/AARTIIND_9_2025-07-11_12:30:20.json'
+2025-07-11 12:31:06,474 | ERROR | __main__ | • APLAPOLLO: Error processing APLAPOLLO (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/9/AARTIIND_9_2025-07-11_12:30:20.json'
+2025-07-11 12:31:06,474 | ERROR | __main__ | • AUBANK: Error processing AUBANK (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/9/AARTIIND_9_2025-07-11_12:30:20.json'
+2025-07-11 12:31:06,474 | ERROR | __main__ | • ADANIENSOL: Error processing ADANIENSOL (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/9/AUBANK_9_2025-07-11_12:29:50.json'
+2025-07-11 12:31:06,476 | ERROR | __main__ | • ADANIENT: Error processing ADANIENT (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/9/AARTIIND_9_2025-07-11_12:30:20.json'
+2025-07-11 12:31:06,476 | ERROR | __main__ | • ADANIGREEN: Error processing ADANIGREEN (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/9/360ONE_9_2025-07-11_12:29:20.json'
+2025-07-11 12:31:06,476 | ERROR | __main__ | • ADANIPORTS: Error processing ADANIPORTS (equity): [Errno 2] No such file or directory: 'temp_snapshots/2025-07-11/9/ADANIENT_9_2025-07-11_12:29:20.json'
+2025-07-11 12:31:06,476 | INFO | __main__ | TOTAL FETCH TIME : 11.12 SECONDS ,  TOTAL PROCESS TIME : 6.32 SECONDS , TOTAL TIME : 17.44 SECONDS
+2025-07-11 12:31:06,477 | INFO | __main__ | SLEEPING FOR 42.56 SECONDS
+2025-07-11 12:31:06,477 | INFO | __main__ | ==================================================
+2025-07-11 12:32:21,590 | INFO | __main__ | Starting main execution...
+2025-07-11 12:32:22,520 | INFO | __main__ | Starting with snapshot ID 10 (last was 9)
+2025-07-11 12:32:44,335 | INFO | __main__ | ==================================================
+2025-07-11 12:32:44,335 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 10:
+2025-07-11 12:32:44,335 | INFO | __main__ | TOTAL STOCKS: 10 | TOTAL SUCCESS: 10 | TOTAL FAILED: 0 | TOTAL SKIPPED: 0
+2025-07-11 12:32:44,335 | INFO | __main__ | FETCH SUCCESS : 10 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-11 12:32:44,335 | INFO | __main__ | TOTAL FETCH TIME : 15.15 SECONDS ,  TOTAL PROCESS TIME : 6.67 SECONDS , TOTAL TIME : 21.82 SECONDS
+2025-07-11 12:32:44,336 | INFO | __main__ | SLEEPING FOR 38.18 SECONDS
+2025-07-11 12:32:44,336 | INFO | __main__ | ==================================================
+2025-07-11 12:33:38,797 | INFO | __main__ | ==================================================
+2025-07-11 12:33:38,798 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 11:
+2025-07-11 12:33:38,798 | INFO | __main__ | TOTAL STOCKS: 10 | TOTAL SUCCESS: 7 | TOTAL FAILED: 0 | TOTAL SKIPPED: 3
+2025-07-11 12:33:38,798 | INFO | __main__ | FETCH SUCCESS : 10 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-11 12:33:38,798 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, AARTIIND
+2025-07-11 12:33:38,798 | INFO | __main__ | TOTAL FETCH TIME : 11.68 SECONDS ,  TOTAL PROCESS TIME : 4.60 SECONDS , TOTAL TIME : 16.28 SECONDS
+2025-07-11 12:33:38,798 | INFO | __main__ | SLEEPING FOR 43.72 SECONDS
+2025-07-11 12:33:38,798 | INFO | __main__ | ==================================================
+2025-07-11 12:34:06,207 | INFO | __main__ | Starting main execution...
+2025-07-11 12:34:06,804 | INFO | __main__ | Starting with snapshot ID 12 (last was 11)
+2025-07-11 12:34:35,982 | INFO | __main__ | ==================================================
+2025-07-11 12:34:35,983 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 12:
+2025-07-11 12:34:35,983 | INFO | __main__ | TOTAL STOCKS: 50 | TOTAL SUCCESS: 48 | TOTAL FAILED: 0 | TOTAL SKIPPED: 2
+2025-07-11 12:34:35,983 | INFO | __main__ | FETCH SUCCESS : 50 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-11 12:34:35,983 | INFO | __main__ | SKIPPED STOCKS: AUBANK, ADANIENT
+2025-07-11 12:34:35,983 | INFO | __main__ | TOTAL FETCH TIME : 13.80 SECONDS ,  TOTAL PROCESS TIME : 15.37 SECONDS , TOTAL TIME : 29.17 SECONDS
+2025-07-11 12:34:35,983 | INFO | __main__ | SLEEPING FOR 30.83 SECONDS
+2025-07-11 12:34:35,983 | INFO | __main__ | ==================================================
+2025-07-11 12:37:49,272 | INFO | __main__ | Starting main execution...
+2025-07-11 12:37:49,878 | INFO | __main__ | Starting with snapshot ID 13 (last was 12)
+2025-07-11 12:38:40,385 | INFO | __main__ | ==================================================
+2025-07-11 12:38:40,386 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 13:
+2025-07-11 12:38:40,386 | INFO | __main__ | TOTAL STOCKS: 50 | TOTAL SUCCESS: 50 | TOTAL FAILED: 0 | TOTAL SKIPPED: 0
+2025-07-11 12:38:40,386 | INFO | __main__ | FETCH SUCCESS : 50 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-11 12:38:40,386 | INFO | __main__ | TOTAL FETCH TIME : 29.43 SECONDS ,  TOTAL PROCESS TIME : 21.08 SECONDS , TOTAL TIME : 50.51 SECONDS
+2025-07-11 12:38:40,386 | INFO | __main__ | SLEEPING FOR 9.49 SECONDS
+2025-07-11 12:38:40,387 | INFO | __main__ | ==================================================
+2025-07-11 12:39:23,569 | INFO | __main__ | ==================================================
+2025-07-11 12:39:23,571 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 14:
+2025-07-11 12:39:23,571 | INFO | __main__ | TOTAL STOCKS: 50 | TOTAL SUCCESS: 45 | TOTAL FAILED: 0 | TOTAL SKIPPED: 5
+2025-07-11 12:39:23,571 | INFO | __main__ | FETCH SUCCESS : 50 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-11 12:39:23,572 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABFRL, ANGELONE, BSE, CHOLAFIN
+2025-07-11 12:39:23,572 | INFO | __main__ | TOTAL FETCH TIME : 15.78 SECONDS ,  TOTAL PROCESS TIME : 17.91 SECONDS , TOTAL TIME : 33.69 SECONDS
+2025-07-11 12:39:23,572 | INFO | __main__ | SLEEPING FOR 26.31 SECONDS
+2025-07-11 12:39:23,572 | INFO | __main__ | ==================================================
+2025-07-11 12:40:17,160 | INFO | __main__ | ==================================================
+2025-07-11 12:40:17,161 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 15:
+2025-07-11 12:40:17,161 | INFO | __main__ | TOTAL STOCKS: 50 | TOTAL SUCCESS: 39 | TOTAL FAILED: 0 | TOTAL SKIPPED: 11
+2025-07-11 12:40:17,161 | INFO | __main__ | FETCH SUCCESS : 50 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-11 12:40:17,162 | INFO | __main__ | SKIPPED STOCKS: ACC, APLAPOLLO, AARTIIND, ADANIENT, APOLLOHOSP, ASHOKLEY, BDL, BHARTIARTL, BOSCHLTD, BRITANNIA, CDSL
+2025-07-11 12:40:17,162 | INFO | __main__ | TOTAL FETCH TIME : 11.22 SECONDS ,  TOTAL PROCESS TIME : 16.06 SECONDS , TOTAL TIME : 27.28 SECONDS
+2025-07-11 12:40:17,162 | INFO | __main__ | SLEEPING FOR 32.72 SECONDS
+2025-07-11 12:40:17,162 | INFO | __main__ | ==================================================
+2025-07-11 12:44:17,119 | INFO | __main__ | Starting main execution...
+2025-07-11 12:44:17,763 | INFO | __main__ | Starting with snapshot ID 16 (last was 15)
+2025-07-11 12:45:00,166 | INFO | __main__ | ==================================================
+2025-07-11 12:45:00,166 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 16:
+2025-07-11 12:45:00,166 | INFO | __main__ | TOTAL STOCKS: 50 | TOTAL SUCCESS: 50 | TOTAL FAILED: 0 | TOTAL SKIPPED: 0
+2025-07-11 12:45:00,166 | INFO | __main__ | FETCH SUCCESS : 50 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-11 12:45:00,166 | INFO | __main__ | TOTAL FETCH TIME : 25.70 SECONDS ,  TOTAL PROCESS TIME : 16.71 SECONDS , TOTAL TIME : 42.40 SECONDS
+2025-07-11 12:45:00,167 | INFO | __main__ | SLEEPING FOR 17.60 SECONDS
+2025-07-11 12:45:00,167 | INFO | __main__ | ==================================================
+2025-07-11 12:45:52,082 | INFO | __main__ | ==================================================
+2025-07-11 12:45:52,083 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 17:
+2025-07-11 12:45:52,083 | INFO | __main__ | TOTAL STOCKS: 50 | TOTAL SUCCESS: 43 | TOTAL FAILED: 0 | TOTAL SKIPPED: 7
+2025-07-11 12:45:52,083 | INFO | __main__ | FETCH SUCCESS : 50 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-11 12:45:52,083 | INFO | __main__ | SKIPPED STOCKS: ASHOKLEY, ASTRAL, AXISBANK, BAJAJFINSV, BANDHANBNK, BHARTIARTL, CHAMBLFERT
+2025-07-11 12:45:52,084 | INFO | __main__ | TOTAL FETCH TIME : 19.57 SECONDS ,  TOTAL PROCESS TIME : 14.75 SECONDS , TOTAL TIME : 34.32 SECONDS
+2025-07-11 12:45:52,084 | INFO | __main__ | SLEEPING FOR 25.68 SECONDS
+2025-07-11 12:45:52,084 | INFO | __main__ | ==================================================
