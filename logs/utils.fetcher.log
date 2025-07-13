@@ -164,3 +164,11 @@
 2025-07-11 12:44:22,579 | INFO | utils.fetcher | Retry 1 for BANDHANBNK (equity)
 2025-07-11 12:44:34,418 | WARNING | utils.fetcher | Fetch failed for ASHOKLEY (equity) with proxy https://sp43xsvop5:CrylD86py=e4ZxQl7m@in.decodo.com:10000: 
 2025-07-11 12:44:34,418 | INFO | utils.fetcher | Retry 1 for ASHOKLEY (equity)
+2025-07-11 14:45:23,384 | WARNING | utils.fetcher | Fetch failed for CIPLA (equity) with proxy https://sp43xsvop5:CrylD86py=e4ZxQl7m@in.decodo.com:10000: 522, message='status code 522', url='https://sp43xsvop5:CrylD86py=e4ZxQl7m@in.decodo.com:10000'
+2025-07-11 14:45:23,386 | INFO | utils.fetcher | Retry 1 for CIPLA (equity)
+2025-07-11 14:45:23,539 | WARNING | utils.fetcher | Fetch failed for BAJFINANCE (equity) with proxy https://sp43xsvop5:CrylD86py=e4ZxQl7m@in.decodo.com:10000: 522, message='status code 522', url='https://sp43xsvop5:CrylD86py=e4ZxQl7m@in.decodo.com:10000'
+2025-07-11 14:45:23,540 | INFO | utils.fetcher | Retry 1 for BAJFINANCE (equity)
+2025-07-11 14:45:28,219 | WARNING | utils.fetcher | Fetch failed for DMART (equity) with proxy https://sp43xsvop5:CrylD86py=e4ZxQl7m@in.decodo.com:10000: 522, message='status code 522', url='https://sp43xsvop5:CrylD86py=e4ZxQl7m@in.decodo.com:10000'
+2025-07-11 14:45:28,219 | INFO | utils.fetcher | Retry 1 for DMART (equity)
+2025-07-11 14:45:40,661 | WARNING | utils.fetcher | Fetch failed for CHOLAFIN (equity) with proxy https://sp43xsvop5:CrylD86py=e4ZxQl7m@in.decodo.com:10000: 
+2025-07-11 14:45:40,661 | INFO | utils.fetcher | Retry 1 for CHOLAFIN (equity)

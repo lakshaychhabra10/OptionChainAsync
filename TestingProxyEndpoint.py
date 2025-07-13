@@ -6,10 +6,19 @@ import ssl
 import traceback
 
 PROXIES = [
-    "https://spk6s8992j:a5xvo1~bNyvHzc87IE@in.decodo.com:10000",
+    "http://iqoopiiq:x8z7nvi33uls@38.154.227.167:5868",
+    "http://iqoopiiq:x8z7nvi33uls@92.113.242.158:6742",
+    "http://iqoopiiq:x8z7nvi33uls@23.95.150.145:6114",
+    "http://iqoopiiq:x8z7nvi33uls@198.23.239.134:6540",
+    "http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712",
+    "http://iqoopiiq:x8z7nvi33uls@107.172.163.27:6543",
+    "http://iqoopiiq:x8z7nvi33uls@216.10.27.159:6837",
+    "http://iqoopiiq:x8z7nvi33uls@136.0.207.84:6661",
+    "http://iqoopiiq:x8z7nvi33uls@142.147.128.93:6593",
+    "http://iqoopiiq:x8z7nvi33uls@206.41.172.74:6634"
 ]
 
-PROXIES *= 100  # Repeat the list to simulate a larger set of proxies
+# PROXIES *= 100  # Repeat the list to simulate a larger set of proxies
 
 STOCK = "RELIANCE"
 BASE_URL = "https://www.nseindia.com"
