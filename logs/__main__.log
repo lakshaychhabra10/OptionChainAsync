@@ -413,3 +413,83 @@
 2025-07-11 14:46:05,912 | INFO | __main__ | SLEEPING FOR 12.55 SECONDS
 2025-07-11 14:46:05,912 | INFO | __main__ | ==================================================
 2025-07-11 14:46:15,467 | INFO | __main__ | Program terminated by user
+2025-07-14 11:15:37,729 | INFO | __main__ | Starting main execution...
+2025-07-14 11:15:38,447 | INFO | __main__ | Starting with snapshot ID 27 (last was 26)
+2025-07-14 11:16:09,530 | INFO | __main__ | ==================================================
+2025-07-14 11:16:09,531 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 27:
+2025-07-14 11:16:09,531 | INFO | __main__ | TOTAL STOCKS: 10 | TOTAL SUCCESS: 9 | TOTAL FAILED: 1 | TOTAL SKIPPED: 0
+2025-07-14 11:16:09,531 | INFO | __main__ | FETCH SUCCESS : 9 | FETCH FAILED: 1 | PROCESS FAILED: 0
+2025-07-14 11:16:09,531 | INFO | __main__ | FETCH FAILURE DETAILS :
+2025-07-14 11:16:09,532 | ERROR | __main__ | • ADANIENSOL: ['Fetch failed: Could not retrieve data']
+2025-07-14 11:16:09,532 | INFO | __main__ | TOTAL FETCH TIME : 25.15 SECONDS ,  TOTAL PROCESS TIME : 5.93 SECONDS , TOTAL TIME : 31.08 SECONDS
+2025-07-14 11:16:09,532 | INFO | __main__ | SLEEPING FOR 28.92 SECONDS
+2025-07-14 11:16:09,532 | INFO | __main__ | ==================================================
+2025-07-14 11:16:51,923 | INFO | __main__ | ==================================================
+2025-07-14 11:16:51,924 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 28:
+2025-07-14 11:16:51,925 | INFO | __main__ | TOTAL STOCKS: 10 | TOTAL SUCCESS: 7 | TOTAL FAILED: 0 | TOTAL SKIPPED: 3
+2025-07-14 11:16:51,925 | INFO | __main__ | FETCH SUCCESS : 10 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-14 11:16:51,925 | INFO | __main__ | SKIPPED STOCKS: ABB, AARTIIND, ADANIGREEN
+2025-07-14 11:16:51,925 | INFO | __main__ | TOTAL FETCH TIME : 8.88 SECONDS ,  TOTAL PROCESS TIME : 4.59 SECONDS , TOTAL TIME : 13.47 SECONDS
+2025-07-14 11:16:51,925 | INFO | __main__ | SLEEPING FOR 46.53 SECONDS
+2025-07-14 11:16:51,925 | INFO | __main__ | ==================================================
+2025-07-14 11:29:04,325 | INFO | __main__ | Starting main execution...
+2025-07-14 11:29:05,048 | INFO | __main__ | Starting with snapshot ID 29 (last was 28)
+2025-07-14 11:29:19,606 | INFO | __main__ | ==================================================
+2025-07-14 11:29:19,610 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 29:
+2025-07-14 11:29:19,610 | INFO | __main__ | TOTAL STOCKS: 10 | TOTAL SUCCESS: 10 | TOTAL FAILED: 0 | TOTAL SKIPPED: 0
+2025-07-14 11:29:19,610 | INFO | __main__ | FETCH SUCCESS : 10 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-14 11:29:19,611 | INFO | __main__ | TOTAL FETCH TIME : 8.74 SECONDS ,  TOTAL PROCESS TIME : 5.83 SECONDS , TOTAL TIME : 14.56 SECONDS
+2025-07-14 11:29:19,611 | INFO | __main__ | SLEEPING FOR 45.44 SECONDS
+2025-07-14 11:29:19,611 | INFO | __main__ | ==================================================
+2025-07-14 11:30:28,563 | INFO | __main__ | ==================================================
+2025-07-14 11:30:28,564 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 30:
+2025-07-14 11:30:28,564 | INFO | __main__ | TOTAL STOCKS: 10 | TOTAL SUCCESS: 6 | TOTAL FAILED: 0 | TOTAL SKIPPED: 4
+2025-07-14 11:30:28,564 | INFO | __main__ | FETCH SUCCESS : 10 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-14 11:30:28,565 | INFO | __main__ | SKIPPED STOCKS: 360ONE, ABB, ACC, ADANIENT
+2025-07-14 11:30:28,565 | INFO | __main__ | TOTAL FETCH TIME : 18.81 SECONDS ,  TOTAL PROCESS TIME : 4.70 SECONDS , TOTAL TIME : 23.51 SECONDS
+2025-07-14 11:30:28,565 | INFO | __main__ | SLEEPING FOR 36.49 SECONDS
+2025-07-14 11:30:28,565 | INFO | __main__ | ==================================================
+2025-07-14 11:31:20,684 | INFO | __main__ | ==================================================
+2025-07-14 11:31:20,685 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 31:
+2025-07-14 11:31:20,686 | INFO | __main__ | TOTAL STOCKS: 10 | TOTAL SUCCESS: 8 | TOTAL FAILED: 0 | TOTAL SKIPPED: 2
+2025-07-14 11:31:20,686 | INFO | __main__ | FETCH SUCCESS : 10 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-14 11:31:20,686 | INFO | __main__ | SKIPPED STOCKS: APLAPOLLO, ADANIGREEN
+2025-07-14 11:31:20,686 | INFO | __main__ | TOTAL FETCH TIME : 10.55 SECONDS ,  TOTAL PROCESS TIME : 5.08 SECONDS , TOTAL TIME : 15.63 SECONDS
+2025-07-14 11:31:20,686 | INFO | __main__ | SLEEPING FOR 44.37 SECONDS
+2025-07-14 11:31:20,686 | INFO | __main__ | ==================================================
+2025-07-14 11:37:51,811 | INFO | __main__ | Starting main execution...
+2025-07-14 11:37:52,497 | INFO | __main__ | Starting with snapshot ID 32 (last was 31)
+2025-07-14 11:38:23,535 | INFO | __main__ | ==================================================
+2025-07-14 11:38:23,536 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 32:
+2025-07-14 11:38:23,536 | INFO | __main__ | TOTAL STOCKS: 10 | TOTAL SUCCESS: 10 | TOTAL FAILED: 0 | TOTAL SKIPPED: 0
+2025-07-14 11:38:23,537 | INFO | __main__ | FETCH SUCCESS : 10 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-14 11:38:23,537 | INFO | __main__ | TOTAL FETCH TIME : 25.73 SECONDS ,  TOTAL PROCESS TIME : 5.31 SECONDS , TOTAL TIME : 31.04 SECONDS
+2025-07-14 11:38:23,537 | INFO | __main__ | SLEEPING FOR 28.96 SECONDS
+2025-07-14 11:38:23,537 | INFO | __main__ | ==================================================
+2025-07-14 11:39:12,727 | INFO | __main__ | ==================================================
+2025-07-14 11:39:12,729 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 33:
+2025-07-14 11:39:12,729 | INFO | __main__ | TOTAL STOCKS: 10 | TOTAL SUCCESS: 8 | TOTAL FAILED: 0 | TOTAL SKIPPED: 2
+2025-07-14 11:39:12,729 | INFO | __main__ | FETCH SUCCESS : 10 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-14 11:39:12,729 | INFO | __main__ | SKIPPED STOCKS: ADANIENT, ADANIPORTS
+2025-07-14 11:39:12,729 | INFO | __main__ | TOTAL FETCH TIME : 15.55 SECONDS ,  TOTAL PROCESS TIME : 4.68 SECONDS , TOTAL TIME : 20.23 SECONDS
+2025-07-14 11:39:12,730 | INFO | __main__ | SLEEPING FOR 39.77 SECONDS
+2025-07-14 11:39:12,730 | INFO | __main__ | ==================================================
+2025-07-14 11:40:14,435 | INFO | __main__ | ==================================================
+2025-07-14 11:40:14,436 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 34:
+2025-07-14 11:40:14,436 | INFO | __main__ | TOTAL STOCKS: 10 | TOTAL SUCCESS: 10 | TOTAL FAILED: 0 | TOTAL SKIPPED: 0
+2025-07-14 11:40:14,436 | INFO | __main__ | FETCH SUCCESS : 10 | FETCH FAILED: 0 | PROCESS FAILED: 0
+2025-07-14 11:40:14,437 | INFO | __main__ | TOTAL FETCH TIME : 16.38 SECONDS ,  TOTAL PROCESS TIME : 5.56 SECONDS , TOTAL TIME : 21.93 SECONDS
+2025-07-14 11:40:14,437 | INFO | __main__ | SLEEPING FOR 38.07 SECONDS
+2025-07-14 11:40:14,437 | INFO | __main__ | ==================================================
+2025-07-14 12:29:23,264 | INFO | __main__ | Starting main execution...
+2025-07-14 12:29:23,947 | INFO | __main__ | Starting with snapshot ID 35 (last was 34)
+2025-07-14 12:33:17,589 | INFO | __main__ | ==================================================
+2025-07-14 12:33:17,590 | INFO | __main__ | PROCESSING SUMMARY FOR SNAPSHOT 35:
+2025-07-14 12:33:17,590 | INFO | __main__ | TOTAL STOCKS: 229 | TOTAL SUCCESS: 227 | TOTAL FAILED: 2 | TOTAL SKIPPED: 0
+2025-07-14 12:33:17,590 | INFO | __main__ | FETCH SUCCESS : 227 | FETCH FAILED: 2 | PROCESS FAILED: 0
+2025-07-14 12:33:17,590 | INFO | __main__ | FETCH FAILURE DETAILS :
+2025-07-14 12:33:17,590 | ERROR | __main__ | • ATGL: ['Fetch failed: Could not retrieve data']
+2025-07-14 12:33:17,590 | ERROR | __main__ | • PETRONET: ['Fetch failed: Could not retrieve data']
+2025-07-14 12:33:17,590 | INFO | __main__ | TOTAL FETCH TIME : 171.50 SECONDS ,  TOTAL PROCESS TIME : 62.14 SECONDS , TOTAL TIME : 233.64 SECONDS
+2025-07-14 12:33:17,590 | INFO | __main__ | SLEEPING FOR 1.00 SECONDS
+2025-07-14 12:33:17,590 | INFO | __main__ | ==================================================

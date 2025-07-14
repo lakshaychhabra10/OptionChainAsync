@@ -14,7 +14,6 @@ from utils.database import insert_in_database, get_latest_snapshot_id, engine, c
 from utils.logger import get_logger
 import time
 from collections import defaultdict
-import aiohttp
 import shutil
 
 
@@ -112,7 +111,7 @@ async def main():
             
             try:
                 results = await process_batch(SYMBOLS, PROXY)
-            except (aiohttp.ClientError, asyncio.TimeoutError) as e:
+            except asyncio.TimeoutError as e:
                 logger.error(f"Network error fetching symbols: {e}")
                 results = []
             except Exception as e:

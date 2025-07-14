@@ -172,3 +172,175 @@
 2025-07-11 14:45:28,219 | INFO | utils.fetcher | Retry 1 for DMART (equity)
 2025-07-11 14:45:40,661 | WARNING | utils.fetcher | Fetch failed for CHOLAFIN (equity) with proxy https://sp43xsvop5:CrylD86py=e4ZxQl7m@in.decodo.com:10000: 
 2025-07-11 14:45:40,661 | INFO | utils.fetcher | Retry 1 for CHOLAFIN (equity)
+2025-07-14 11:15:43,492 | WARNING | utils.fetcher | Bad response 403 for ADANIENSOL (equity) via {'http': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712', 'https': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712'}
+2025-07-14 11:15:43,497 | INFO | utils.fetcher | Retry 1 for ADANIENSOL (equity)
+2025-07-14 11:15:50,006 | WARNING | utils.fetcher | Bad response 403 for ADANIENSOL (equity) via {'http': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712', 'https': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712'}
+2025-07-14 11:15:50,012 | INFO | utils.fetcher | Retry 2 for ADANIENSOL (equity)
+2025-07-14 11:15:57,592 | WARNING | utils.fetcher | Bad response 403 for ADANIENSOL (equity) via {'http': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712', 'https': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712'}
+2025-07-14 11:15:57,597 | INFO | utils.fetcher | Retry 3 for ADANIENSOL (equity)
+2025-07-14 11:30:10,829 | WARNING | utils.fetcher | Bad response 403 for ADANIPORTS (equity) via {'http': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712', 'https': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712'}
+2025-07-14 11:30:10,835 | INFO | utils.fetcher | Retry 1 for ADANIPORTS (equity) with new proxy
+2025-07-14 11:37:58,774 | WARNING | utils.fetcher | Bad response 403 for ADANIENSOL (equity) via {'http': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712', 'https': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712'}
+2025-07-14 11:37:58,782 | INFO | utils.fetcher | Retry 1 for ADANIENSOL (equity) with new proxy
+2025-07-14 11:38:05,587 | WARNING | utils.fetcher | Bad response 403 for ADANIENSOL (equity) via {'http': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712', 'https': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712'}
+2025-07-14 11:38:05,592 | INFO | utils.fetcher | Retry 2 for ADANIENSOL (equity) with new proxy
+2025-07-14 11:38:57,440 | WARNING | utils.fetcher | Bad response 403 for ABB (equity) via {'http': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712', 'https': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712'}
+2025-07-14 11:38:57,447 | INFO | utils.fetcher | Retry 1 for ABB (equity) with new proxy
+2025-07-14 11:39:56,507 | WARNING | utils.fetcher | Bad response 403 for ADANIENSOL (equity) via {'http': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712', 'https': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712'}
+2025-07-14 11:39:56,511 | INFO | utils.fetcher | Retry 1 for ADANIENSOL (equity) with new proxy
+2025-07-14 11:39:57,959 | WARNING | utils.fetcher | Bad response 403 for ADANIENT (equity) via {'http': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712', 'https': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712'}
+2025-07-14 11:39:57,961 | INFO | utils.fetcher | Retry 1 for ADANIENT (equity) with new proxy
+2025-07-14 11:39:58,136 | WARNING | utils.fetcher | Bad response 403 for 360ONE (equity) via {'http': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712', 'https': 'http://iqoopiiq:x8z7nvi33uls@207.244.217.165:6712'}
+2025-07-14 11:39:58,141 | INFO | utils.fetcher | Retry 1 for 360ONE (equity) with new proxy
+2025-07-14 12:29:28,552 | WARNING | utils.fetcher | Bad response 403 for ATGL (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@104.252.71.104:6032', 'https': 'http://aeizewrd:c7r90z945p6n@104.252.71.104:6032'}
+2025-07-14 12:29:28,559 | INFO | utils.fetcher | Retry 1 for ATGL (equity) with new proxy
+2025-07-14 12:29:29,894 | WARNING | utils.fetcher | Bad response 403 for ADANIPORTS (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.21.208.6:7323', 'https': 'http://aeizewrd:c7r90z945p6n@82.21.208.6:7323'}
+2025-07-14 12:29:29,898 | INFO | utils.fetcher | Retry 1 for ADANIPORTS (equity) with new proxy
+2025-07-14 12:29:40,661 | WARNING | utils.fetcher | Bad response 403 for BSE (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@207.244.217.230:6777', 'https': 'http://aeizewrd:c7r90z945p6n@207.244.217.230:6777'}
+2025-07-14 12:29:40,667 | INFO | utils.fetcher | Retry 1 for BSE (equity) with new proxy
+2025-07-14 12:29:43,861 | WARNING | utils.fetcher | Bad response 403 for BANKBARODA (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.27.254.81:6440', 'https': 'http://aeizewrd:c7r90z945p6n@82.27.254.81:6440'}
+2025-07-14 12:29:43,866 | INFO | utils.fetcher | Retry 1 for BANKBARODA (equity) with new proxy
+2025-07-14 12:29:44,018 | WARNING | utils.fetcher | Bad response 403 for BDL (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@45.131.103.206:6192', 'https': 'http://aeizewrd:c7r90z945p6n@45.131.103.206:6192'}
+2025-07-14 12:29:44,024 | INFO | utils.fetcher | Retry 1 for BDL (equity) with new proxy
+2025-07-14 12:29:45,130 | WARNING | utils.fetcher | Bad response 403 for BEL (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@185.135.10.188:5702', 'https': 'http://aeizewrd:c7r90z945p6n@185.135.10.188:5702'}
+2025-07-14 12:29:45,135 | INFO | utils.fetcher | Retry 1 for BEL (equity) with new proxy
+2025-07-14 12:29:56,068 | WARNING | utils.fetcher | Bad response 403 for COFORGE (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.26.235.105:7920', 'https': 'http://aeizewrd:c7r90z945p6n@82.26.235.105:7920'}
+2025-07-14 12:29:56,073 | INFO | utils.fetcher | Retry 1 for COFORGE (equity) with new proxy
+2025-07-14 12:29:58,782 | WARNING | utils.fetcher | Bad response 403 for COLPAL (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@45.131.103.206:6192', 'https': 'http://aeizewrd:c7r90z945p6n@45.131.103.206:6192'}
+2025-07-14 12:29:58,787 | INFO | utils.fetcher | Retry 1 for COLPAL (equity) with new proxy
+2025-07-14 12:30:06,621 | WARNING | utils.fetcher | Bad response 403 for EICHERMOT (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.25.247.117:6451', 'https': 'http://aeizewrd:c7r90z945p6n@82.25.247.117:6451'}
+2025-07-14 12:30:06,626 | INFO | utils.fetcher | Retry 1 for EICHERMOT (equity) with new proxy
+2025-07-14 12:30:07,167 | WARNING | utils.fetcher | Bad response 403 for NYKAA (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@45.38.86.158:6087', 'https': 'http://aeizewrd:c7r90z945p6n@45.38.86.158:6087'}
+2025-07-14 12:30:07,172 | INFO | utils.fetcher | Retry 1 for NYKAA (equity) with new proxy
+2025-07-14 12:30:12,609 | WARNING | utils.fetcher | Bad response 403 for GRASIM (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.25.247.83:6417', 'https': 'http://aeizewrd:c7r90z945p6n@82.25.247.83:6417'}
+2025-07-14 12:30:12,623 | INFO | utils.fetcher | Retry 1 for GRASIM (equity) with new proxy
+2025-07-14 12:30:22,073 | WARNING | utils.fetcher | Bad response 403 for ICICIBANK (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@92.112.137.59:6002', 'https': 'http://aeizewrd:c7r90z945p6n@92.112.137.59:6002'}
+2025-07-14 12:30:22,078 | INFO | utils.fetcher | Retry 1 for ICICIBANK (equity) with new proxy
+2025-07-14 12:30:25,250 | WARNING | utils.fetcher | Bad response 403 for IRB (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@185.135.10.188:5702', 'https': 'http://aeizewrd:c7r90z945p6n@185.135.10.188:5702'}
+2025-07-14 12:30:25,255 | INFO | utils.fetcher | Retry 1 for IRB (equity) with new proxy
+2025-07-14 12:30:27,643 | WARNING | utils.fetcher | Bad response 403 for IREDA (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@104.252.71.104:6032', 'https': 'http://aeizewrd:c7r90z945p6n@104.252.71.104:6032'}
+2025-07-14 12:30:27,648 | INFO | utils.fetcher | Retry 1 for IREDA (equity) with new proxy
+2025-07-14 12:30:31,820 | WARNING | utils.fetcher | Bad response 403 for INOXWIND (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.25.242.114:7433', 'https': 'http://aeizewrd:c7r90z945p6n@82.25.242.114:7433'}
+2025-07-14 12:30:31,826 | INFO | utils.fetcher | Retry 1 for INOXWIND (equity) with new proxy
+2025-07-14 12:30:37,826 | WARNING | utils.fetcher | Bad response 403 for KALYANKJIL (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@104.252.71.77:6005', 'https': 'http://aeizewrd:c7r90z945p6n@104.252.71.77:6005'}
+2025-07-14 12:30:37,831 | INFO | utils.fetcher | Retry 1 for KALYANKJIL (equity) with new proxy
+2025-07-14 12:30:39,690 | WARNING | utils.fetcher | Bad response 403 for LICHSGFIN (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@207.244.217.230:6777', 'https': 'http://aeizewrd:c7r90z945p6n@207.244.217.230:6777'}
+2025-07-14 12:30:39,695 | INFO | utils.fetcher | Retry 1 for LICHSGFIN (equity) with new proxy
+2025-07-14 12:30:45,525 | WARNING | utils.fetcher | Bad response 403 for LICI (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@45.117.55.141:6787', 'https': 'http://aeizewrd:c7r90z945p6n@45.117.55.141:6787'}
+2025-07-14 12:30:45,530 | INFO | utils.fetcher | Retry 1 for LICI (equity) with new proxy
+2025-07-14 12:30:46,249 | WARNING | utils.fetcher | Bad response 403 for M&MFIN (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.26.235.105:7920', 'https': 'http://aeizewrd:c7r90z945p6n@82.26.235.105:7920'}
+2025-07-14 12:30:46,254 | INFO | utils.fetcher | Retry 1 for M&MFIN (equity) with new proxy
+2025-07-14 12:30:50,576 | WARNING | utils.fetcher | Bad response 403 for NBCC (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.26.235.105:7920', 'https': 'http://aeizewrd:c7r90z945p6n@82.26.235.105:7920'}
+2025-07-14 12:30:50,580 | INFO | utils.fetcher | Retry 1 for NBCC (equity) with new proxy
+2025-07-14 12:30:51,418 | WARNING | utils.fetcher | Bad response 403 for MAZDOCK (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@104.252.71.77:6005', 'https': 'http://aeizewrd:c7r90z945p6n@104.252.71.77:6005'}
+2025-07-14 12:30:51,422 | INFO | utils.fetcher | Retry 1 for MAZDOCK (equity) with new proxy
+2025-07-14 12:31:04,430 | WARNING | utils.fetcher | Bad response 403 for PATANJALI (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@45.67.0.144:6580', 'https': 'http://aeizewrd:c7r90z945p6n@45.67.0.144:6580'}
+2025-07-14 12:31:04,435 | INFO | utils.fetcher | Retry 1 for PATANJALI (equity) with new proxy
+2025-07-14 12:31:04,788 | WARNING | utils.fetcher | Bad response 403 for PETRONET (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@92.112.238.216:7095', 'https': 'http://aeizewrd:c7r90z945p6n@92.112.238.216:7095'}
+2025-07-14 12:31:04,794 | INFO | utils.fetcher | Retry 1 for PETRONET (equity) with new proxy
+2025-07-14 12:31:06,643 | WARNING | utils.fetcher | Bad response 403 for POONAWALLA (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.29.236.201:8014', 'https': 'http://aeizewrd:c7r90z945p6n@82.29.236.201:8014'}
+2025-07-14 12:31:06,649 | INFO | utils.fetcher | Retry 1 for POONAWALLA (equity) with new proxy
+2025-07-14 12:31:09,094 | WARNING | utils.fetcher | Bad response 403 for PRESTIGE (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@207.244.219.213:6469', 'https': 'http://aeizewrd:c7r90z945p6n@207.244.219.213:6469'}
+2025-07-14 12:31:09,099 | INFO | utils.fetcher | Retry 1 for PRESTIGE (equity) with new proxy
+2025-07-14 12:31:12,262 | WARNING | utils.fetcher | Bad response 403 for SBILIFE (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.24.239.52:6909', 'https': 'http://aeizewrd:c7r90z945p6n@82.24.239.52:6909'}
+2025-07-14 12:31:12,268 | INFO | utils.fetcher | Retry 1 for SBILIFE (equity) with new proxy
+2025-07-14 12:31:13,567 | WARNING | utils.fetcher | Bad response 403 for SJVN (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.25.247.117:6451', 'https': 'http://aeizewrd:c7r90z945p6n@82.25.247.117:6451'}
+2025-07-14 12:31:13,572 | INFO | utils.fetcher | Retry 1 for SJVN (equity) with new proxy
+2025-07-14 12:31:25,309 | WARNING | utils.fetcher | Bad response 403 for TCS (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@104.252.71.104:6032', 'https': 'http://aeizewrd:c7r90z945p6n@104.252.71.104:6032'}
+2025-07-14 12:31:25,314 | INFO | utils.fetcher | Retry 1 for TCS (equity) with new proxy
+2025-07-14 12:31:32,054 | WARNING | utils.fetcher | Bad response 403 for TORNTPHARM (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@207.244.217.230:6777', 'https': 'http://aeizewrd:c7r90z945p6n@207.244.217.230:6777'}
+2025-07-14 12:31:32,058 | INFO | utils.fetcher | Retry 1 for TORNTPHARM (equity) with new proxy
+2025-07-14 12:31:35,871 | WARNING | utils.fetcher | Bad response 403 for TRENT (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@104.253.82.2:6423', 'https': 'http://aeizewrd:c7r90z945p6n@104.253.82.2:6423'}
+2025-07-14 12:31:35,877 | INFO | utils.fetcher | Retry 1 for TRENT (equity) with new proxy
+2025-07-14 12:31:36,828 | WARNING | utils.fetcher | Bad response 403 for UPL (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@104.253.0.91:6530', 'https': 'http://aeizewrd:c7r90z945p6n@104.253.0.91:6530'}
+2025-07-14 12:31:36,839 | INFO | utils.fetcher | Retry 1 for UPL (equity) with new proxy
+2025-07-14 12:31:40,017 | WARNING | utils.fetcher | Bad response 403 for WIPRO (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.27.254.45:6404', 'https': 'http://aeizewrd:c7r90z945p6n@82.27.254.45:6404'}
+2025-07-14 12:31:40,022 | INFO | utils.fetcher | Retry 1 for WIPRO (equity) with new proxy
+2025-07-14 12:31:41,361 | WARNING | utils.fetcher | Bad response 403 for VOLTAS (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.24.239.52:6909', 'https': 'http://aeizewrd:c7r90z945p6n@82.24.239.52:6909'}
+2025-07-14 12:31:41,365 | INFO | utils.fetcher | Retry 1 for VOLTAS (equity) with new proxy
+2025-07-14 12:31:43,223 | WARNING | utils.fetcher | Bad response 403 for BANKNIFTY (index) via {'http': 'http://aeizewrd:c7r90z945p6n@82.25.242.114:7433', 'https': 'http://aeizewrd:c7r90z945p6n@82.25.242.114:7433'}
+2025-07-14 12:31:43,229 | INFO | utils.fetcher | Retry 1 for BANKNIFTY (index) with new proxy
+2025-07-14 12:31:44,122 | WARNING | utils.fetcher | Bad response 403 for NIFTY (index) via {'http': 'http://aeizewrd:c7r90z945p6n@104.253.0.91:6530', 'https': 'http://aeizewrd:c7r90z945p6n@104.253.0.91:6530'}
+2025-07-14 12:31:44,130 | INFO | utils.fetcher | Retry 1 for NIFTY (index) with new proxy
+2025-07-14 12:31:46,377 | WARNING | utils.fetcher | Bad response 403 for ATGL (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.25.247.83:6417', 'https': 'http://aeizewrd:c7r90z945p6n@82.25.247.83:6417'}
+2025-07-14 12:31:46,382 | INFO | utils.fetcher | Retry 2 for ATGL (equity) with new proxy
+2025-07-14 12:31:55,053 | WARNING | utils.fetcher | Bad response 403 for LICHSGFIN (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@104.252.71.10:5938', 'https': 'http://aeizewrd:c7r90z945p6n@104.252.71.10:5938'}
+2025-07-14 12:31:55,061 | INFO | utils.fetcher | Retry 2 for LICHSGFIN (equity) with new proxy
+2025-07-14 12:31:57,481 | WARNING | utils.fetcher | Bad response 403 for PETRONET (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@207.244.217.230:6777', 'https': 'http://aeizewrd:c7r90z945p6n@207.244.217.230:6777'}
+2025-07-14 12:31:57,484 | INFO | utils.fetcher | Retry 2 for PETRONET (equity) with new proxy
+2025-07-14 12:32:08,535 | WARNING | utils.fetcher | Bad response 403 for PETRONET (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@207.244.217.230:6777', 'https': 'http://aeizewrd:c7r90z945p6n@207.244.217.230:6777'}
+2025-07-14 12:32:08,542 | INFO | utils.fetcher | Retry 3 for PETRONET (equity) with new proxy
+2025-07-14 12:32:09,443 | WARNING | utils.fetcher | Bad response 403 for ATGL (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@46.203.157.222:7165', 'https': 'http://aeizewrd:c7r90z945p6n@46.203.157.222:7165'}
+2025-07-14 12:32:09,449 | INFO | utils.fetcher | Retry 3 for ATGL (equity) with new proxy
+2025-07-14 12:33:45,358 | WARNING | utils.fetcher | Bad response 403 for CESC (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@207.244.217.230:6777', 'https': 'http://aeizewrd:c7r90z945p6n@207.244.217.230:6777'}
+2025-07-14 12:33:45,365 | INFO | utils.fetcher | Retry 1 for CESC (equity) with new proxy
+2025-07-14 12:33:45,392 | WARNING | utils.fetcher | Bad response 403 for BOSCHLTD (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.27.254.81:6440', 'https': 'http://aeizewrd:c7r90z945p6n@82.27.254.81:6440'}
+2025-07-14 12:33:45,397 | INFO | utils.fetcher | Retry 1 for BOSCHLTD (equity) with new proxy
+2025-07-14 12:33:45,482 | WARNING | utils.fetcher | Bad response 403 for BIOCON (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@104.239.6.238:6372', 'https': 'http://aeizewrd:c7r90z945p6n@104.239.6.238:6372'}
+2025-07-14 12:33:45,487 | INFO | utils.fetcher | Retry 1 for BIOCON (equity) with new proxy
+2025-07-14 12:33:46,155 | WARNING | utils.fetcher | Bad response 403 for BRITANNIA (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@185.135.10.188:5702', 'https': 'http://aeizewrd:c7r90z945p6n@185.135.10.188:5702'}
+2025-07-14 12:33:46,159 | INFO | utils.fetcher | Retry 1 for BRITANNIA (equity) with new proxy
+2025-07-14 12:33:50,771 | WARNING | utils.fetcher | Bad response 403 for CIPLA (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.22.217.188:5530', 'https': 'http://aeizewrd:c7r90z945p6n@82.22.217.188:5530'}
+2025-07-14 12:33:50,776 | INFO | utils.fetcher | Retry 1 for CIPLA (equity) with new proxy
+2025-07-14 12:33:58,159 | WARNING | utils.fetcher | Bad response 403 for DIXON (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.21.208.6:7323', 'https': 'http://aeizewrd:c7r90z945p6n@82.21.208.6:7323'}
+2025-07-14 12:33:58,163 | INFO | utils.fetcher | Retry 1 for DIXON (equity) with new proxy
+2025-07-14 12:34:04,808 | WARNING | utils.fetcher | Bad response 403 for GMRAIRPORT (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.25.247.83:6417', 'https': 'http://aeizewrd:c7r90z945p6n@82.25.247.83:6417'}
+2025-07-14 12:34:04,813 | INFO | utils.fetcher | Retry 1 for GMRAIRPORT (equity) with new proxy
+2025-07-14 12:34:05,146 | WARNING | utils.fetcher | Bad response 403 for GODREJPROP (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@45.131.103.206:6192', 'https': 'http://aeizewrd:c7r90z945p6n@45.131.103.206:6192'}
+2025-07-14 12:34:05,149 | INFO | utils.fetcher | Retry 1 for GODREJPROP (equity) with new proxy
+2025-07-14 12:34:09,059 | WARNING | utils.fetcher | Bad response 403 for HDFCBANK (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@191.96.69.25:5538', 'https': 'http://aeizewrd:c7r90z945p6n@191.96.69.25:5538'}
+2025-07-14 12:34:09,065 | INFO | utils.fetcher | Retry 1 for HDFCBANK (equity) with new proxy
+2025-07-14 12:34:13,968 | WARNING | utils.fetcher | Bad response 403 for HUDCO (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@191.96.69.25:5538', 'https': 'http://aeizewrd:c7r90z945p6n@191.96.69.25:5538'}
+2025-07-14 12:34:13,973 | INFO | utils.fetcher | Retry 1 for HUDCO (equity) with new proxy
+2025-07-14 12:34:14,179 | WARNING | utils.fetcher | Bad response 403 for HINDZINC (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.27.254.81:6440', 'https': 'http://aeizewrd:c7r90z945p6n@82.27.254.81:6440'}
+2025-07-14 12:34:14,184 | INFO | utils.fetcher | Retry 1 for HINDZINC (equity) with new proxy
+2025-07-14 12:34:18,362 | WARNING | utils.fetcher | Bad response 403 for ITC (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.22.247.218:8052', 'https': 'http://aeizewrd:c7r90z945p6n@82.22.247.218:8052'}
+2025-07-14 12:34:18,367 | INFO | utils.fetcher | Retry 1 for ITC (equity) with new proxy
+2025-07-14 12:34:24,652 | WARNING | utils.fetcher | Bad response 403 for INDUSTOWER (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@45.67.3.173:6336', 'https': 'http://aeizewrd:c7r90z945p6n@45.67.3.173:6336'}
+2025-07-14 12:34:24,658 | INFO | utils.fetcher | Retry 1 for INDUSTOWER (equity) with new proxy
+2025-07-14 12:34:27,754 | WARNING | utils.fetcher | Bad response 403 for INFY (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@45.117.55.141:6787', 'https': 'http://aeizewrd:c7r90z945p6n@45.117.55.141:6787'}
+2025-07-14 12:34:27,760 | INFO | utils.fetcher | Retry 1 for INFY (equity) with new proxy
+2025-07-14 12:34:28,681 | WARNING | utils.fetcher | Bad response 403 for JSL (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@92.112.238.216:7095', 'https': 'http://aeizewrd:c7r90z945p6n@92.112.238.216:7095'}
+2025-07-14 12:34:28,687 | INFO | utils.fetcher | Retry 1 for JSL (equity) with new proxy
+2025-07-14 12:34:30,014 | WARNING | utils.fetcher | Bad response 403 for JIOFIN (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@185.39.8.61:5718', 'https': 'http://aeizewrd:c7r90z945p6n@185.39.8.61:5718'}
+2025-07-14 12:34:30,020 | INFO | utils.fetcher | Retry 1 for JIOFIN (equity) with new proxy
+2025-07-14 12:34:33,951 | WARNING | utils.fetcher | Fetch failed for IREDA (equity) with proxy {'http': 'http://aeizewrd:c7r90z945p6n@82.22.245.66:5890', 'https': 'http://aeizewrd:c7r90z945p6n@82.22.245.66:5890'}: Failed to perform, curl: (28) Operation timed out after 15000 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-07-14 12:34:33,953 | INFO | utils.fetcher | Retry 1 for IREDA (equity) with new proxy
+2025-07-14 12:34:34,795 | WARNING | utils.fetcher | Bad response 403 for KAYNES (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@46.203.157.222:7165', 'https': 'http://aeizewrd:c7r90z945p6n@46.203.157.222:7165'}
+2025-07-14 12:34:34,801 | INFO | utils.fetcher | Retry 1 for KAYNES (equity) with new proxy
+2025-07-14 12:34:35,000 | WARNING | utils.fetcher | Bad response 403 for KFINTECH (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@207.244.219.213:6469', 'https': 'http://aeizewrd:c7r90z945p6n@207.244.219.213:6469'}
+2025-07-14 12:34:35,005 | INFO | utils.fetcher | Retry 1 for KFINTECH (equity) with new proxy
+2025-07-14 12:34:45,033 | WARNING | utils.fetcher | Bad response 403 for MFSL (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.25.247.83:6417', 'https': 'http://aeizewrd:c7r90z945p6n@82.25.247.83:6417'}
+2025-07-14 12:34:45,038 | INFO | utils.fetcher | Retry 1 for MFSL (equity) with new proxy
+2025-07-14 12:34:47,548 | WARNING | utils.fetcher | Bad response 403 for MCX (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@104.239.6.238:6372', 'https': 'http://aeizewrd:c7r90z945p6n@104.239.6.238:6372'}
+2025-07-14 12:34:47,552 | INFO | utils.fetcher | Retry 1 for MCX (equity) with new proxy
+2025-07-14 12:34:47,594 | WARNING | utils.fetcher | Bad response 403 for MPHASIS (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.25.242.114:7433', 'https': 'http://aeizewrd:c7r90z945p6n@82.25.242.114:7433'}
+2025-07-14 12:34:47,599 | INFO | utils.fetcher | Retry 1 for MPHASIS (equity) with new proxy
+2025-07-14 12:34:49,208 | WARNING | utils.fetcher | Bad response 403 for NBCC (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@92.112.137.59:6002', 'https': 'http://aeizewrd:c7r90z945p6n@92.112.137.59:6002'}
+2025-07-14 12:34:49,212 | INFO | utils.fetcher | Retry 1 for NBCC (equity) with new proxy
+2025-07-14 12:34:50,496 | WARNING | utils.fetcher | Bad response 403 for NHPC (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@207.244.219.166:6422', 'https': 'http://aeizewrd:c7r90z945p6n@207.244.219.166:6422'}
+2025-07-14 12:34:50,501 | INFO | utils.fetcher | Retry 1 for NHPC (equity) with new proxy
+2025-07-14 12:34:53,773 | WARNING | utils.fetcher | Bad response 403 for OFSS (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.26.235.105:7920', 'https': 'http://aeizewrd:c7r90z945p6n@82.26.235.105:7920'}
+2025-07-14 12:34:53,778 | INFO | utils.fetcher | Retry 1 for OFSS (equity) with new proxy
+2025-07-14 12:34:57,831 | WARNING | utils.fetcher | Bad response 403 for PNBHOUSING (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@104.252.71.104:6032', 'https': 'http://aeizewrd:c7r90z945p6n@104.252.71.104:6032'}
+2025-07-14 12:34:57,834 | INFO | utils.fetcher | Retry 1 for PNBHOUSING (equity) with new proxy
+2025-07-14 12:34:59,585 | WARNING | utils.fetcher | Bad response 403 for PPLPHARMA (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.24.239.52:6909', 'https': 'http://aeizewrd:c7r90z945p6n@82.24.239.52:6909'}
+2025-07-14 12:34:59,591 | INFO | utils.fetcher | Retry 1 for PPLPHARMA (equity) with new proxy
+2025-07-14 12:35:02,740 | WARNING | utils.fetcher | Bad response 403 for PFC (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@104.253.82.2:6423', 'https': 'http://aeizewrd:c7r90z945p6n@104.253.82.2:6423'}
+2025-07-14 12:35:02,745 | INFO | utils.fetcher | Retry 1 for PFC (equity) with new proxy
+2025-07-14 12:35:05,228 | WARNING | utils.fetcher | Bad response 403 for RBLBANK (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.24.224.66:5422', 'https': 'http://aeizewrd:c7r90z945p6n@82.24.224.66:5422'}
+2025-07-14 12:35:05,233 | INFO | utils.fetcher | Retry 1 for RBLBANK (equity) with new proxy
+2025-07-14 12:35:09,692 | WARNING | utils.fetcher | Bad response 403 for SHREECEM (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.22.247.218:8052', 'https': 'http://aeizewrd:c7r90z945p6n@82.22.247.218:8052'}
+2025-07-14 12:35:09,697 | INFO | utils.fetcher | Retry 1 for SHREECEM (equity) with new proxy
+2025-07-14 12:35:13,170 | WARNING | utils.fetcher | Bad response 403 for SIEMENS (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@45.38.86.158:6087', 'https': 'http://aeizewrd:c7r90z945p6n@45.38.86.158:6087'}
+2025-07-14 12:35:13,175 | INFO | utils.fetcher | Retry 1 for SIEMENS (equity) with new proxy
+2025-07-14 12:35:13,765 | WARNING | utils.fetcher | Bad response 403 for SAIL (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.25.247.83:6417', 'https': 'http://aeizewrd:c7r90z945p6n@82.25.247.83:6417'}
+2025-07-14 12:35:13,773 | INFO | utils.fetcher | Retry 1 for SAIL (equity) with new proxy
+2025-07-14 12:35:19,943 | WARNING | utils.fetcher | Bad response 403 for TVSMOTOR (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.27.254.81:6440', 'https': 'http://aeizewrd:c7r90z945p6n@82.27.254.81:6440'}
+2025-07-14 12:35:19,948 | INFO | utils.fetcher | Retry 1 for TVSMOTOR (equity) with new proxy
+2025-07-14 12:35:21,568 | WARNING | utils.fetcher | Bad response 403 for TATAELXSI (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@207.244.217.230:6777', 'https': 'http://aeizewrd:c7r90z945p6n@207.244.217.230:6777'}
+2025-07-14 12:35:21,573 | INFO | utils.fetcher | Retry 1 for TATAELXSI (equity) with new proxy
+2025-07-14 12:35:23,388 | WARNING | utils.fetcher | Bad response 403 for TATAPOWER (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@185.39.8.61:5718', 'https': 'http://aeizewrd:c7r90z945p6n@185.39.8.61:5718'}
+2025-07-14 12:35:23,393 | INFO | utils.fetcher | Retry 1 for TATAPOWER (equity) with new proxy
+2025-07-14 12:35:26,418 | WARNING | utils.fetcher | Bad response 403 for INDHOTEL (equity) via {'http': 'http://aeizewrd:c7r90z945p6n@82.21.238.26:7829', 'https': 'http://aeizewrd:c7r90z945p6n@82.21.238.26:7829'}
+2025-07-14 12:35:26,420 | INFO | utils.fetcher | Retry 1 for INDHOTEL (equity) with new proxy

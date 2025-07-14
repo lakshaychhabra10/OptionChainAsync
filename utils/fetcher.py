@@ -1,8 +1,9 @@
-import aiohttp
 import asyncio
 import random
+import time
 from urllib.parse import quote
 from utils.logger import get_logger
+from curl_cffi import requests as cureq
 
 logger = get_logger(__name__)
 
@@ -39,8 +40,8 @@ HEADERS_LIST = [
 def get_random_headers():
     return random.choice(HEADERS_LIST).copy()
 
-async def fetch_stock(stock, proxy, headers, session, symbol_type='equity'):
-    await asyncio.sleep(random.uniform(0.5, 2))
+def sync_fetch_stock(stock, proxy, headers, symbol_type):
+    time.sleep(random.uniform(0.5, 2))
     base_url = "https://www.nseindia.com"
     option_chain_url = "https://www.nseindia.com/option-chain"
     encoded_stock = quote(stock)
@@ -49,49 +50,55 @@ async def fetch_stock(stock, proxy, headers, session, symbol_type='equity'):
         if symbol_type == 'equity'
         else f"https://www.nseindia.com/api/option-chain-indices?symbol={encoded_stock}"
     )
+
     try:
-        headers["Referer"] = "https://www.nseindia.com"
-        async with session.get(base_url, headers=headers, proxy=proxy) as response:
-            await asyncio.sleep(random.uniform(0.5, 2))
-            if response.status != 200:
-                logger.warning(f"Bad response {response.status} for {stock} (base_url) via {proxy}")
-                return stock, None
         headers["Referer"] = base_url
-        async with session.get(option_chain_url, headers=headers, proxy=proxy) as response:
-            await asyncio.sleep(random.uniform(0.5, 2))
-            if response.status != 200:
-                logger.warning(f"Bad response {response.status} for {stock} (option_chain_url) via {proxy}")
-                return stock, None
-        headers["Referer"] = option_chain_url
-        async with session.get(api_url, headers=headers, proxy=proxy) as response:
-            if response.status == 200:
-                data = await response.json()
-                #logger.info(f"Fetched data for {stock} ({symbol_type}) via {proxy}")
-                return stock, data
+
+        with cureq.Session(impersonate="chrome110") as session:
+            session.get(base_url, headers=headers, proxies=proxy, timeout=15)
+            time.sleep(random.uniform(0.5, 2))
+
+            headers["Referer"] = base_url
+            session.get(option_chain_url, headers=headers, proxies=proxy, timeout=15)
+            time.sleep(random.uniform(0.5, 2))
+
+            headers["Referer"] = option_chain_url
+            response = session.get(api_url, headers=headers, proxies=proxy, timeout=15)
+
+            if response.status_code == 200:
+                return stock, response.json()
             else:
-                logger.warning(f"Bad response {response.status} for {stock} ({symbol_type}) via {proxy}")
+                logger.warning(f"Bad response {response.status_code} for {stock} ({symbol_type}) via {proxy}")
                 return stock, None
+
     except Exception as e:
         logger.warning(f"Fetch failed for {stock} ({symbol_type}) with proxy {proxy}: {e}")
         return stock, None
 
-async def fetch_with_retries(stock, proxy, session, max_retries=3, symbol_type='equity'):
+async def fetch_stock(stock, proxy, headers, session, symbol_type='equity'):
+    return await asyncio.to_thread(sync_fetch_stock, stock, proxy, headers, symbol_type)
+
+async def fetch_with_retries(stock, proxies, session, max_retries=3, symbol_type='equity'):
     for attempt in range(max_retries):
         headers = get_random_headers()
-        result = await fetch_stock(stock, proxy, headers, session, symbol_type)
+        proxy_dict = random.choice(proxies)  # Rotate proxy on each attempt
+        result = await fetch_stock(stock, proxy_dict, headers, session, symbol_type)
         if result[1] is not None:
             return result
-        logger.info(f"Retry {attempt + 1} for {stock} ({symbol_type})")
+        logger.info(f"Retry {attempt + 1} for {stock} ({symbol_type}) with new proxy")
         await asyncio.sleep(2 * (attempt + 1))
     return stock, None
 
-async def process_batch(symbols_with_types, proxy):
-    timeout = aiohttp.ClientTimeout(total=15)
-    connector = aiohttp.TCPConnector(ssl=False, limit=250)
-    async with aiohttp.ClientSession(timeout=timeout, connector=connector) as session:
-        tasks = [
-            fetch_with_retries(symbol, proxy, session, symbol_type=symbol_type)
-            for symbol, symbol_type in symbols_with_types
-        ]
-        results = await asyncio.gather(*tasks)
-        return [(symbol, json_object, symbol_type) for (symbol, json_object), (_, symbol_type) in zip(results, symbols_with_types)]
+
+async def process_batch(symbols_with_types, proxies):
+    session = None  # still unused, but kept for signature compatibility
+    tasks = [
+        fetch_with_retries(symbol, proxies, session, symbol_type=symbol_type)
+        for symbol, symbol_type in symbols_with_types
+    ]
+    results = await asyncio.gather(*tasks)
+    return [
+        (symbol, json_object, symbol_type)
+        for (symbol, json_object), (_, symbol_type) in zip(results, symbols_with_types)
+    ]
+
