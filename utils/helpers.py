@@ -7,6 +7,7 @@ import pandas as pd
 from google.cloud import storage
 import os
 from io import BytesIO
+import aiofiles
 
 logger = get_logger(__name__)
 
@@ -144,9 +145,9 @@ def extract_download_datetime_underlying(json_object):
         logger.warning("No timestamp found for stock.")
         return None, None, underlying
 
-def save_option_chain_snapshot_local(temp_dir, download_date, download_time, snapshot_id, stock, json_object):
+async def save_option_chain_snapshot_local(temp_dir, download_date, download_time, snapshot_id, stock, json_object):
     """
-    Saves the JSON object to a local temporary directory instead of uploading to GCS.
+    Asynchronously saves the JSON object to a local temporary directory.
     """
     date_dir = os.path.join(temp_dir, download_date, str(snapshot_id))
     os.makedirs(date_dir, exist_ok=True)
@@ -154,24 +155,46 @@ def save_option_chain_snapshot_local(temp_dir, download_date, download_time, sna
     json_filename = f"{stock}_{snapshot_id}_{download_date}_{download_time}.json"
     json_path = os.path.join(date_dir, json_filename)
 
-    with open(json_path, 'w') as f:
-        json.dump(json_object, f)
+    async with aiofiles.open(json_path, mode='w') as f:
+        await f.write(json.dumps(json_object))
 
-def batch_upload_to_gcs(bucket_name, local_base_dir):
+import os
+from google.cloud import storage
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+def batch_upload_to_gcs(bucket_name, local_base_dir, max_workers=8):
     """
-    Recursively uploads all files in local_base_dir to GCS bucket, preserving folder structure.
+    Recursively uploads all files in local_base_dir to GCS bucket, preserving folder structure, using multi-threading.
     """
     client = storage.Client()
     bucket = client.bucket(bucket_name)
 
+    # Gather all files to upload
+    files_to_upload = []
     for root, _, files in os.walk(local_base_dir):
         for file in files:
             local_path = os.path.join(root, file)
-            # Construct relative path for GCS
             rel_path = os.path.relpath(local_path, local_base_dir)
-            blob = bucket.blob(rel_path)
+            files_to_upload.append((local_path, rel_path))
 
-            blob.upload_from_filename(local_path, content_type='application/json')
+    def upload_file(local_path, rel_path):
+        blob = bucket.blob(rel_path)
+        blob.upload_from_filename(local_path, content_type='application/json')
+        return rel_path
+
+    # Use ThreadPoolExecutor for parallel uploads
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = [
+            executor.submit(upload_file, local_path, rel_path)
+            for local_path, rel_path in files_to_upload
+        ]
+        for future in as_completed(futures):
+            try:
+                uploaded = future.result()
+                # Optional: log or print uploaded file path
+                # print(f"Uploaded: {uploaded}")
+            except Exception as e:
+                logger.error(f"Upload to google cloud storage failed: {e}")
 
 
 def create_snapshot_df(snapshot_id, stock, download_date, download_time, underlying_val):

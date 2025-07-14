@@ -40,6 +40,7 @@ HEADERS_LIST = [
 def get_random_headers():
     return random.choice(HEADERS_LIST).copy()
 
+
 def sync_fetch_stock(stock, proxy, headers, symbol_type):
     time.sleep(random.uniform(0.5, 2))
     base_url = "https://www.nseindia.com"
@@ -57,11 +58,9 @@ def sync_fetch_stock(stock, proxy, headers, symbol_type):
         with cureq.Session(impersonate="chrome110") as session:
             session.get(base_url, headers=headers, proxies=proxy, timeout=15)
             time.sleep(random.uniform(0.5, 2))
-
             headers["Referer"] = base_url
             session.get(option_chain_url, headers=headers, proxies=proxy, timeout=15)
             time.sleep(random.uniform(0.5, 2))
-
             headers["Referer"] = option_chain_url
             response = session.get(api_url, headers=headers, proxies=proxy, timeout=15)
 
@@ -78,27 +77,48 @@ def sync_fetch_stock(stock, proxy, headers, symbol_type):
 async def fetch_stock(stock, proxy, headers, session, symbol_type='equity'):
     return await asyncio.to_thread(sync_fetch_stock, stock, proxy, headers, symbol_type)
 
-async def fetch_with_retries(stock, proxies, session, max_retries=3, symbol_type='equity'):
+async def fetch_with_retries(stock, assigned_proxy, proxies, session, max_retries=3, symbol_type='equity'):
+    used_proxies = set()
+    current_proxy = assigned_proxy
+
     for attempt in range(max_retries):
         headers = get_random_headers()
-        proxy_dict = random.choice(proxies)  # Rotate proxy on each attempt
-        result = await fetch_stock(stock, proxy_dict, headers, session, symbol_type)
+        result = await fetch_stock(stock, current_proxy, headers, session, symbol_type)
         if result[1] is not None:
             return result
+
+        used_proxies.add(frozenset(current_proxy.items()))
         logger.info(f"Retry {attempt + 1} for {stock} ({symbol_type}) with new proxy")
+
+        # Choose a new proxy not used before
+        available_proxies = [p for p in proxies if frozenset(p.items()) not in used_proxies]
+        if not available_proxies:
+            logger.warning(f"No more unused proxies available for {stock} ({symbol_type})")
+            break
+        current_proxy = random.choice(available_proxies)
         await asyncio.sleep(2 * (attempt + 1))
+
     return stock, None
 
-
 async def process_batch(symbols_with_types, proxies):
-    session = None  # still unused, but kept for signature compatibility
+    session = None  # unused placeholder
+
+    proxies = proxies.copy()  # Avoid modifying original
+    random.shuffle(proxies)   # Shuffle proxies for randomness
+
+    if len(proxies) < len(symbols_with_types):
+        logger.warning("Not enough unique proxies for each stock. Proxies will be reused.")
+    
+    # Assign each stock a proxy (reusing if needed)
+    assigned_proxies = [proxies[i % len(proxies)] for i in range(len(symbols_with_types))]
+
     tasks = [
-        fetch_with_retries(symbol, proxies, session, symbol_type=symbol_type)
-        for symbol, symbol_type in symbols_with_types
+        fetch_with_retries(symbol, assigned_proxy, proxies, session, symbol_type=symbol_type)
+        for (symbol, symbol_type), assigned_proxy in zip(symbols_with_types, assigned_proxies)
     ]
+
     results = await asyncio.gather(*tasks)
     return [
         (symbol, json_object, symbol_type)
         for (symbol, json_object), (_, symbol_type) in zip(results, symbols_with_types)
     ]
-

@@ -90,7 +90,7 @@ def insert_in_database(df, table_name):
 
 
     with engine.connect() as conn:
-        df.to_sql(table_name, con=conn, if_exists='append', index=False)
+        df.to_sql(table_name, con=conn, if_exists='append', index=False, method='multi')
 
 
 def get_latest_snapshot_id():
